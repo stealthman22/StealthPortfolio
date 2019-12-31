@@ -25,6 +25,10 @@ ef50000 F2854e
     text-align: center;
 }
 
+.nav-ul {
+    display: flex;
+}
+
 .nav-list {
     list-style-type: none;
 }
@@ -39,6 +43,7 @@ ef50000 F2854e
     letter-spacing: 2px;
     line-height: 24px;
     color: #50c879;
+    text-align: center;
 }
 
 .nav-items:hover,
