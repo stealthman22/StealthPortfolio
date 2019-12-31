@@ -1,1 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:700i|Raleway&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+Colors
+     #50c879  #ff7e66
+#009f6b 007f56
+Complimentary
+ef50000 F2854e
+*/
+
+.nav {
+    display: flex;
+}
+
+.nav-logo {
+    font-family: Lato, sans-serif;
+    padding: 0.5rem;
+    border: 1px solid #21564b;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-items {
+    font-family: Lato, sans-serif;
+    text-decoration: none;
+    padding: 0.5em;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #50c879;
+}
+
+.nav-items:hover,
+nav-items:active {
+    color: #21564b;
+}
