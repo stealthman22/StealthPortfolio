@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+:root {
+    --hl-clr: #45b29a;
+    --text-pry: #092545;
+    --act-clr: #ff9f63;
+    --bg-pry: #fff;
+    --bg-sec: #e0ebe8;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -24,19 +32,19 @@ sean #45b29a
 
 .nav {
     padding: 40px;
-    background: #e0ebe8;
+    /*  background: var(--bg-sec); */
 }
 
 .nav-logo {
     font-family: Lato, sans-serif;
     font-size: 20px;
-    font-style: oblique;
+    font-style: italic;
     padding: 1.5rem;
-    border: 1px solid #45b29a;
+    border: 1px solid var(--text-pry);
     border-radius: 50%;
     text-align: center;
     margin: 100px;
-    color: #45cea2;
+    color: var(--text-pry)
 }
 
 .nav-ul {
@@ -58,13 +66,13 @@ sean #45b29a
     font-weight: 300;
     letter-spacing: 2px;
     line-height: 24px;
-    color: #45cea2;
+    color: #030303;
     align-self: center;
 }
 
 .nav-items:hover,
 .nav-logo:hover {
-    color: #030303;
+    color: var(--text-pry);
 }
 
 
@@ -75,16 +83,16 @@ sean #45b29a
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
-    padding: 1em;
-    margin: 2em;
+    padding: 0.2em;
+    margin-top: 25px;
 }
 
 .eye {
     width: 60px;
     height: 30px;
-    background: #fff;
+    background: var(--bg-pry);
     display: inline-block;
-    margin: 20px;
+    margin: 5px;
     /*   border: 1px solid #e0ebe8; */
     border-radius: 50%;
     position: relative;
@@ -96,7 +104,7 @@ sean #45b29a
     height: 10px;
     background: rgba(0, 0, 0, 0.87);
     position: absolute;
-    border: 10px solid #45cea2;
+    border: 10px solid var(--act-clr);
     border-radius: 50%;
     top: 50%;
     left: 50%;
