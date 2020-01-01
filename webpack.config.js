@@ -10,9 +10,10 @@ module.exports = {
     entry: {
         app: './src/index.js',
     },
-    devtool: 'eval',
+    devtool: 'eval-source-map',
     devServer: {
-        contentBase: './dist'
+        contentBase: './dist',
+        hot: true,
     },
     module: {
         rules: [
