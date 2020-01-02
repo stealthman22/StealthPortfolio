@@ -4,7 +4,6 @@ import './style.css'
 const time = document.querySelector('.time');
 const hero = document.querySelector('.hero');
 const greetingJs = document.querySelector('.greeting-js');
-console.log(greetingJs)
 const greeting = document.querySelector('greeting');
 
 
@@ -64,7 +63,7 @@ function setBg() {
 getTime();
 addZero();
 
-setBg();
+
 
 
 
