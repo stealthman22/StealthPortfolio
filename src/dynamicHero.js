@@ -44,16 +44,16 @@ function setBg() {
 
     //morning
     if (hour < 12) {
-        hero.style.background = "url('./img/rippling-water-2257568 large.jpg')";
+        hero.style.background = "url('../rippling-water-2257568 medium.jpg')";
         greetingJs.textContent = 'Good Morning,'
 
 
     } else if (hour < 18) {
-        hero.style.background = "url('./img/one-world-trade-center-under-cloudy-sky-during-daytime-161963.jpg)";
+        hero.style.background = "url('../woman-stretching-beside-sea-3455103  medium.jpg')";
         greetingJs.textContent = 'Good Afternoon,'
     }
     else {
-        hero.style.background = "url('./img/bonfire-burning-camp-campfire-1368382.jpg')"
+        hero.style.background = "url('../a-water-falls-in-a-mountain-forest-2892007.jpg')"
         greetingJs.textContent = 'Good Evening'
     }
 }
@@ -62,7 +62,7 @@ function setBg() {
 // Run functions
 getTime();
 addZero();
-
+setBg();
 
 
 
