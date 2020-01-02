@@ -15,6 +15,7 @@
 
 body {
     overflow-x: hidden;
+    background: var(--act-clr)
 }
 
 
@@ -86,6 +87,7 @@ sean #45b29a
     text-align: center;
     padding: 0.2em;
     margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .eye {
@@ -118,7 +120,6 @@ sean #45b29a
 .hero {
     height: 100vh;
     width: 100vw;
-    background: url(./img/a-water-falls-in-a-mountain-forest-2892007.jpg) no-repeat center center fixed;
     text-align: center;
     font-family: Lato, sans-serif;
     color: var(--text-sec);

@@ -2,7 +2,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // modules
 module.exports = {
@@ -10,10 +10,9 @@ module.exports = {
     entry: {
         app: './src/index.js',
     },
-    devtool: 'eval-source-map',
+    devtool: 'eval',
     devServer: {
         contentBase: './dist',
-        hot: true,
     },
     module: {
         rules: [
@@ -29,7 +28,10 @@ module.exports = {
                     {
                         // load with html loader and then minimize
                         loader: 'html-loader',
-                        options: { minimize: true }
+                        options: {
+                            minimize: true,
+                            interpolate: true,
+                        }
                     }
                 ]
             },
@@ -46,9 +48,9 @@ module.exports = {
         ]
     },
     plugins: [
-        new CleanWebpackPlugin({
-            cleanAfterEveryBuildPatterns: ['dist']
-        }),
+        /*   new CleanWebpackPlugin({
+              cleanAfterEveryBuildPatterns: ['dist']
+          }), */
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: './index.html',

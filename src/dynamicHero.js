@@ -1,13 +1,16 @@
 // Dynamic landing page
+import './style.css'
 
-const time = document.querySelector('time')
-const hero = document.querySelector('hero');
+const time = document.querySelector('.time');
+const hero = document.querySelector('.hero');
+const greetingJs = document.querySelector('.greetingJs');
 const greeting = document.querySelector('greeting');
-const greetingJS = document.querySelector('greeting-js');
+
+
 
 // Get time
 function getTime() {
-    let today = new Date(2020, 1, 1, 2, 2, 10),
+    let today = new Date(2020, 1, 1, 13, 2, 10),
         hour = today.getHours(),
         minutes = today.getMinutes();
 
@@ -34,11 +37,31 @@ function addZero(n) {
 
 
 // Set dynamic background
+function setBg() {
+    console.log(' I am Working')
+    let today = new Date(2020, 1, 1, 2, 2, 10),
+        hour = today.getHours();
+
+    //morning
+    if (hour > 12) {
+        hero.style.background = "url('./img/rippling-water-2257568 large .jpg')";
+        greetingJs.textContent = 'Good Morning,';
+
+    } else if (hour > 18) {
+        hero.style.background = "url('./img/one-world-trade-center-under-cloudy-sky-during-daytime-161963.jpg')";
+        greetingJs.textContent = 'Good Afternoon,';
+    } else {
+        hero.style.background = "url('./img/bonfire-burning-camp-campfire-1368382.jpg)";
+        greetingJs.textContent = 'Good Evening,'
+    }
+}
 
 
 // Run functions
 getTime();
 addZero();
+setBg();
+
 
 
 
