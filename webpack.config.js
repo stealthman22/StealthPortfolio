@@ -17,11 +17,11 @@ module.exports = {
     module: {
         rules: [
             // babel 
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: 'babel-loader'
-            },
+            /*   {
+                  test: /\.js$/,
+                  exclude: /node_modules/,
+                  use: 'babel-loader'
+              }, */
             {
                 test: /\.html$/,
                 use: [
@@ -62,8 +62,8 @@ module.exports = {
         },
     },
     output: {
-        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
-        publicPath: '/',
+        filename: '[name].bundle.js',
+        publicPath: '/dist',
     },
 }
