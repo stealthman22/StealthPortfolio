@@ -15,7 +15,6 @@
 
 body {
     overflow-x: hidden;
-    background: var(--act-clr)
 }
 
 
@@ -118,7 +117,10 @@ sean #45b29a
 /* Hero section */
 
 .hero {
-    /* background: url('../src/img/bonfire-burning-camp-campfire-1368382.jpg') no-repeat center center fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     text-align: center;
@@ -139,7 +141,7 @@ sean #45b29a
 }
 
 #description {
-    margin: 20px;
+    padding: 90px;
     font-style: normal;
     font-weight: 600;
     letter-spacing: 2px;

@@ -1,8 +1,9 @@
 // Dynamic landing page
-import './style.css'
+import myImagePath from './img/rippling-water-2257568 large .jpg';
 
 const time = document.querySelector('.time');
 const hero = document.querySelector('.hero');
+
 const greetingJs = document.querySelector('.greeting-js');
 const greeting = document.querySelector('greeting');
 
@@ -10,7 +11,7 @@ const greeting = document.querySelector('greeting');
 
 // Get time
 function getTime() {
-    let today = new Date(),
+    let today = new Date(2020, 1, 2, 2, 20, 30),
         hour = today.getHours(),
         minutes = today.getMinutes();
 
@@ -39,17 +40,17 @@ function addZero(n) {
 // Set dynamic background
 function setBg() {
     console.log(' I am Working')
-    let today = new Date(),
+    let today = new Date(2020, 1, 2, 2, 20, 30),
         hour = today.getHours();
 
     //morning
     if (hour < 12) {
-        hero.style.background = "url('./img/rippling-water-2257568 large.jpg')";
+        hero.style.background = `url(${myImagePath})`;
         greetingJs.textContent = 'Good Morning,'
 
 
     } else if (hour < 18) {
-        hero.style.background = "url('./img/one-world-trade-center-under-cloudy-sky-during-daytime-161963.jpg)";
+        hero.style.background = "url('./img/one-world-trade-center-under-cloudy-sky-during-daytime-161963.jpg')";
         greetingJs.textContent = 'Good Afternoon,'
     }
     else {
@@ -66,4 +67,4 @@ setBg();
 
 
 
-
+console.log(hero)

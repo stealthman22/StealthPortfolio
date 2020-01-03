@@ -10,9 +10,9 @@ module.exports = {
     entry: {
         app: './src/index.js',
     },
-
     devServer: {
         contentBase: './dist',
+        devtool: eval,
     },
     module: {
         rules: [
@@ -44,9 +44,6 @@ module.exports = {
                 use: [
                     'file-loader'
                 ],
-                options: {
-                    name: 'src/img/[name].[ext]',
-                }
             },
         ]
     },
