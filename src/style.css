@@ -15,6 +15,7 @@
 
 body {
     overflow-x: hidden;
+    background-color: chocolate;
 }
 
 
@@ -23,7 +24,7 @@ Colors
      #50c879  #ff7e66
 #009f6b 007f56
 accent Complimentary:#45cea2 #ff8f51
-ef50000 F2854e
+ef5fff0 F2854e
 sham #45cea2
 sean #45b29a
 */
@@ -124,7 +125,7 @@ sean #45b29a
     height: 100vh;
     width: 100vw;
     text-align: center;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     color: var(--text-sec);
 }
 
@@ -146,6 +147,33 @@ sean #45b29a
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 24px;
+}
+
+
+/* Blinking cursor */
+
+.txt-type>.txt {
+    margin: 0 auto;
+    border-right: 0.25rem solid #fff;
+    animation: cursor 1s steps(10) infinite
+}
+
+@keyframes cursor {
+    0% {
+        border-color: rgba(255, 255, 255, 0.143)
+    }
+    20% {
+        border-color: #fff
+    }
+    50% {
+        border-color: #fff
+    }
+    70% {
+        border-color: #fff
+    }
+    100% {
+        border-color: #fff
+    }
 }
 
 

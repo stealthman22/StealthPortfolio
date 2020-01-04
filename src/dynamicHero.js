@@ -11,7 +11,7 @@ const greeting = document.querySelector('greeting');
 
 // Get time
 function getTime() {
-    let today = new Date(2020, 1, 2, 2, 20, 30),
+    let today = new Date(),
         hour = today.getHours(),
         minutes = today.getMinutes();
 
@@ -40,7 +40,7 @@ function addZero(n) {
 // Set dynamic background
 function setBg() {
     console.log(' I am Working')
-    let today = new Date(2020, 1, 2, 2, 20, 30),
+    let today = new Date(),
         hour = today.getHours();
 
     //morning
