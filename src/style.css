@@ -155,7 +155,7 @@ sean #45b29a
 .txt-type>.txt {
     margin: 0 auto;
     border-right: 0.25rem solid #fff;
-    animation: cursor 1s steps(10) infinite
+    animation: cursor 1s steps(70) infinite
 }
 
 @keyframes cursor {
