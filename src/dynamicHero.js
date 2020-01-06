@@ -1,5 +1,4 @@
 // Dynamic landing page
-import myImagePath from './img/rippling-water-2257568 large .jpg';
 
 const time = document.querySelector('.time');
 const hero = document.querySelector('.hero');
@@ -7,6 +6,13 @@ const hero = document.querySelector('.hero');
 const greetingJs = document.querySelector('.greeting-js');
 const greeting = document.querySelector('greeting');
 
+// Import multiple images
+/* 
+function importAll(r) {
+    return r.keys().map(r)
+}
+
+const images = importAll(require.context('./img/hero', false, /\.(png|jpe?g|svg)$/)) */
 
 
 // Get time
@@ -45,12 +51,12 @@ function setBg() {
 
     //morning
     if (hour < 12) {
-        hero.style.background = `url(${myImagePath})`;
+        hero.style.background = `url(${rippling - water - l.jpg})`;
         greetingJs.textContent = 'Good Morning,'
 
 
     } else if (hour < 18) {
-        hero.style.background = "url('./img/one-world-trade-center-under-cloudy-sky-during-daytime-161963.jpg')";
+        hero.style.background = `url(${one - world - trade - center - l.jpg})`;
         greetingJs.textContent = 'Good Afternoon,'
     }
     else {
