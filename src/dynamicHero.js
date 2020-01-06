@@ -1,18 +1,15 @@
 // Dynamic landing page
 
+// All image files
+
+
 const time = document.querySelector('.time');
 const hero = document.querySelector('.hero');
 
 const greetingJs = document.querySelector('.greeting-js');
-const greeting = document.querySelector('greeting');
+const greeting = document.querySelector('.greeting');
 
-// Import multiple images
-/* 
-function importAll(r) {
-    return r.keys().map(r)
-}
 
-const images = importAll(require.context('./img/hero', false, /\.(png|jpe?g|svg)$/)) */
 
 
 // Get time
@@ -43,6 +40,17 @@ function addZero(n) {
 }
 
 
+
+function importAll(r) {
+    let images = {};
+    r.keys().map(item => { images[item.replace('./', '')] = r(item) })
+    return images;
+}
+
+const images = importAll(require.context("./img", false, /\.(png|jpe?g|svg)$/))
+
+console.log(images)
+
 // Set dynamic background
 function setBg() {
     console.log(' I am Working')
@@ -51,12 +59,12 @@ function setBg() {
 
     //morning
     if (hour < 12) {
-        hero.style.background = `url(${rippling - water - l.jpg})`;
+        hero.style.background = ``;
         greetingJs.textContent = 'Good Morning,'
 
 
     } else if (hour < 18) {
-        hero.style.background = `url(${one - world - trade - center - l.jpg})`;
+        hero.style.background = `${images['bonfire-burning-camp-campfire-1368382 small.jpg']}`;
         greetingJs.textContent = 'Good Afternoon,'
     }
     else {
@@ -72,5 +80,3 @@ addZero();
 setBg();
 
 
-
-console.log(hero)
