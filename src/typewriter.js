@@ -1,4 +1,3 @@
-
 function init() {
     // Grab the Dom elements
     const txtElement = document.querySelector('.txt-type');
