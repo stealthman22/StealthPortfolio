@@ -64,11 +64,11 @@ function setBg() {
 
 
     } else if (hour < 18) {
-        hero.style.background = `${images['bonfire-burning-camp-campfire-1368382 small.jpg']}`;
-        greetingJs.textContent = 'Good Afternoon,'
+        hero.style.background =
+            greetingJs.textContent = 'Good Afternoon,'
     }
     else {
-        hero.style.background = "url('./img/bonfire-burning-camp-campfire-1368382.jpg')"
+        hero.style.background = `url(${images['ash-blaze-bonfire-m.jpg']})`;
         greetingJs.textContent = 'Good Evening'
     }
 }
