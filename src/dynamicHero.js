@@ -1,7 +1,7 @@
 // Dynamic landing page
 
 // All image files
-
+import images from './index'
 
 const time = document.querySelector('.time');
 const hero = document.querySelector('.hero');
@@ -41,16 +41,6 @@ function addZero(n) {
 
 
 
-function importAll(r) {
-    let images = {};
-    r.keys().map(item => { images[item.replace('./', '')] = r(item) })
-    return images;
-}
-
-const images = importAll(require.context("./img", false, /\.(png|jpe?g|svg)$/))
-
-console.log(images)
-
 // Set dynamic background
 function setBg() {
     console.log(' I am Working')
@@ -73,6 +63,8 @@ function setBg() {
     }
 }
 
+
+console.log(images)
 
 // Run functions
 getTime();
