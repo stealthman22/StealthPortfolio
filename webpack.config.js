@@ -11,9 +11,7 @@ module.exports = {
         app: './src/index.js',
     },
     devServer: {
-        contentBase: path.resolve(__dirname, 'dist'),
-        devtool: 'eval',
-        publicPath: '/'
+
     },
     module: {
         rules: [
@@ -45,11 +43,6 @@ module.exports = {
                 use: [
                     {
                         loader: 'file-loader',
-                        options: {
-                            name: '[name]-[hash:8].[ext]',
-
-                            outputPath: 'img/'
-                        }
                     }
                 ],
             },
