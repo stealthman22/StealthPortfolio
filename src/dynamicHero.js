@@ -14,7 +14,7 @@ const greetingJs = document.querySelector('.greeting-js');
 
 // Get time
 function getTime() {
-    let today = new Date(2020, 1, 10, 10, 20, 30),
+    let today = new Date(),
         hour = today.getHours(),
         minutes = today.getMinutes();
 
@@ -44,21 +44,22 @@ function addZero(n) {
 // Set dynamic background
 function setBg() {
     console.log(' I am Working')
-    let today = new Date(2020, 1, 10, 10, 20, 30),
-        hour = today.getHours();
+    let today = new Date(2019, 1, 20, 10, 30, 20)
+    // let today = new Date(),
+    hour = today.getHours();
 
     //morning
     if (hour < 12) {
-        hero.style.background = 'url("../src/img/hero/rippling-water-l.jpg")';
+        hero.style.background = 'url("../src/img/hero/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg") no-repeat center center / cover';
         greetingJs.textContent = 'Good Morning,'
 
 
     } else if (hour < 18) {
-        hero.style.background = 'url("../src/img/hero/one-world-trade-center-l.jpg")'
+        hero.style.background = 'url("../src/img/hero/america-arid-bushes-california-221148.jpg") no-repeat center center / cover';
         greetingJs.textContent = 'Good Afternoon,'
     }
     else {
-        // hero.style.background = ;
+        hero.style.background = 'url("../src/img/hero/bonfire-burning-l.jpg") no-repeat center center / cover';
         greetingJs.textContent = 'Good Evening,'
     }
 }
