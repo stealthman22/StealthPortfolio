@@ -1,20 +1,20 @@
 // Dynamic landing page
 
 // All image files
-import images from './index'
 
+const images = require('./index');
 const time = document.querySelector('.time');
 const hero = document.querySelector('.hero');
 
 const greetingJs = document.querySelector('.greeting-js');
-const greeting = document.querySelector('.greeting');
+
 
 
 
 
 // Get time
 function getTime() {
-    let today = new Date(),
+    let today = new Date(2020, 1, 10, 10, 20, 30),
         hour = today.getHours(),
         minutes = today.getMinutes();
 
@@ -44,22 +44,22 @@ function addZero(n) {
 // Set dynamic background
 function setBg() {
     console.log(' I am Working')
-    let today = new Date(),
+    let today = new Date(2020, 1, 10, 10, 20, 30),
         hour = today.getHours();
 
     //morning
     if (hour < 12) {
-        hero.style.background = ``;
+        hero.style.background = 'url("../src/img/hero/rippling-water-l.jpg")';
         greetingJs.textContent = 'Good Morning,'
 
 
     } else if (hour < 18) {
-        hero.style.background =
-            greetingJs.textContent = 'Good Afternoon,'
+        hero.style.background = 'url("../src/img/hero/one-world-trade-center-l.jpg")'
+        greetingJs.textContent = 'Good Afternoon,'
     }
     else {
-        hero.style.background = `url(${images['ash-blaze-bonfire-m.jpg']})`;
-        greetingJs.textContent = 'Good Evening'
+        // hero.style.background = ;
+        greetingJs.textContent = 'Good Evening,'
     }
 }
 
