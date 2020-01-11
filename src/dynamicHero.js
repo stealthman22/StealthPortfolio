@@ -44,7 +44,7 @@ function addZero(n) {
 // Set dynamic background
 function setBg() {
     console.log(' I am Working')
-    let today = new Date(2019, 1, 20, 10, 30, 20)
+    let today = new Date()
     // let today = new Date(),
     hour = today.getHours();
 

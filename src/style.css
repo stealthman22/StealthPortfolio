@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -89,8 +90,9 @@ sean #45b29a
 }
 
 .eye {
-    width: 60px;
-    height: 30px;
+    padding: 0 0.2rem;
+    width: 1.5rem;
+    height: 1rem;
     background: var(--bg-pry);
     display: inline-block;
     margin: 5px;
@@ -101,11 +103,11 @@ sean #45b29a
 }
 
 .ball {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background: var(--text-pry);
     position: absolute;
-    border: 10px solid var(--act-clr);
+    border: 20px solid var(--act-clr);
     border-radius: 50%;
     top: 50%;
     left: 50%;
@@ -121,7 +123,8 @@ sean #45b29a
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* Be sure to change this */
+    height: 110vh;
     width: 100vw;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -170,9 +173,32 @@ sean #45b29a
     70% {
         border-color: #fff
     }
-    100% {
+    200% {
         border-color: #fff
     }
+}
+
+
+/* Showcase */
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.cards {
+    display: flex;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-main {
+    border: 1px solid #030303;
+    height: 20rem;
+    width: 20rem;
 }
 
 

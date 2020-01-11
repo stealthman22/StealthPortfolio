@@ -28,6 +28,7 @@ module.exports = {
                         // load with html loader and then minimize
                         loader: 'html-loader',
                         options: {
+                            attrs: ['img:src', 'link:href'],
                             minimize: true,
                             interpolate: true,
                         }
@@ -70,7 +71,7 @@ module.exports = {
     },
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.join(__dirname, 'dist'),
         publicPath: '/'
 
     },
