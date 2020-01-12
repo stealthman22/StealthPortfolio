@@ -59,7 +59,7 @@ function setBg() {
         greetingJs.textContent = 'Good Afternoon,'
     }
     else {
-        hero.style.background = 'url("../src/img/hero/bonfire-burning-l.jpg") no-repeat center center / cover';
+        hero.style.background = 'url("../src/img/hero/art-astronomy-atmosphere-aurora-borealis-360912.jpg") no-repeat center center / cover';
         greetingJs.textContent = 'Good Evening,'
     }
 }

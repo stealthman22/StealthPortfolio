@@ -33,7 +33,7 @@ sean #45b29a
 /* Nav bar */
 
 .nav {
-    padding: 40px;
+    padding: 2.5rem;
     /*  background: var(--bg-sec); */
 }
 
@@ -81,33 +81,30 @@ sean #45b29a
 /* Eyes follow */
 
 .eyes {
-    top: 25%;
-    transform: translateY(-50%);
+    transform: translateY(-70%);
     width: 100%;
     text-align: center;
-    padding: 0.2em;
-    margin-top: 5px;
 }
 
 .eye {
-    padding: 0 0.2rem;
-    width: 1.5rem;
-    height: 1rem;
+    width: 65px;
+    height: 35px;
     background: var(--bg-pry);
     display: inline-block;
     margin: 5px;
-    /*   border: 1px solid #e0ebe8; */
+    border: 1px solid #e0ebe8;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
 }
 
 .ball {
-    width: 12px;
-    height: 12px;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.1rem;
     background: var(--text-pry);
     position: absolute;
-    border: 20px solid var(--act-clr);
+    border: 8px solid var(--act-clr);
     border-radius: 50%;
     top: 50%;
     left: 50%;
