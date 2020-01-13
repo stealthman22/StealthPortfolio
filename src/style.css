@@ -124,8 +124,9 @@ sean #45b29a
     height: 110vh;
     width: 100vw;
     text-align: center;
-    font-family: 'Lato', sans-serif;
     color: var(--text-sec);
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }
 
 .time {
@@ -138,6 +139,8 @@ sean #45b29a
     font-weight: 600;
     letter-spacing: 4px;
     line-height: 58px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }
 
 #description {
@@ -146,6 +149,8 @@ sean #45b29a
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 24px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }
 
 
