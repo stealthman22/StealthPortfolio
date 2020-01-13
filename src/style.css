@@ -198,9 +198,12 @@ sean #45b29a
 }
 
 .cards-main {
-    border: 1px solid #030303;
-    height: 20rem;
-    width: 20rem;
+    height: 40rem;
+    width: 40rem;
+}
+
+.card-pic {
+    height: 30rem;
 }
 
 
