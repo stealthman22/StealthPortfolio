@@ -186,24 +186,57 @@ sean #45b29a
 .cards-container {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
 
 .cards {
     display: flex;
     height: 100vh;
-    width: auto;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 }
 
+.cards-one {
+    background: linear-gradient(89deg, #ff5edf 0%, #04c8de 100%);
+}
+
 .cards-main {
+    position: relative;
+    display: flex;
+    margin: 0 5em;
+}
+
+.card-pic-one {
+    /*   padding: 0 2px 0 2px; */
+    height: 38rem;
+    width: 38rem;
+}
+
+.card-pic-two {
+    position: absolute;
+    left: 73%;
+    top: 33%;
+    height: 20rem;
+    width: 20rem;
+}
+
+.card-pic-three {
     height: 40rem;
     width: 40rem;
 }
 
-.card-pic {
-    height: 30rem;
+.card-pic-four {
+    position: absolute;
+    left: 58%;
+    top: -33%;
+    height: 22rem;
+    width: 22rem;
+}
+
+.cards-info {
+    margin: 0 5em;
+    color: var(--text-sec);
 }
 
 
@@ -217,4 +250,5 @@ letter-spacing: 2px;
 line-height: 36px;
 text-transform: none;
 color: #2E2E2E;
+ background: linear-gradient(89deg, #ff5edf 0%, #04c8de 100%);
 } */

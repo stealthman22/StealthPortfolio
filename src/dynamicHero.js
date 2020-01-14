@@ -69,6 +69,7 @@ function setBg() {
     let evening = eveningPath + eveningBg;
 
 
+    // Show bg
     //morning
     if (hour < 12) {
         hero.style.background = `url(${morning}) no-repeat center center / cover`;
