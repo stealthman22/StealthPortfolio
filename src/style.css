@@ -259,7 +259,7 @@ sean #45b29a
 }
 
 .cards-four {
-    background: linear-gradient(90deg, #7FB862 30%, #82C0DD 100%);
+    background: linear-gradient(90deg, #7FB862 30%, #82C0DD 90%);
 }
 
 .card-pic-seven {
@@ -275,20 +275,25 @@ sean #45b29a
     width: 20rem;
 }
 
+.cards-five {
+    background: linear-gradient(90deg, #5DA2B7 20%, #F2CDD2 90%);
+}
+
 .card-pic-nine {
-    height: 35rem;
-    width: 35rem;
-    margin-right: 1rem;
+    height: 42rem;
+    width: 42rem;
 }
 
 .card-pic-ten {
     height: 26rem;
     width: 26rem;
-    margin-left: 1rem;
+    position: absolute;
+    top: 9.5rem;
+    left: 30rem;
 }
 
 .cards-info {
-    margin: 0 5em;
+    margin: 0 4em;
     color: var(--text-sec);
 }
 
@@ -315,4 +320,6 @@ color: #2E2E2E;
 #9CD4ED
 #7FB862
 #82C0DD
+#5DA2B7
+#F2CDD2
 */
