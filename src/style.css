@@ -124,8 +124,9 @@ sean #45b29a
     height: 110vh;
     width: 100vw;
     text-align: center;
-    font-family: 'Lato', sans-serif;
     color: var(--text-sec);
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }
 
 .time {
@@ -138,6 +139,8 @@ sean #45b29a
     font-weight: 600;
     letter-spacing: 4px;
     line-height: 58px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }
 
 #description {
@@ -146,6 +149,8 @@ sean #45b29a
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 24px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
 }
 
 
@@ -178,24 +183,118 @@ sean #45b29a
 
 /* Showcase */
 
+
+/* The smaller image of all device pairs are absolutely fixed, as their parents (Cards) are relative */
+
 .cards-container {
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
+    padding-top: 5rem;
 }
 
 .cards {
     display: flex;
-    height: 100vh;
-    width: auto;
+    height: 110vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
 }
 
+.cards-one {
+    background: linear-gradient(89deg, #ff5edf 0%, #04c8de 80%);
+}
+
 .cards-main {
-    border: 1px solid #030303;
+    position: relative;
+    display: flex;
+    margin: 0 5em;
+}
+
+.card-pic-one {
+    /*   padding: 0 2px 0 2px; */
+    height: 38rem;
+    width: 38rem;
+}
+
+.card-pic-two {
+    position: absolute;
+    left: 28rem;
+    top: 11.8rem;
     height: 20rem;
     width: 20rem;
+}
+
+.cards-two {
+    background: linear-gradient(95deg, #3B6C77 0%, #6DB352 70%);
+}
+
+.card-pic-three {
+    height: 40rem;
+    width: 40rem;
+}
+
+.card-pic-four {
+    position: absolute;
+    top: 13rem;
+    left: 25rem;
+    height: 20rem;
+    width: 20rem;
+}
+
+.cards-three {
+    background: linear-gradient(90deg, #9CD4ED 0%, #0D0D0F 70%);
+}
+
+.card-pic-five {
+    height: 40rem;
+    width: 40rem;
+}
+
+.card-pic-six {
+    position: absolute;
+    top: 12.5rem;
+    left: 30rem;
+    height: 22rem;
+    width: 22rem;
+}
+
+.cards-four {
+    background: linear-gradient(90deg, #7FB862 30%, #82C0DD 90%);
+}
+
+.card-pic-seven {
+    height: 45rem;
+    width: 45rem;
+}
+
+.card-pic-eight {
+    position: absolute;
+    top: 17rem;
+    left: 30rem;
+    height: 20rem;
+    width: 20rem;
+}
+
+.cards-five {
+    background: linear-gradient(90deg, #5DA2B7 20%, #F2CDD2 90%);
+}
+
+.card-pic-nine {
+    height: 42rem;
+    width: 42rem;
+}
+
+.card-pic-ten {
+    height: 26rem;
+    width: 26rem;
+    position: absolute;
+    top: 9.5rem;
+    left: 30rem;
+}
+
+.cards-info {
+    margin: 0 4em;
+    color: var(--text-sec);
 }
 
 
@@ -209,4 +308,18 @@ letter-spacing: 2px;
 line-height: 36px;
 text-transform: none;
 color: #2E2E2E;
+ background: linear-gradient(89deg, #ff5edf 0%, #04c8de 100%);
 } */
+
+
+/* #B8EBD0
+
+#3B6C77
+
+#0D0A09
+#9CD4ED
+#7FB862
+#82C0DD
+#5DA2B7
+#F2CDD2
+*/
