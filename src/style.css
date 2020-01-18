@@ -298,6 +298,71 @@ sean #45b29a
 }
 
 
+/* Why me  */
+
+.reasons {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(90deg, 20% #38D39F, 80% #FF8344);
+    justify-content: space-around;
+}
+
+.reasons-card {
+    width: 20rem;
+    height: 30rem;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin: 2rem;
+    /*    transition: 0.5s ease; */
+    cursor: pointer;
+}
+
+.reasons-card-img {
+    height: 50%;
+}
+
+.reasons-card-img-one {
+    background: url('./img/reasons/undraw_developer_activity_bv83.svg') no-repeat center center / cover;
+}
+
+.reasons-card-img-two {
+    background: url('./img/reasons/undraw_designer_life_w96d.svg') no-repeat center center / cover;
+}
+
+.reasons-card-img-three {
+    background: url('./img/reasons/undraw_programming_2svr.svg') no-repeat center center / cover;
+}
+
+.reasons-card-text {
+    padding: 1rem;
+    margin: 0.5rem;
+    font-family: 'Raleway';
+    height: 40%;
+}
+
+.reasons-card-text h2 {
+    font-family: Lato sans-serif;
+}
+
+.reasons-footer {
+    height: 10%;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.reasons-footer-odd {
+    background: #38D39F;
+}
+
+.reasons-footer-even {
+    background: #FF8344;
+}
+
+
 /* 
 .content-1 {
 font-family: Lato, sans-serif;
@@ -313,6 +378,8 @@ color: #2E2E2E;
 
 
 /* #B8EBD0
+svg green #38D39F
+
 
 #3B6C77
 
