@@ -14,7 +14,10 @@ import './style.css';
 import './eyes';
 import './dynamicHero';
 import './typewriter';
+import yall from 'yall-js'
+console.log(yall)
 
+document.addEventListener('DomContentLoaded', yall)
 
 
 /* function importAll(r) {

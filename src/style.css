@@ -381,6 +381,25 @@ sean #45b29a
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6)
 }
 
+.contact-form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.contact-card {
+    width: 80vw;
+    height: 80vh;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    margin: 1rem;
+}
+
 
 /* 
 .content-1 {
