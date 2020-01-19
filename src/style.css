@@ -189,10 +189,11 @@ sean #45b29a
 .cards-container {
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
+    margin-top: 4rem;
 }
 
 .cards {
+    margin-top: 1rem;
     display: flex;
     height: 110vh;
     width: 100vw;
@@ -301,23 +302,24 @@ sean #45b29a
 /* Why me  */
 
 .reasons {
+    margin-top: 4rem;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(90deg, 20% #38D39F, 80% #FF8344);
+    background: linear-gradient(90deg, #38D39F 20%, #FF8344 90%);
     justify-content: space-around;
 }
 
 .reasons-card {
     width: 20rem;
-    height: 30rem;
+    height: 26.5rem;
     border-radius: 18px;
     background: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     margin: 2rem;
-    /*    transition: 0.5s ease; */
+    transition: 0.5s ease;
     cursor: pointer;
 }
 
@@ -337,10 +339,22 @@ sean #45b29a
     background: url('./img/reasons/undraw_programming_2svr.svg') no-repeat center center / cover;
 }
 
+.reasons-card-img-four {
+    background: url('./img/reasons/undraw_Mobile_application_mr4r.svg') no-repeat center center / cover;
+}
+
+.reasons-card-img-five {
+    background: url('./img/reasons/undraw_dream_world_cin1.svg') no-repeat center center / cover;
+}
+
+.reasons-card-img-six {
+    background: url('./img/reasons/undraw_interaction_design_odgc.svg') no-repeat center center / cover;
+}
+
 .reasons-card-text {
-    padding: 1rem;
     margin: 0.5rem;
     font-family: 'Raleway';
+    font-size: 0.95rem;
     height: 40%;
 }
 
@@ -360,6 +374,11 @@ sean #45b29a
 
 .reasons-footer-even {
     background: #FF8344;
+}
+
+.reasons-card:hover {
+    transform: scale(1.07);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6)
 }
 
 
