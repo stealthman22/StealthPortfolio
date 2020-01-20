@@ -6,7 +6,7 @@ function importAll(r) {
     return images;
 }
 
-const images = importAll(require.context("./img", true, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context("./img/hero", true, /\.(png|jpe?g|svg)$/));
 
 
 import './index.html';
@@ -14,7 +14,10 @@ import './style.css';
 import './eyes';
 import './dynamicHero';
 import './typewriter';
-
+import yall from 'yall-js'
+console.log(yall)
+console.log(images)
+document.addEventListener('DomContentLoaded', yall)
 
 
 /* function importAll(r) {

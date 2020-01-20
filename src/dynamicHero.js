@@ -52,7 +52,7 @@ function setBg() {
     // Randomize bg
     // morning
     let morningArray = ['sunset-view-of-mountains-733100.jpg', 'purple-petal-flower-surrounded-by-green-plants-during-66288.jpg', 'time-lapse-photography-of-waterfalls-during-sunset-210186.jpg', 'two-cargo-ships-sailing-near-city-2144905.jpg'];
-    let morningBg = morningArray[Math.ceil(Math.random() * morningArray.length)];
+    let morningBg = morningArray[Math.floor(Math.random() * morningArray.length)];
     let morningPath = '../src/img/hero/';
     let morning = morningPath + morningBg
     console.log(morning)
