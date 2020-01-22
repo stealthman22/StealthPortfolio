@@ -407,17 +407,23 @@ sean #45b29a
 }
 
 .lets-talk {
-    height: 50%;
+    height: 50vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.hiring {
+    height: 10vh;
 }
 
 .contact-btn {
     margin: 1rem;
 }
 
-.hiring {
-    height: 20%;
+.icon {
+    height: 50px;
+    width: 50px;
 }
 
 
