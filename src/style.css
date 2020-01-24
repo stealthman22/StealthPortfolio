@@ -6,7 +6,7 @@
 }
 
 :root {
-    --hl-clr: #45b29a;
+    --hl-clr: #38D39F;
     --text-pry: #092545;
     --text-sec: #fff;
     --act-clr: #ff9f63;
@@ -20,6 +20,18 @@ body {
 
 button {
     cursor: pointer;
+    outline: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
 }
 
 
@@ -385,6 +397,112 @@ sean #45b29a
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6)
 }
 
+
+/* Contact Section */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    margin-top: 4rem;
+    align-items: center;
+}
+
+.hiring {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 15rem;
+    border-radius: 18px;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.hiring-btn {
+    padding: 1rem;
+    background: var(--hl-clr);
+    color: var(--text-sec);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid var(--hl-clr);
+    border-radius: 18px;
+}
+
+.hiring-icon {
+    height: 3rem;
+    width: 3rem;
+    background: var(--text-sec);
+    border-radius: 40%;
+    padding: 0.5rem;
+}
+
+.message>h2 {
+    margin-top: 2rem;
+    font-weight: 200;
+    padding: 1rem;
+}
+
+.message-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.message-list>li {
+    margin: 2rem;
+}
+
+.message-list>li>a>button {
+    padding: 0.5rem;
+    background-color: var(--hl-clr);
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-sec);
+    border: 1px solid var(--hl-clr);
+}
+
+.message-list>li>button {
+    padding: 0.5rem;
+    background-color: var(--hl-clr);
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-sec);
+    border: 1px solid var(--hl-clr);
+}
+
+.jet-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+.message-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.socialize>h2 {
+    font-weight: 300
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.social-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+
+/* 
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -395,6 +513,7 @@ sean #45b29a
     align-items: center;
     margin-top: 4rem;
 }
+
 
 .contact-card {
     width: 80vw;
@@ -432,17 +551,20 @@ sean #45b29a
     margin: 1rem;
 }
 
+ */
+
 
 /* 
 .contact-text {
     margin: 0 1rem;
-} */
+} 
 
 .clipboard {
     position: absolute;
     bottom: .7rem;
     right: 1.7rem;
 }
+*/
 
 
 /* 
