@@ -9,7 +9,7 @@
     --hl-clr: #38D39F;
     --text-pry: #092545;
     --text-sec: #fff;
-    --act-clr: #ff9f63;
+    --act-clr: #ff9057;
     --bg-pry: #fff;
     --bg-sec: #e0ebe8;
 }
@@ -94,7 +94,7 @@ sean #45b29a
 }
 
 
-/* Eyes follow */
+/* Eyes follow
 
 .eyes {
     transform: translateY(-70%);
@@ -126,6 +126,7 @@ sean #45b29a
     left: 50%;
     transform: translate(-50%, -50%);
 }
+ */
 
 
 /* Hero section */
@@ -411,6 +412,7 @@ sean #45b29a
 
 .hiring {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 80vw;
@@ -422,8 +424,13 @@ sean #45b29a
     text-align: center;
 }
 
+.hiring>h2 {
+    font-weight: 200
+}
+
 .hiring-btn {
     padding: 1rem;
+    margin: 2rem;
     background: var(--hl-clr);
     color: var(--text-sec);
     font-size: 1.5rem;
@@ -436,8 +443,8 @@ sean #45b29a
     height: 3rem;
     width: 3rem;
     background: var(--text-sec);
-    border-radius: 40%;
-    padding: 0.5rem;
+    border-radius: 20%;
+    vertical-align: middle;
 }
 
 .message>h2 {
@@ -476,14 +483,16 @@ sean #45b29a
     border: 1px solid var(--hl-clr);
 }
 
-.jet-icon {
+.flash-icon {
     height: 3rem;
     width: 3rem;
+    vertical-align: middle;
 }
 
 .message-icon {
     height: 2rem;
     width: 2rem;
+    vertical-align: middle;
 }
 
 .socialize>h2 {
@@ -492,8 +501,13 @@ sean #45b29a
 
 .social {
     display: flex;
-    justify-content: space-between;
-    padding: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.social-icon {
+    margin: 2rem;
 }
 
 .social-icon {
@@ -501,84 +515,19 @@ sean #45b29a
     width: 3rem;
 }
 
-
-/* 
-.contact-form {
-    display: flex;
-    flex-direction: column;
+.footer {
+    height: 15rem;
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4rem;
-}
-
-
-.contact-card {
-    width: 80vw;
-    height: 80vh;
-    border-radius: 18px;
-    padding: 1rem;
-    background: #fff;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    background-color: #FF8344;
     text-align: center;
-    font-size: 1rem;
+    padding: 2rem;
 }
 
-.lets-talk {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 1rem;
+.copy-icon {
+    height: 3rem;
+    width: 3rem;
+    vertical-align: middle;
 }
-
-.hiring {
-    height: 10vh;
-}
-
-.contact-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.icon {
-    height: 2em;
-    width: 2em;
-    margin: 1rem;
-}
-
- */
-
-
-/* 
-.contact-text {
-    margin: 0 1rem;
-} 
-
-.clipboard {
-    position: absolute;
-    bottom: .7rem;
-    right: 1.7rem;
-}
-*/
-
-
-/* 
-.content-1 {
-font-family: Lato, sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 300;
-letter-spacing: 2px;
-line-height: 36px;
-text-transform: none;
-color: #2E2E2E;
- background: linear-gradient(89deg, #ff5edf 0%, #04c8de 100%);
-} */
 
 
 /* #B8EBD0
