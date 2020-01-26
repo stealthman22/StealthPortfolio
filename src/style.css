@@ -6,10 +6,10 @@
 }
 
 :root {
-    --hl-clr: #45b29a;
+    --hl-clr: #38D39F;
     --text-pry: #092545;
     --text-sec: #fff;
-    --act-clr: #ff9f63;
+    --act-clr: #ff9057;
     --bg-pry: #fff;
     --bg-sec: #e0ebe8;
 }
@@ -20,6 +20,18 @@ body {
 
 button {
     cursor: pointer;
+    outline: transparent;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
 }
 
 
@@ -37,26 +49,32 @@ sean #45b29a
 /* Nav bar */
 
 .nav {
-    padding: 2.5rem;
-    /*  background: var(--bg-sec); */
-}
-
-.nav-logo {
+    display: flex;
+    padding: 1rem;
     font-family: Lato, sans-serif;
-    font-size: 20px;
-    font-style: italic;
-    padding: 1.5rem;
-    border: 1px solid var(--text-pry);
-    border-radius: 50%;
-    text-align: center;
-    margin: 80px;
-    color: var(--text-pry)
+    background: linear-gradient(1790deg, var(--hl-clr) 20%, var(--act-clr) 100%);
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    color: var(--text-sec);
+    z-index: 1000;
 }
 
 .nav-ul {
     display: flex;
     justify-content: flex-end;
-    margin: auto 2em auto 0;
+    margin: auto;
+}
+
+.nav-logo {
+    font-size: 1rem;
+    font-style: italic;
+    padding: 1.5rem;
+    border: 1px solid var(--text-pry);
+    border-radius: 50%;
+    text-align: center;
+    margin: 0.5rem;
 }
 
 .nav-list {
@@ -65,24 +83,24 @@ sean #45b29a
 
 .nav-items {
     font-family: Lato, sans-serif;
-    font-style: oblique;
     text-decoration: none;
     padding: 0.5em;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 2px;
     line-height: 24px;
-    color: #030303;
     align-self: center;
+    color: var(--text-sec);
 }
 
-.nav-items:hover,
+
+/* .nav-items:hover,
 .nav-logo:hover {
     color: var(--text-pry);
-}
+} */
 
 
-/* Eyes follow */
+/* Eyes follow
 
 .eyes {
     transform: translateY(-70%);
@@ -114,6 +132,7 @@ sean #45b29a
     left: 50%;
     transform: translate(-50%, -50%);
 }
+ */
 
 
 /* Hero section */
@@ -131,6 +150,7 @@ sean #45b29a
     color: var(--text-sec);
     font-family: 'Lato', sans-serif;
     font-style: italic;
+    padding-top: 4rem;
 }
 
 .time {
@@ -194,6 +214,7 @@ sean #45b29a
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
+    padding-top: 4rem;
 }
 
 .cards {
@@ -247,7 +268,7 @@ sean #45b29a
 }
 
 .cards-three {
-    background: linear-gradient(90deg, #9CD4ED 0%, #0D0D0F 70%);
+    background: linear-gradient(90deg, #9CD4ED 0%, #0B1C27 70%);
 }
 
 .card-pic-five {
@@ -281,7 +302,7 @@ sean #45b29a
 }
 
 .cards-five {
-    background: linear-gradient(90deg, #5DA2B7 20%, #F2CDD2 90%);
+    background: linear-gradient(90deg, #5DA2B7 20%, #697D8A 90%);
 }
 
 .card-pic-nine {
@@ -298,8 +319,34 @@ sean #45b29a
 }
 
 .cards-info {
-    margin: 0 4em;
+    margin: 0 4rem;
+    padding: 1rem;
     color: var(--text-sec);
+    width: 20rem;
+    height: 22rem;
+    border-radius: 18px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+}
+
+.cards-info>h1 {
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.info-icons {
+    height: 3rem;
+    width: 3rem;
+    margin: 2rem 1rem;
+}
+
+
+/* Achievements */
+
+.achieve {
+    height: 100vh;
 }
 
 
@@ -307,6 +354,7 @@ sean #45b29a
 
 .reasons {
     margin-top: 4rem;
+    padding-top: 7rem;
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -325,7 +373,11 @@ sean #45b29a
     margin: 2rem;
     transition: 0.5s ease;
     cursor: pointer;
+    color: var(--text-pry);
 }
+
+
+/* height of container */
 
 .reasons-card-img {
     height: 50%;
@@ -385,20 +437,27 @@ sean #45b29a
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6)
 }
 
-.contact-form {
+
+/* Contact Section */
+
+.contact {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
     margin-top: 4rem;
+    align-items: center;
+    color: var(--text-pry);
+    padding-top: 8rem;
 }
 
-.contact-card {
+.hiring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 80vw;
-    height: 80vh;
+    height: 15rem;
     border-radius: 18px;
     padding: 1rem;
     background: #fff;
@@ -406,33 +465,125 @@ sean #45b29a
     text-align: center;
 }
 
-.lets-talk {
-    height: 50%;
+.hiring>h2 {
+    font-weight: 200
+}
+
+.hiring-btn {
+    padding: 1rem;
+    margin: 2rem;
+    background: var(--hl-clr);
+    color: var(--text-sec);
+    font-size: 1.5rem;
+    font-weight: 600;
+    border: 1px solid var(--hl-clr);
+    border-radius: 18px;
+}
+
+.hiring-icon {
+    height: 3rem;
+    width: 3rem;
+    background: var(--text-sec);
+    border-radius: 20%;
+    vertical-align: middle;
+}
+
+.message>h2 {
+    margin-top: 2rem;
+    font-weight: 200;
+    padding: 1rem;
+}
+
+.message-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.contact-btn {
-    margin: 1rem;
+.message-list>li {
+    margin: 2rem;
 }
 
-.hiring {
-    height: 20%;
+.message-list>li>a>button {
+    padding: 0.5rem;
+    background-color: var(--hl-clr);
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-sec);
+    border: 1px solid var(--hl-clr);
 }
 
+.message-list>li>button {
+    padding: 0.5rem;
+    background-color: var(--hl-clr);
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-sec);
+    border: 1px solid var(--hl-clr);
+}
 
-/* 
-.content-1 {
-font-family: Lato, sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 300;
-letter-spacing: 2px;
-line-height: 36px;
-text-transform: none;
-color: #2E2E2E;
- background: linear-gradient(89deg, #ff5edf 0%, #04c8de 100%);
-} */
+.flash-icon {
+    height: 3rem;
+    width: 3rem;
+    vertical-align: middle;
+}
+
+.down-icon {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+}
+
+.message-icon {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+}
+
+.socialize>h2 {
+    font-weight: 300
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.social-icon {
+    margin: 2rem;
+}
+
+.social-icon {
+    height: 3rem;
+    width: 3rem;
+}
+
+.footer {
+    color: var(--text-pry);
+    height: 15rem;
+    width: 100vw;
+    background-color: #FF8344;
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer>p {
+    margin-top: 1rem;
+}
+
+.footer>p>a {
+    text-decoration: none;
+}
+
+.copy-icon {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+}
 
 
 /* #B8EBD0

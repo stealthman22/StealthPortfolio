@@ -13,16 +13,17 @@
     <nav class="nav">
         <span class="nav-logo">A_S</span>
         <ul class="nav-ul">
-            <li class="nav-list"><a href="" class="nav-items">Home</a></li>
-            <li class="nav-list"><a href="" class="nav-items">Showcase</a></li>
-            <li class="nav-list"><a href="" class="nav-items">Achievements</a></li>
-            <li class="nav-list"><a href="" class="nav-items">Why Me</a></li>
-            <li class="nav-list"><a href="" class="nav-items">Let's Talk</a></li>
+
+            <li class="nav-list"><a href="#home" class="nav-items">Home</a></li>
+            <li class="nav-list"><a href="#showcase" class="nav-items">Showcase</a></li>
+            <li class="nav-list"><a href="#achievements" class="nav-items">Achievements</a></li>
+            <li class="nav-list"><a href="#whyme" class="nav-items">Reasons</a></li>
+            <li class="nav-list"><a href="#talk" class="nav-items">Contact</a></li>
             <li class="nav-list"><a href="" class="nav-items">Blog</a></li>
-            <li class="nav-list"><a href="" class="nav-items">Who Am I</a></li>
+            <li class="nav-list"><a href="" class="nav-items">About Me</a></li>
         </ul>
     </nav>
-    <div class="eyes">
+    <!--    <div class="eyes">
         <div class="eye">
             <div class="ball"></div>
         </div>
@@ -32,9 +33,9 @@
 
         </div>
 
-    </div>
+    </div> -->
 
-    <main class="hero">
+    <main class="hero" id="home">
         <time class="time"></time>
         <h1 class="greeting">
             <span class="greeting-js"> </span> I'm Joel
@@ -43,20 +44,19 @@
         <!-- <button class="btn">Click to scroll down</button> -->
     </main>
 
-    <section class="cards-container">
+    <section class="cards-container" id="showcase">
         <div class="cards cards-one">
             <div class="cards-main cards-main-one">
                 <img src="../src/img/showcase/face box_dell-xps15-front.png" alt="" class="card-pic card-pic-one">
                 <img src="../src/img/showcase/smart brain ipad_ipad_black_portrait.png" alt=" " class=" card-pic card-pic-two ">
             </div>
             <div class=" cards-info ">
-                <h1>Smart Face recognition app</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veniam minus iusto qui nulla ex harum maiores, hic cumque corrupti accusamus soluta, dolore magni, ducimus enim reprehenderit libero. Qui, autem? Saepe ab aspernatur omnis, explicabo
-                    consectetur voluptas, alias recusandae odio est tenetur qui placeat nihil sapiente sed fugit. Nisi, architecto. Excepturi ducimus similique aspernatur nesciunt dolorem velit impedit, accusamus pariatur. Assumenda, perferendis nobis
-                    aperiam porro expedita aspernatur dolorum non officiis delectus architecto doloribus repudiandae harum repellat omnis molestiae quis ad recusandae placeat. Praesentium ea voluptatem facere nihil omnis qui voluptatibus. Provident deserunt
-                    iure accusantium eveniet. Ducimus odit alias quaerat perspiciatis suscipit officia quam corporis et nemo odio aliquam cupiditate asperiores architecto fugit blanditiis enim voluptate nisi id repudiandae, illum similique. Nulla temporibus
-                    voluptates maxime sit a eius expedita quaerat quibusdam perferendis corrupti! Deleniti ratione non iste nisi ducimus et, at nemo sed odio unde incidunt eveniet, voluptatibus voluptatem, nesciunt veniam.</p>
-                <h2>links links</h2>
+                <h1 class="info-head">Recognize</h1>
+                <p class="info-body">An app that recognizes the faces in pictures and predicts it's location with a bounding box.
+                    <p> The front-end was built in react, it's backend utilizes an express server running on-top of node.js</p>
+                    <p>It also boasts of a fully functional SQL database built with PostgreSQL </p>
+                </p>
+                <span class="info-bottom"> <a href=""> <img src="./img/contact/038-github.svg" alt="" class="info-icons"></a>  <a href=""> <img src="./img/contact/link.svg" alt="" class="info-icons"> </a></span>
             </div>
         </div>
         <div class=" cards  cards-two">
@@ -66,13 +66,13 @@
             </div>
 
             <div class=" cards-info ">
-                <h1>Robotic Friends</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veniam minus iusto qui nulla ex harum maiores, hic cumque corrupti accusamus soluta, dolore magni, ducimus enim reprehenderit libero. Qui, autem? Saepe ab aspernatur omnis, explicabo
-                    consectetur voluptas, alias recusandae odio est tenetur qui placeat nihil sapiente sed fugit. Nisi, architecto. Excepturi ducimus similique aspernatur nesciunt dolorem velit impedit, accusamus pariatur. Assumenda, perferendis nobis
-                    aperiam porro expedita aspernatur dolorum non officiis delectus architecto doloribus repudiandae harum repellat omnis molestiae quis ad recusandae placeat. Praesentium ea voluptatem facere nihil omnis qui voluptatibus. Provident deserunt
-                    iure accusantium eveniet. Ducimus odit alias quaerat perspiciatis suscipit officia quam corporis et nemo odio aliquam cupiditate asperiores architecto fugit blanditiis enim voluptate nisi id repudiandae, illum similique. Nulla temporibus
-                    voluptates maxime sit a eius expedita quaerat quibusdam perferendis corrupti! Deleniti ratione non iste nisi ducimus et, at nemo sed odio unde incidunt eveniet, voluptatibus voluptatem, nesciunt veniam.</p>
-                <h2>links links</h2>
+                <h1 class="info-head"> Friendz</h1>
+                <p class="info-body">
+                    <p>A simple react and redux app that filters profiles based on search results.</p>
+                    <p>It uses react for the UI, and redux for state management, so the state of the search box can be recorded at all times. The profiles structure are fetched from an API.
+                    </p>
+                </p>
+                <span class="info-bottom"> <a href=""> <img src="./img/contact/038-github.svg" alt="" class="info-icons"></a>  <a href=""> <img src="./img/contact/link.svg" alt="" class="info-icons"> </a></span>
             </div>
         </div>
 
@@ -82,13 +82,13 @@
                 <img src="../src/img/showcase/stories ipad_ipad_black_portrait.png" alt="" class="card-pic-six">
             </div>
             <div class=" cards-info ">
-                <h1>Dev Portfolio</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veniam minus iusto qui nulla ex harum maiores, hic cumque corrupti accusamus soluta, dolore magni, ducimus enim reprehenderit libero. Qui, autem? Saepe ab aspernatur omnis, explicabo
-                    consectetur voluptas, alias recusandae odio est tenetur qui placeat nihil sapiente sed fugit. Nisi, architecto. Excepturi ducimus similique aspernatur nesciunt dolorem velit impedit, accusamus pariatur. Assumenda, perferendis nobis
-                    aperiam porro expedita aspernatur dolorum non officiis delectus architecto doloribus repudiandae harum repellat omnis molestiae quis ad recusandae placeat. Praesentium ea voluptatem facere nihil omnis qui voluptatibus. Provident deserunt
-                    iure accusantium eveniet. Ducimus odit alias quaerat perspiciatis suscipit officia quam corporis et nemo odio aliquam cupiditate asperiores architecto fugit blanditiis enim voluptate nisi id repudiandae, illum similique. Nulla temporibus
-                    voluptates maxime sit a eius expedita quaerat quibusdam perferendis corrupti! Deleniti ratione non iste nisi ducimus et, at nemo sed odio unde incidunt eveniet, voluptatibus voluptatem, nesciunt veniam.</p>
-                <h2>links links</h2>
+                <h1 class="info-head">Dev Portfolio</h1>
+                <p class="info-body">
+                    <p>An elegant portfolio template that dev and desing teams can utilize to quickly bootstrap theirs and make necessary changes.</p>
+                    <p>It has a beautiful carousel that highlights the teams main strengths and skills.</p>
+                    <p>It is built in vanilla js and is simple to set up.</p>
+                </p>
+                <span class="info-bottom"> <a href=""> <img src="./img/contact/038-github.svg" alt="" class="info-icons"></a>  <a href=""> <img src="./img/contact/link.svg" alt="" class="info-icons"> </a></span>
             </div>
         </div>
         <div class=" cards  cards-four">
@@ -97,12 +97,11 @@
                 <img src="../src/img/showcase/logistics iphone_iphonexspacegrey_portrait.png" alt="" class="card-pic-eight">
             </div>
             <div class=" cards-info">
-                <h1>Stealth Logistics</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veniam minus iusto qui nulla ex harum maiores, hic cumque corrupti accusamus soluta, dolore magni, ducimus enim reprehenderit libero. Qui, autem? Saepe ab aspernatur omnis, explicabo
-                    consectetur voluptas, alias recusandae odio est tenetur qui placeat nihil sapiente sed fugit. Nisi, architecto. Excepturi ducimus similique aspernatur nesciunt dolorem velit impedit, accusamus pariatur. Assumenda, perferendis nobis
-                    aperiam porro expedita aspernatur dolorum non officiis delectus architecto doloribus repudiandae harum repellat omnis molestiae quis ad recusandae placeat. Praesentium ea voluptatem facere nihil omnis qui voluptatibus. Provident deserunt
-                    iure accusantium eveniet. eveniet, voluptatibus voluptatem, nesciunt veniam.</p>
-                <h2>links links</h2>
+                <h1 class="info-head">Stealth Logistics</h1>
+                <p class="info-body">An elegant landing page for a logistics office, to help them get clients contact information and meeting schedule quickly</p>
+                <p>It uses an form that submits directly to an email account, for fast processing. </p>
+                <p>And with a click, potential clients can be redirected to a social page to learn more about the company</p>
+                <span class="info-bottom"> <a href=""> <img src="./img/contact/038-github.svg" alt="" class="info-icons"></a>  <a href=""> <img src="./img/contact/link.svg" alt="" class="info-icons"> </a></span>
             </div>
         </div>
 
@@ -114,114 +113,170 @@
 
             </div>
             <div class=" cards-info ">
-                <h1>Survey Form and Product Page</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A veniam minus iusto qui nulla ex harum maiores, hic cumque corrupti accusamus soluta, dolore magni, ducimus enim reprehenderit libero. Qui, autem? Saepe ab aspernatur omnis, explicabo
-                    consectetur voluptas, alias recusandae odio est tenetur qui placeat nihil sapiente sed fugit. Nisi, architecto. Excepturi ducimus similique aspernatur nesciunt dolorem velit impedit, accusamus pariatur. Assumenda, perferendis nobis
-                    aperiam porro expedita aspernatur dolorum non officiis delectus architecto doloribus repudiandae harum repellat omnis molestiae quis ad recusandae placeat. </p>
-                <h2>links links</h2>
+                <h1 class="info-head">Survey and Product Page</h1>
+                <p class="info-body">
+                    <p>Two quick projects that can be utilized together.</p>
+                    <p>A product page for a gaming shop, that deal in all forms of consoles and kits</p>
+                    <p>A survey form that can be used to get valuable feedback from customers and stakeholders</p>
+                </p>
+                <span class="info-bottom"> <a href=""> <img src="./img/contact/038-github.svg" alt="" class="info-icons"></a>  <a href=""> <img src="./img/contact/link.svg" alt="" class="info-icons"> </a></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="achieve" id="achievements">
+
+    </section>
+
+    <section class="reasons" id="whyme">
+
+        <div class="reasons-card">
+            <div class="reasons-card-img reasons-card-img-one"></div>
+            <div class="reasons-card-text">
+                <h2>Lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
+                </p>
+            </div>
+            <div class="reasons-footer  reasons-footer-odd">
             </div>
         </div>
 
-        <section class="reasons">
 
-            <div class="reasons-card">
-                <div class="reasons-card-img reasons-card-img-one"></div>
-                <div class="reasons-card-text">
-                    <h2>Lorem</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
-                    </p>
-                </div>
-                <div class="reasons-footer  reasons-footer-odd">
-                </div>
+
+        <div class="reasons-card">
+            <div class="reasons-card-img reasons-card-img-three"></div>
+            <div class="reasons-card-text">
+                <h2>Lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
+                </p>
             </div>
-
-
-
-            <div class="reasons-card">
-                <div class="reasons-card-img reasons-card-img-three"></div>
-                <div class="reasons-card-text">
-                    <h2>Lorem</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
-                    </p>
-                </div>
-                <div class="reasons-footer  reasons-footer-odd">
-                </div>
+            <div class="reasons-footer  reasons-footer-odd">
             </div>
+        </div>
 
-            <div class="reasons-card">
-                <div class="reasons-card-img reasons-card-img-two"></div>
-                <div class="reasons-card-text ">
-                    <h2>Lorem</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
-                    </p>
-                </div>
-                <div class="reasons-footer reasons-footer-even">
-                </div>
+        <div class="reasons-card">
+            <div class="reasons-card-img reasons-card-img-two"></div>
+            <div class="reasons-card-text ">
+                <h2>Lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
+                </p>
             </div>
-            <div class="reasons-card">
-                <div class="reasons-card-img reasons-card-img-four"></div>
-                <div class="reasons-card-text">
-                    <h2>Lorem</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
-                    </p>
-                </div>
-                <div class="reasons-footer  reasons-footer-odd">
-                </div>
+            <div class="reasons-footer reasons-footer-even">
             </div>
-
-
-            <div class="reasons-card">
-                <div class="reasons-card-img reasons-card-img-five"></div>
-                <div class="reasons-card-text">
-                    <h2>Lorem</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
-                    </p>
-                </div>
-                <div class="reasons-footer  reasons-footer-even">
-                </div>
+        </div>
+        <div class="reasons-card">
+            <div class="reasons-card-img reasons-card-img-four"></div>
+            <div class="reasons-card-text">
+                <h2>Lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
+                </p>
             </div>
-
-            <div class="reasons-card">
-                <div class="reasons-card-img reasons-card-img-six"></div>
-                <div class="reasons-card-text">
-                    <h2>Lorem</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
-                    </p>
-                </div>
-                <div class="reasons-footer  reasons-footer-even">
-                </div>
+            <div class="reasons-footer  reasons-footer-odd">
             </div>
-        </section>
+        </div>
 
-        <section class="contact-form">
-            <div class="contact-card">
-                <div class="lets-talk">
-                    <button class="contact-btn">Call +233240070101</button>
-                    <button class="contact btn">Mail alaratj@hotmail.com</button>
-                    <button class="contact-btn">Whatsapp +233509682103</button>
-                </div>
-                <div class="hiring">
-                    <button class="resume">Download Resume</button>
-                </div>
-                <div class="social">
-                    <p> Let's be friends and socialize here:</p>
-                    <a href="" class="social-btn">ln</a>
-                    <a href="" class="social-btn">fb</a>
-                    <a href="" class="social-btn">tw</a>
-                    <a href="" class="social-btn">ig</a>
-                    <a href="" class="social-btn">fcc</a>
-                </div>
+
+        <div class="reasons-card">
+            <div class="reasons-card-img reasons-card-img-five"></div>
+            <div class="reasons-card-text">
+                <h2>Lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
+                </p>
             </div>
+            <div class="reasons-footer  reasons-footer-even">
+            </div>
+        </div>
 
-        </section>
-        <!-- A <noscript> example using <img> with src and srcset. -->
-        <!--   <img class="lazy" data-srcset="/img/image-to-lazy-load-2x.jpg 2x, /img/image-to-lazy-load-1x.jpg 1x" data-src="/img/image-to-lazy-load-1x.jpg" src="/img/placeholder.jpg" alt="Alternative text to describe image.">
+        <div class="reasons-card">
+            <div class="reasons-card-img reasons-card-img-six"></div>
+            <div class="reasons-card-text">
+                <h2>Lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quis consequuntur esse eveniet eos minima praesentium ipsa assumenda cumque, minus sapiente mollitia sit, suscipit consequatur ab dicta commodi magni sunt?
+                </p>
+            </div>
+            <div class="reasons-footer  reasons-footer-even">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="talk">
+        <div class="hiring">
+            <h2>You should checkout my Resume </h2>
+            <a href="">
+                <button class="hiring-btn"> Grab a copy
+                         <img src="./img/contact/download.svg" alt="" class="hiring-icon"> </button>
+            </a>
+        </div>
+        <div class="message">
+
+            <h2> <img src="./img/contact/flash.svg" class="flash-icon" alt="">Want to get in touch with lightning speed ? Reach me here then <img src="./img/contact/048-arrow.svg" alt="" class="down-icon"></h2>
+            <ul class="message-list">
+                <li>
+                    <a href="mailto:alaratj@hotmail.com">
+                        <button class="message-btn"><img src="./img/contact/email.svg" alt="" class="message-icon"> <span class="message-text">alaratj@hotmail.com</span> </button> </a>
+                </li>
+                <li>
+                    <a href="mailto:tdotonline@gmail.com">
+                        <button><img src="./img/contact/icons8-gmail.svg" alt="" class="message-icon"> tdotonline@gmail.com</button>
+                    </a>
+                </li>
+                <li><button><img src="./img/contact/phone.svg" alt="" class="message-icon"> +233240070101</button></li>
+                <li><button><img src="./img/contact/whatsapp.svg" alt="" class="message-icon">  +233509682103</button></li>
+                <!--  <li><button>https://www.linkedin.com/in/alara-joel-b16865b6/</button></li> -->
+            </ul>
+        </div>
+        <div class="socialize">
+            <h2>How about we become friends here :) <img src="./img/contact/048-arrow.svg" alt="" class="down-icon"></h2>
+            <ul class="social">
+                <li>
+                    <a href="https://www.linkedin.com/in/alara-joel-b16865b6/" target="_blank"><img src="./img/contact/045-linkedin.svg" alt="" class="social-icon"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/alara_joel" target="_blank"><img src="./img/contact/043-twitter.svg" alt="" class="social-icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/alara_joel_stealth/" target="_blank"><img src="./img/contact/025-instagram.svg" alt="" class="social-icon"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/stealthman22" target="_blank"><img src="./img/contact/038-github.svg" alt="" class="social-icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/alaratj" target="_blank"><img src="./img/contact/021-facebook.svg" alt="" class="social-icon"></a>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer class="footer">
+        <p> <img src="./img/contact/copyright.svg" alt="" class="copy-icon"> Designed and developed by <a href="https://twitter.com/alara_joel" target="_blank"> Alara O. Joel</a> a.k.a <a href="https://github.com/stealthman22" target="_blank"> Stealthman22</a>
+        </p>
+        <p>Authors of the background images can be linked here at <a href="https://www.pexels.com/@alara-joel-597602/collections/" target="_blank">pexels</a> and Quickly build your mockups here
+            <a href="https://mockuphone.com/" target="_blank">mockuphone</a> </p>
+        <p> Some icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank">Freepik</a>, <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market" target="_blank">Vectors Market</a>, <a href="https://www.flaticon.com/authors/pixel-perfect"
+                title="Pixel perfect" target="_blank">Pixel perfect</a> and <a href="https://www.flaticon.com/authors/fps-web-agency" title="fps web agency" target="_blank">fps web agency</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank"> www.flaticon.com</a>            </p>
+        <p>Other icons from <a target="_blank" href="https://icons8.com">Icons8</a> and
+            <a href="https://freesvg.org/" target="_blank">freesvg</a></p>
+    </footer>
+
+
+
+    <!-- A <noscript> example using <img> with src and srcset. -->
+    <!--   <img class="lazy" data-srcset="/img/image-to-lazy-load-2x.jpg 2x, /img/image-to-lazy-load-1x.jpg 1x" data-src="/img/image-to-lazy-load-1x.jpg" src="/img/placeholder.jpg" alt="Alternative text to describe image.">
     <noscript>
       <img srcset="/img/image-to-lazy-load-2x.jpg 2x, /img/image-to-lazy-load-1x.jpg 1x" src="/img/image-to-lazy-load-1x.jpg" alt="Alternative text to describe image.">
     </noscript> -->
 
 
-        <!-- <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script> -->
+    <!-- <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script> -->
+    <!--  -->
+    <!-- Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+    <!-- Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> -->
+
+    <!-- Icons made by <a href="https://www.flaticon.com/authors/fps-web-agency" title="fps web agency">fps web agency</a> from <a href="https://www.flaticon.com/" title="Flaticon"> 
+            www.flaticon.com</a> -->
+
+    <!-- <a target="_blank" href="https://icons8.com/icons/set/gmail">Gmail icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
 </body>
 
 
