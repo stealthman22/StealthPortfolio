@@ -15,8 +15,8 @@ import './eyes';
 import './dynamicHero';
 import './typewriter';
 
-import SmoothScroll from "../node_modules/smooth-scroll";
-const scroll = new SmoothScroll("[data-scroll]");
+/* import SmoothScroll from "../node_modules/smooth-scroll";
+const scroll = new SmoothScroll("[data-scroll]"); */
 
 import './lazy';
 
