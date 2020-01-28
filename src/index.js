@@ -14,10 +14,12 @@ import './style.css';
 import './eyes';
 import './dynamicHero';
 import './typewriter';
-import yall from 'yall-js'
-console.log(yall)
-console.log(images)
-document.addEventListener('DomContentLoaded', yall)
+
+import SmoothScroll from "../node_modules/smooth-scroll";
+const scroll = new SmoothScroll("[data-scroll]");
+
+import './lazy';
+
 
 
 /* function importAll(r) {

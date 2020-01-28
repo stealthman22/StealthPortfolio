@@ -34,6 +34,7 @@
         "webpack-dev-server": "^3.10.1"
     },
     "dependencies": {
+        "smooth-scroll": "^16.1.2",
         "yall-js": "^3.1.7"
     }
 }
