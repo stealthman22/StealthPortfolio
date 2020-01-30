@@ -52,13 +52,27 @@ sean #45b29a
     display: flex;
     padding: 1rem;
     font-family: Lato, sans-serif;
-    background: linear-gradient(1790deg, var(--hl-clr) 20%, var(--act-clr) 100%);
+    /* background: linear-gradient(90deg, var(--hl-clr) 40%, var(--act-clr) 70%); */
+    /* background: rgba(56, 211, 159, .7) */
+    background: linear-gradient(90deg, rgba(56, 211, 159, 0.5) 40%, rgba(255, 143, 87, 0.5) 70%);
     position: fixed;
     width: 100vw;
     top: 0;
     left: 0;
     color: var(--text-sec);
     z-index: 1000;
+    /* box-shadow: 0px 40px 0px rgba(0, 0, 0, 0.0); */
+    ;
+}
+
+.border_gradient {
+    border: 8px solid transparent;
+    -moz-border-bottom-colors: #897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+    -moz-border-top-colors: #897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+    -moz-border-left-colors: #897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+    -moz-border-right-colors: #897048 #917953 #a18a66 #b6a488 #c5b59b #d4c5ae #e2d6c4 #eae1d2;
+    padding: 5px 5px 5px 15px;
+    width: 100%;
 }
 
 .nav-ul {
@@ -79,12 +93,25 @@ sean #45b29a
 
 .nav-link {
     list-style-type: none;
+    margin: 1rem;
+}
+
+.nav-link>a {
+    background-image: linear-gradient(90deg, transparent 50%, #6DB357 50%);
+    background-size: 200%;
+    transition: background-position 0.5s linear;
+}
+
+.nav-link>a:hover {
+    /* Push the background a 100% of it's width */
+    background-position: -100%;
 }
 
 .nav-items {
     font-family: Lato, sans-serif;
     text-decoration: none;
-    padding: 0.5em;
+    padding: 0 0.6rem;
+    border-radius: 18px;
     font-size: 1.5rem;
     font-weight: 300;
     letter-spacing: 2px;
@@ -144,7 +171,7 @@ sean #45b29a
     justify-content: center;
     align-items: center;
     /* Be sure to change this */
-    height: 110vh;
+    height: 100vh;
     width: 100vw;
     text-align: center;
     color: var(--text-sec);
@@ -213,12 +240,12 @@ sean #45b29a
 .cards-container {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
-    padding-top: 4rem;
+    margin-top: 1rem;
+    padding-top: 0;
 }
 
 .cards {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     display: flex;
     height: 110vh;
     width: 100vw;
@@ -434,7 +461,7 @@ sean #45b29a
 
 .reasons-card:hover {
     transform: scale(1.07);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6)
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 
