@@ -536,7 +536,7 @@ sean #45b29a
     color: var(--text-pry);
     height: 15rem;
     width: 100vw;
-    background-color: #FF8344;
+    background-color: var(--hl-clr);
     text-align: center;
     padding: 2rem;
 }
