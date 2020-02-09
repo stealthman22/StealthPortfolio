@@ -317,6 +317,11 @@ sean #45b29a
 
 .achieve {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #38D39F 10%, #FF8344 90%);
+    color: white;
 }
 
 
