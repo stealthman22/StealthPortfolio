@@ -52,13 +52,14 @@ sean #45b29a
     display: flex;
     padding: 1rem;
     font-family: Lato, sans-serif;
-    background: linear-gradient(1790deg, var(--hl-clr) 20%, var(--act-clr) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 100%);
     position: fixed;
     width: 100vw;
     top: 0;
     left: 0;
     color: var(--text-sec);
     z-index: 1000;
+    font-weight: 500;
 }
 
 .nav-ul {
@@ -68,9 +69,9 @@ sean #45b29a
 }
 
 .nav-logo {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-style: italic;
-    padding: 1.5rem;
+    padding: 1.6rem;
     border: 1px solid var(--text-pry);
     border-radius: 50%;
     text-align: center;
@@ -79,60 +80,29 @@ sean #45b29a
 
 .nav-link {
     list-style-type: none;
+    margin: 1rem;
 }
 
-.nav-items {
+.nav-link>a {
     font-family: Lato, sans-serif;
     text-decoration: none;
-    padding: 0.5em;
+    padding: 0 0.6rem;
+    border-radius: 18px;
     font-size: 1.5rem;
-    font-weight: 300;
     letter-spacing: 2px;
     line-height: 24px;
     align-self: center;
     color: var(--text-sec);
+    /* Linear gradient hack */
+    background-image: linear-gradient(90deg, transparent 50%, #6DB357 50%);
+    background-size: 200%;
+    transition: background-position 0.3s linear;
 }
 
-
-/* .nav-items:hover,
-.nav-logo:hover {
-    color: var(--text-pry);
-} */
-
-
-/* Eyes follow
-
-.eyes {
-    transform: translateY(-70%);
-    width: 100%;
-    text-align: center;
+.nav-link>a:hover {
+    /* Push the background a 100% of it's width */
+    background-position: -100%;
 }
-
-.eye {
-    width: 65px;
-    height: 35px;
-    background: var(--bg-pry);
-    display: inline-block;
-    margin: 5px;
-    border: 1px solid #e0ebe8;
-    border-radius: 50%;
-    position: relative;
-    overflow: hidden;
-}
-
-.ball {
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 0.1rem;
-    background: var(--text-pry);
-    position: absolute;
-    border: 8px solid var(--act-clr);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
- */
 
 
 /* Hero section */
@@ -144,7 +114,7 @@ sean #45b29a
     justify-content: center;
     align-items: center;
     /* Be sure to change this */
-    height: 110vh;
+    height: 100vh;
     width: 100vw;
     text-align: center;
     color: var(--text-sec);
@@ -213,12 +183,12 @@ sean #45b29a
 .cards-container {
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
-    padding-top: 4rem;
+    margin-top: 1rem;
+    padding-top: 0;
 }
 
 .cards {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     display: flex;
     height: 110vh;
     width: 100vw;
@@ -347,6 +317,11 @@ sean #45b29a
 
 .achieve {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #38D39F 10%, #FF8344 90%);
+    color: white;
 }
 
 
@@ -434,7 +409,7 @@ sean #45b29a
 
 .reasons-card:hover {
     transform: scale(1.07);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6)
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -566,7 +541,7 @@ sean #45b29a
     color: var(--text-pry);
     height: 15rem;
     width: 100vw;
-    background-color: #FF8344;
+    background-color: var(--hl-clr);
     text-align: center;
     padding: 2rem;
 }
