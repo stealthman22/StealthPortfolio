@@ -5,6 +5,9 @@
     box-sizing: border-box;
 }
 
+
+/* Clean up css */
+
 :root {
     --hl-clr: #38D39F;
     --text-pry: #092545;
