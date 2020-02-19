@@ -541,12 +541,13 @@ sean #45b29a
 }
 
 .footer {
-    color: var(--text-pry);
+    color: var(--text-sec);
     height: 15rem;
     width: 100vw;
-    background-color: var(--hl-clr);
+    background-color: rgba(56, 211, 159, 0.85);
     text-align: center;
     padding: 2rem;
+    font-size: 1.1rem;
 }
 
 .footer>p {
