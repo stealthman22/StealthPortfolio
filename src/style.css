@@ -55,7 +55,7 @@ sean #45b29a
     display: flex;
     padding: 1rem;
     font-family: Lato, sans-serif;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.1) 100%);
     position: fixed;
     width: 100vw;
     top: 0;
@@ -69,10 +69,11 @@ sean #45b29a
     display: flex;
     justify-content: flex-end;
     margin: auto;
+    padding-left: 10rem;
 }
 
 .nav-logo {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-style: italic;
     padding: 1.6rem;
     border: 1px solid var(--text-pry);
@@ -91,7 +92,9 @@ sean #45b29a
     text-decoration: none;
     padding: 0 0.6rem;
     border-radius: 18px;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+    font-style: oblique;
+    font-weight: 600;
     letter-spacing: 2px;
     line-height: 24px;
     align-self: center;
@@ -241,7 +244,7 @@ sean #45b29a
 }
 
 .cards-three {
-    background: linear-gradient(90deg, #9CD4ED 0%, #0B1C27 70%);
+    background: linear-gradient(90deg, #9CD4ED 0%, #837673 70%);
 }
 
 .card-pic-five {
@@ -252,7 +255,7 @@ sean #45b29a
 .card-pic-six {
     position: absolute;
     top: 12.5rem;
-    left: 30rem;
+    left: 28rem;
     height: 22rem;
     width: 22rem;
 }
@@ -288,7 +291,7 @@ sean #45b29a
     width: 26rem;
     position: absolute;
     top: 9.5rem;
-    left: 30rem;
+    left: 27rem;
 }
 
 .cards-info {
@@ -296,12 +299,11 @@ sean #45b29a
     padding: 1rem;
     color: var(--text-sec);
     width: 20rem;
-    height: 22rem;
+    min-height: 22rem;
     border-radius: 18px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     font-size: 1.1rem;
-    line-height: 1.2rem;
 }
 
 .cards-info>h1 {
@@ -310,9 +312,15 @@ sean #45b29a
 }
 
 .info-icons {
+    margin: 2rem 1rem;
     height: 3rem;
     width: 3rem;
-    margin: 2rem 1rem;
+    transition: 0.5s ease-in-out;
+}
+
+.info-icons:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -349,9 +357,15 @@ sean #45b29a
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     margin: 2rem;
-    transition: 0.5s ease;
     cursor: pointer;
     color: var(--text-pry);
+    transition: 0.3s ease
+}
+
+.reasons-card:hover {
+    transform: scale(1.07);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
 }
 
 
@@ -366,7 +380,7 @@ sean #45b29a
 }
 
 .reasons-card-img-two {
-    background: url('./img/reasons/undraw_designer_life_w96d.svg') no-repeat center center / cover;
+    background: url('./img/reasons/undraw_reviewed_docs_neeb.svg') no-repeat center center / cover;
 }
 
 .reasons-card-img-three {
@@ -378,11 +392,11 @@ sean #45b29a
 }
 
 .reasons-card-img-five {
-    background: url('./img/reasons/undraw_dream_world_cin1.svg') no-repeat center center / cover;
+    background: url('./img/reasons/undraw_web_developer_p3e5o.svg') no-repeat center center / cover;
 }
 
 .reasons-card-img-six {
-    background: url('./img/reasons/undraw_interaction_design_odgc.svg') no-repeat center center / cover;
+    background: url('./img/reasons/undraw_team_spirit_hrr4.svg') no-repeat center center / cover;
 }
 
 .reasons-card-text {
@@ -392,8 +406,14 @@ sean #45b29a
     height: 40%;
 }
 
-.reasons-card-text h2 {
+.reasons-card-text>h2 {
     font-family: Lato sans-serif;
+}
+
+.reasons-card-text>p {
+    padding: 2rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
 }
 
 .reasons-footer {
@@ -408,11 +428,6 @@ sean #45b29a
 
 .reasons-footer-even {
     background: #FF8344;
-}
-
-.reasons-card:hover {
-    transform: scale(1.07);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
 }
 
 
@@ -533,28 +548,46 @@ sean #45b29a
 
 .social-icon {
     margin: 2rem;
-}
-
-.social-icon {
     height: 3rem;
     width: 3rem;
+    transition: 0.5s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.4);
+    transition: all 0.5s ease;
 }
 
 .footer {
-    color: var(--text-pry);
-    height: 15rem;
+    color: var(--text-sec);
+    min-height: 16rem;
     width: 100vw;
-    background-color: var(--hl-clr);
+    background: linear-gradient(90deg, #38d39f 30%, #6DB357 70%);
     text-align: center;
-    padding: 2rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 1rem;
 }
 
 .footer>p {
-    margin-top: 1rem;
+    padding: 1rem;
 }
 
 .footer>p>a {
     text-decoration: none;
+    color: var(--text-sec);
+    font-style: oblique;
+    font-weight: 700;
+    background-image: linear-gradient(90deg, transparent 50%, #6DB357 50%);
+    background-size: 200%;
+    transition: background-position 0.3s linear;
+    border-radius: 18px;
+    padding: 0 0.2rem;
+    text-transform: capitalize;
+}
+
+.footer>p>a:hover {
+    background-position: -100%;
 }
 
 .copy-icon {
