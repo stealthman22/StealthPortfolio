@@ -558,11 +558,15 @@ sean #45b29a
     transition: all 0.5s ease;
 }
 
+.social-txt {
+    padding-left: 2rem;
+}
+
 .footer {
     color: var(--text-sec);
-    min-height: 16rem;
+    min-height: 20rem;
     width: 100vw;
-    background: linear-gradient(90deg, #38d39f 30%, #6DB357 70%);
+    background: linear-gradient(90deg, #38d39f 30%, rgba(108, 179, 87, 0.711) 70%);
     text-align: center;
     font-weight: 400;
     font-size: 1.2rem;
@@ -570,7 +574,7 @@ sean #45b29a
 }
 
 .footer>p {
-    padding: 1rem;
+    padding: 1.3rem;
 }
 
 .footer>p>a {
