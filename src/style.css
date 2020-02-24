@@ -517,6 +517,10 @@ sean #45b29a
     border: 1px solid var(--hl-clr);
 }
 
+.message-list>li>button:hover {
+    background-color: var(--text-pry);
+}
+
 .flash-icon {
     height: 3rem;
     width: 3rem;
@@ -544,6 +548,11 @@ sean #45b29a
     flex-wrap: wrap;
     justify-content: center;
     padding: 2rem;
+}
+
+.social-li>a {
+    text-decoration: none;
+    color: var(--text-pry);
 }
 
 .social-icon {
