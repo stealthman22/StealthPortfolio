@@ -517,8 +517,20 @@ sean #45b29a
     border: 1px solid var(--hl-clr);
 }
 
-.message-list>li>button:hover {
+.message-icon {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+}
+
+.message-btn {
+    transition: 0.5s ease;
+}
+
+.message-btn:hover {
     background-color: var(--text-pry);
+    transition: 0.5s ease;
+    transform: scale(1.2);
 }
 
 .flash-icon {
@@ -528,12 +540,6 @@ sean #45b29a
 }
 
 .down-icon {
-    height: 2rem;
-    width: 2rem;
-    vertical-align: middle;
-}
-
-.message-icon {
     height: 2rem;
     width: 2rem;
     vertical-align: middle;
