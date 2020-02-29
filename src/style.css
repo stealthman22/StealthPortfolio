@@ -517,6 +517,22 @@ sean #45b29a
     border: 1px solid var(--hl-clr);
 }
 
+.message-icon {
+    height: 2rem;
+    width: 2rem;
+    vertical-align: middle;
+}
+
+.message-btn {
+    transition: 0.5s ease;
+}
+
+.message-btn:hover {
+    background-color: var(--text-pry);
+    transition: 0.5s ease;
+    transform: scale(1.2);
+}
+
 .flash-icon {
     height: 3rem;
     width: 3rem;
@@ -524,12 +540,6 @@ sean #45b29a
 }
 
 .down-icon {
-    height: 2rem;
-    width: 2rem;
-    vertical-align: middle;
-}
-
-.message-icon {
     height: 2rem;
     width: 2rem;
     vertical-align: middle;
@@ -544,6 +554,11 @@ sean #45b29a
     flex-wrap: wrap;
     justify-content: center;
     padding: 2rem;
+}
+
+.social-li>a {
+    text-decoration: none;
+    color: var(--text-pry);
 }
 
 .social-icon {
