@@ -282,17 +282,18 @@ sean #45b29a
 }
 
 .card-pic-nine {
-    height: 42rem;
-    width: 42rem;
+    height: 45rem;
+    width: 45rem;
 }
 
-.card-pic-ten {
+
+/* .card-pic-ten {
     height: 26rem;
     width: 26rem;
     position: absolute;
     top: 9.5rem;
     left: 27rem;
-}
+} */
 
 .cards-info {
     margin: 0 4rem;
