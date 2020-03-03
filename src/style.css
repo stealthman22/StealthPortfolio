@@ -282,17 +282,18 @@ sean #45b29a
 }
 
 .card-pic-nine {
-    height: 42rem;
-    width: 42rem;
+    height: 45rem;
+    width: 45rem;
 }
 
-.card-pic-ten {
+
+/* .card-pic-ten {
     height: 26rem;
     width: 26rem;
     position: absolute;
     top: 9.5rem;
     left: 27rem;
-}
+} */
 
 .cards-info {
     margin: 0 4rem;
@@ -392,7 +393,7 @@ sean #45b29a
 }
 
 .reasons-card-img-five {
-    background: url('./img/reasons/undraw_web_developer_p3e5o.svg') no-repeat center center / cover;
+    background: url('./img/reasons/undraw_creative_thinking_b3bc.svg') no-repeat center center / cover;
 }
 
 .reasons-card-img-six {
