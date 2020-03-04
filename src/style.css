@@ -327,13 +327,186 @@ sean #45b29a
 
 /* Achievements */
 
-.achieve {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, #38D39F 10%, #FF8344 90%);
-    color: white;
+
+/* The timeline container */
+
+.timeline {
+    padding: 8rem 3rem;
+    position: relative;
+    margin: 2rem auto;
+    max-width: 100vw;
+    /* background: linear-gradient(90deg, #19529C 50%, #ee9a14 50%); */
+    background: url('./img/achievements/scenic-view-of-mountains-during-dawn-1266810.jpg') no-repeat center center / cover;
+}
+
+
+/* the vertical ruler */
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+
+/* Container around the content */
+
+.container {
+    padding: 10px 50px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+
+/*  The circles on the timeline */
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #61d4e8;
+    border: 4px solid #2da1e7;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Content on the left */
+
+.left {
+    left: 0;
+}
+
+
+/* Content on the right */
+
+.right {
+    left: 50%;
+}
+
+
+/* Arrows for the left containers (facing right) */
+
+.left::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #fff;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff;
+}
+
+
+/* Arrows for the right containers (facing left) */
+
+.right::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #fff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+}
+
+
+/* Fix circles to the right */
+
+.right::after {
+    left: -16px;
+}
+
+
+/* The actual content */
+
+.content {
+    padding: 20px 30px;
+    background-color: var(--hl-clr);
+    color: var(--text-sec);
+    position: relative;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    min-width: 5em;
+    z-index: 2;
+}
+
+.content>h3 {
+    padding: 0.2rem;
+}
+
+.content>p {
+    padding-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.content>a {
+    text-decoration: none;
+    color: var(--text-sec);
+    font-style: oblique;
+    background-image: linear-gradient(90deg, transparent 50%, #ff9057 50%);
+    background-size: 200%;
+    transition: background-position 0.3s linear;
+    border-radius: 18px;
+    padding: 0 0.2rem;
+    font-size: 1.1rem;
+}
+
+.content>a:hover {
+    background-position: -100%;
+}
+
+
+/* Media queries for responsiveness */
+
+@media screen and (max-with: 600px) {
+    /* Place the timeline to the left */
+    timeline::after {
+        left: 31px;
+    }
+    /* Full width containers */
+    .container {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+    /* Make sure all arrows point leftwards */
+    .left::after,
+    .right::after {
+        left: 15px
+    }
+    /* Make sure all circles are pointing leftwards */
+    .container::before {
+        left: 60px;
+        border: medium solid #fff;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 15px;
+    }
+    /* Make all right containers behave like left ones */
+    .right {
+        left: 0%;
+    }
 }
 
 
@@ -530,8 +703,6 @@ sean #45b29a
 
 .message-btn:hover {
     background-color: var(--text-pry);
-    transition: 0.5s ease;
-    transform: scale(1.2);
 }
 
 .flash-icon {
@@ -603,7 +774,6 @@ sean #45b29a
     transition: background-position 0.3s linear;
     border-radius: 18px;
     padding: 0 0.2rem;
-    text-transform: capitalize;
 }
 
 .footer>p>a:hover {
