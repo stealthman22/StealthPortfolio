@@ -63,6 +63,7 @@ sean #45b29a
     color: var(--text-sec);
     z-index: 1000;
     font-weight: 500;
+    transition: top 0.4s;
 }
 
 .nav-ul {
