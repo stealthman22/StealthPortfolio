@@ -19,23 +19,28 @@ console.log(prevScrollPos)
 
 const hamburger = document.querySelector('.hamburger');
 const navUl = document.querySelector('.nav-ul');
-const links = document.querySelectorAll('.nav-ul li');
+const links = document.querySelectorAll('.nav-items');
 const lineOne = document.querySelector('.hamburger .line:nth-child(1)');
 const lineTwo = document.querySelector('.hamburger .line:nth-child(2)');
 const lineThree = document.querySelector('.hamburger .line:nth-child(3)');
 
-hamburger.addEventListener('click', ()=> {
+console.log(links)
+console.log(navUl)
+
+
+hamburger.addEventListener('click', (e)=> {
+    e.stopPropagation()
     navUl.classList.toggle('open');
     links.forEach(link =>link.classList.toggle('fade'));
     lineThree.classList.toggle('transparent');
     lineOne.classList.toggle('rotateOne');
     lineTwo.classList.toggle('rotateTwo');
+
 })
 
 links.forEach(link=>link.addEventListener('click', ()=> {
-   nav.classList.add('transparent');
-  
-})) 
+   navUL.classList.add('transparent');
+}))  
 
 
 
