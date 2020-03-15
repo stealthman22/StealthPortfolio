@@ -296,6 +296,12 @@ sean #45b29a
         flex-direction: column;
         padding-bottom: 2rem;
     }
+
+    .card-pic-one {
+        /*   padding: 0 2px 0 2px; */
+        height: 16rem;
+        width: 16rem;
+    }
 }
 
 .cards-one {
