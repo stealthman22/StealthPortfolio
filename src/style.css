@@ -302,6 +302,13 @@ sean #45b29a
         height: 16rem;
         width: 16rem;
     }
+    .card-pic-two {
+        position: absolute;
+        left: 28rem;
+        top: 11.8rem;
+        height: 10rem;
+        width: 10rem;
+    }
 }
 
 .cards-one {
