@@ -300,11 +300,12 @@ sean #45b29a
        padding-bottom: 2rem;
     }
 
-    .cards-info {
-        flex: 3;
-        margin: 0 ;
+    .cards .cards-info {
+       
+        
         padding: 1rem;
-        width: 40rem;
+       min-height: 5rem;
+        width: 35rem;
         /* min-height: 22rem;
         border-radius: 18px;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
