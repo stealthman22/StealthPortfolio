@@ -291,27 +291,68 @@ sean #45b29a
     align-items: center;
 }
 
-
+/* px = dp * (dpi / 160) */
 
 @media screen and (max-width: 1100px) {
     .cards {
-     
         flex-direction: column;
        padding-bottom: 2rem;
     }
 
     .cards .cards-info {
-       
-        
         padding: 1rem;
        min-height: 5rem;
-        width: 35rem;
-        /* min-height: 22rem;
-        border-radius: 18px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-        text-align: center;
-        font-size: 1.1rem; */
+        width: 80vw;
         
+    }
+
+    .cards-main-one .card-pic-one {
+      height: 30rem;
+      width: 30rem;
+       
+    }
+
+    .cards-main-one .card-pic-two {
+        left: 21rem;
+        top: 11rem;
+        height: 14rem;
+        width: 14rem;
+    }
+
+    .cards-main-two .card-pic-three {
+        height: 30rem;
+        width: 30rem;
+    }
+    .cards-main-two .card-pic-four {
+        top: 10rem;
+        left: 19rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    .cards-main-three .card-pic-five {
+        height: 28rem;
+        width: 28rem;
+    }
+
+    .cards-main-three .card-pic-six {
+        top: 9rem;
+        left: 18rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    .cards-main-four .card-pic-seven {
+        height: 30rem;
+        width: 30rem;
+    }
+    .cards-main-four .card-pic-eight {
+        top: 11rem;
+        left: 20rem;
+        height: 13rem;
+        width: 13rem;
+    }
+    .cards-main-five .card-pic-nine {
+        height: 35rem;
+        width: 35rem;
     }
 
 }
