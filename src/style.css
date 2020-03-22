@@ -504,6 +504,31 @@ cards-main-two {
     .card-pic-two, .card-pic-four, .card-pic-six, .card-pic-eight {
         opacity: 0;
     }
+
+
+    .cards-main-one .card-pic-one {
+        height: 20rem;
+        width: 20rem;
+         
+      }
+  
+      .cards-main-two .card-pic-three {
+          height: 20rem;
+          width: 20rem;
+      }
+      .cards-main-three .card-pic-five {
+          height: 20rem;
+          width: 20rem;
+      }
+  
+      .cards-main-four .card-pic-seven {
+          height: 20rem;
+          width: 20rem;
+      }
+      .cards-main-five .card-pic-nine {
+          height: 20rem;
+          width: 20rem;
+      }
 }
 
 /* Achievements */
