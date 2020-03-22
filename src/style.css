@@ -19,6 +19,10 @@
 
 body {
     overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+     letter-spacing: 0.1em; 
+
 }
 
 button {
@@ -68,8 +72,8 @@ sean #45b29a
 
 .nav-ul {
     display: flex;
-    justify-content: flex-end;
-    margin: auto;
+    /* justify-content: flex-end; */
+    /* margin: auto; */
     padding-left: 10rem;
 }
 
@@ -88,17 +92,15 @@ sean #45b29a
     margin: 1rem;
 }
 
-.nav-link>a {
+.nav-items {
     font-family: Lato, sans-serif;
     text-decoration: none;
     padding: 0 0.6rem;
     border-radius: 18px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-style: oblique;
     font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 24px;
-    align-self: center;
+    /* align-self: center; */
     color: var(--text-sec);
     /* Linear gradient hack */
     background-image: linear-gradient(90deg, transparent 50%, #6DB357 50%);
@@ -106,13 +108,13 @@ sean #45b29a
     transition: background-position 0.3s linear;
 }
 
-.nav-link>a:hover {
+.nav-items:hover {
     /* Push the background a 100% of it's width */
     background-position: -100%;
 }
 
 /* responsiveness */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1160px) {
     nav {
         position: relative; 
     }
@@ -290,73 +292,6 @@ sean #45b29a
     justify-content: center;
     align-items: center;
 }
-
-/* px = dp * (dpi / 160) */
-
-@media screen and (max-width: 1100px) {
-    .cards {
-        flex-direction: column;
-       padding-bottom: 2rem;
-    }
-
-    .cards .cards-info {
-        padding: 1rem;
-       min-height: 5rem;
-        width: 80vw;
-        
-    }
-
-    .cards-main-one .card-pic-one {
-      height: 30rem;
-      width: 30rem;
-       
-    }
-
-    .cards-main-one .card-pic-two {
-        left: 21rem;
-        top: 11rem;
-        height: 14rem;
-        width: 14rem;
-    }
-
-    .cards-main-two .card-pic-three {
-        height: 30rem;
-        width: 30rem;
-    }
-    .cards-main-two .card-pic-four {
-        top: 10rem;
-        left: 19rem;
-        height: 15rem;
-        width: 15rem;
-    }
-    .cards-main-three .card-pic-five {
-        height: 28rem;
-        width: 28rem;
-    }
-
-    .cards-main-three .card-pic-six {
-        top: 9rem;
-        left: 18rem;
-        height: 15rem;
-        width: 15rem;
-    }
-    .cards-main-four .card-pic-seven {
-        height: 30rem;
-        width: 30rem;
-    }
-    .cards-main-four .card-pic-eight {
-        top: 11rem;
-        left: 20rem;
-        height: 13rem;
-        width: 13rem;
-    }
-    .cards-main-five .card-pic-nine {
-        height: 30rem;
-        width: 30rem;
-    }
-
-}
-
 .cards-main {
     position: relative;
    
@@ -476,7 +411,7 @@ cards-main-two {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     font-size: 1.1rem;
-    
+    letter-spacing: normal;
 }
 
 .cards-info>h1 {
@@ -499,6 +434,77 @@ cards-main-two {
 
 /* mobile */
 
+
+/* px = dp * (dpi / 160) */
+
+@media screen and (max-width: 1100px) {
+    .cards {
+        flex-direction: column;
+       padding-bottom: 2rem;
+    }
+
+    .cards .cards-info {
+        padding: 1rem;
+       min-height: 5rem;
+        width: 80vw;
+        
+    }
+
+    .cards-main-one .card-pic-one {
+      height: 30rem;
+      width: 30rem;
+       
+    }
+
+    .cards-main-one .card-pic-two {
+        left: 21rem;
+        top: 11rem;
+        height: 14rem;
+        width: 14rem;
+    }
+
+    .cards-main-two .card-pic-three {
+        height: 30rem;
+        width: 30rem;
+    }
+    .cards-main-two .card-pic-four {
+        top: 10rem;
+        left: 19rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    .cards-main-three .card-pic-five {
+        height: 28rem;
+        width: 28rem;
+    }
+
+    .cards-main-three .card-pic-six {
+        top: 9rem;
+        left: 18rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    .cards-main-four .card-pic-seven {
+        height: 30rem;
+        width: 30rem;
+    }
+    .cards-main-four .card-pic-eight {
+        top: 11rem;
+        left: 20rem;
+        height: 13rem;
+        width: 13rem;
+    }
+    .cards-main-five .card-pic-nine {
+        height: 30rem;
+        width: 30rem;
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .card-pic-two, .card-pic-four, .card-pic-six, .card-pic-eight {
+        opacity: 0;
+    }
+}
 
 /* Achievements */
 
