@@ -729,7 +729,7 @@ cards-main-two {
 
 .reasons-card {
     width: 20rem;
-    min-height: 26.5rem;
+    min-height: 27rem;
     border-radius: 18px;
     background: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -787,7 +787,7 @@ cards-main-two {
 }
 
 .reasons-card-text>p {
-    padding: 2rem;
+    padding: 1rem;
     /* font-size: 1rem;
     letter-spacing: 2px; */
 }
