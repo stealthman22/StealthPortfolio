@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -17,13 +18,19 @@
     --bg-sec: #e0ebe8;
 }
 
-body {
+html,body {
     overflow-x: hidden;
-    font-size: 16px;
+    font-size: 16.5px;
     line-height: 1.5;
-     letter-spacing: 0.1em; 
 
 }
+
+@supports (-moz-appearance: none) {
+    html,body {
+        font-size: 14.5px;
+    }
+} 
+
 
 button {
     cursor: pointer;
@@ -393,14 +400,6 @@ cards-main-two {
 }
 
 
-/* .card-pic-ten {
-    height: 26rem;
-    width: 26rem;
-    position: absolute;
-    top: 9.5rem;
-    left: 27rem;
-} */
-
 .cards-info {
     margin: 0 3rem;
     padding: 1rem;
@@ -410,7 +409,6 @@ cards-main-two {
     border-radius: 18px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
-    font-size: 1.1rem;
     letter-spacing: normal;
 }
 
@@ -537,7 +535,7 @@ cards-main-two {
 /* The timeline container */
 
 .timeline {
-    padding: 8rem 3rem;
+    padding: 2rem 3rem;
     position: relative;
     margin: 2rem auto;
     max-width: 100vw;
@@ -681,9 +679,9 @@ cards-main-two {
 
 /* Media queries for responsiveness */
 
-@media screen and (max-with: 600px) {
+@media screen and (max-width: 700px) {
     /* Place the timeline to the left */
-    timeline::after {
+    .timeline::after {
         left: 31px;
     }
     /* Full width containers */
