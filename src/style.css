@@ -576,8 +576,6 @@ sean #45b29a
 
 .reasons-card-text {
     margin: 0.5rem;
-    font-family: 'Raleway';
-    
     height: 40%;
 }
 
@@ -604,7 +602,7 @@ sean #45b29a
 .reasons-footer-even {
     background: #FF8344;
 }
-
+ 
 
 /* Contact Section */
 
