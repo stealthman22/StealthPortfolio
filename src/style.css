@@ -729,7 +729,7 @@ cards-main-two {
 
 .reasons-card {
     width: 20rem;
-    height: 26.5rem;
+    min-height: 26.5rem;
     border-radius: 18px;
     background: #fff;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
@@ -779,8 +779,6 @@ cards-main-two {
 
 .reasons-card-text {
     margin: 0.5rem;
-    font-family: 'Raleway';
-    font-size: 0.95rem;
     height: 40%;
 }
 
@@ -790,8 +788,8 @@ cards-main-two {
 
 .reasons-card-text>p {
     padding: 2rem;
-    font-size: 1rem;
-    letter-spacing: 2px;
+    /* font-size: 1rem;
+    letter-spacing: 2px; */
 }
 
 .reasons-footer {
@@ -807,7 +805,7 @@ cards-main-two {
 .reasons-footer-even {
     background: #FF8344;
 }
-
+ 
 
 /* Contact Section */
 
