@@ -717,8 +717,8 @@ cards-main-two {
 /* Why me  */
 
 .reasons {
-    margin-top: 4rem;
-    padding-top: 7rem;
+    /* margin-top: 4rem; */
+    padding-top: 4rem;
     width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -826,7 +826,7 @@ cards-main-two {
     align-items: center;
     justify-content: center;
     width: 80vw;
-    height: 15rem;
+    min-height: 15rem;
     border-radius: 18px;
     padding: 1rem;
     background: #fff;
@@ -834,8 +834,8 @@ cards-main-two {
     text-align: center;
 }
 
-.hiring>h2 {
-    font-weight: 200
+.hiring>h3 {
+    font-weight: 400
 }
 
 .hiring-btn {
@@ -847,6 +847,11 @@ cards-main-two {
     font-weight: 600;
     border: 1px solid var(--hl-clr);
     border-radius: 18px;
+    animation: beat .35s infinite alternate;
+    transform-origin: center;
+}
+@keyframes beat {
+    to {transform: scale(1.1);}
 }
 
 .hiring-icon {
@@ -857,8 +862,8 @@ cards-main-two {
     vertical-align: middle;
 }
 
-.message>h2 {
-    margin-top: 2rem;
+.message>h3 {
+    margin-top: 1rem;
     font-weight: 200;
     padding: 1rem;
 }
@@ -866,7 +871,14 @@ cards-main-two {
 .message-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+ 
+}
+@media screen and (max-width:700px) {
+    .message-list {
+        flex-direction: column;
+       align-items: center;
+    }
 }
 
 .message-list>li {
@@ -888,7 +900,7 @@ cards-main-two {
     background-color: var(--hl-clr);
     border-radius: 18px;
     font-size: 1rem;
-    font-weight: 600;
+    /* font-weight: 600; */
     color: var(--text-sec);
     border: 1px solid var(--hl-clr);
 }
@@ -919,7 +931,7 @@ cards-main-two {
     vertical-align: middle;
 }
 
-.socialize>h2 {
+.socialize>h3{
     font-weight: 300
 }
 
@@ -927,7 +939,7 @@ cards-main-two {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .social-li>a {
@@ -951,14 +963,18 @@ cards-main-two {
     padding-left: 2rem;
 }
 
+@media screen and (max-width:700px) {
+    .social{
+        flex-direction: column;
+       align-items: center;
+    }
+}
 .footer {
     color: var(--text-sec);
     min-height: 20rem;
     width: 100vw;
     background: linear-gradient(90deg, #38d39f 30%, rgba(108, 179, 87, 0.711) 70%);
     text-align: center;
-    font-weight: 400;
-    font-size: 1.2rem;
     padding: 1rem;
 }
 
