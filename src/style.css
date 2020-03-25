@@ -414,8 +414,6 @@ cards-main-two {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
     text-align: center;
     letter-spacing: normal;
-    /* For mobile */
-    background: inherit;
 }
 
 .cards-info>h1 {
@@ -449,8 +447,9 @@ cards-main-two {
 
     .cards .cards-info {
         padding: 1rem;
-       min-height: 5rem;
+        min-height: 5rem;
         width: 80vw;
+        background: inherit;
         
     }
 
