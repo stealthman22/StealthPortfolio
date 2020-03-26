@@ -53,13 +53,13 @@ function setBg() {
     // morning
     let morningArray = ['sunset-view-of-mountains-733100.jpg', 'purple-petal-flower-surrounded-by-green-plants-during-66288.jpg', 'time-lapse-photography-of-waterfalls-during-sunset-210186.jpg', 'two-cargo-ships-sailing-near-city-2144905.jpg'];
     let morningBg = morningArray[Math.floor(Math.random() * morningArray.length)];
-    let morningPath = './src/img/hero/';
+    let morningPath = '../src/img/hero/';
     let morning = morningPath + morningBg
     console.log(morning)
     // afternoon
     let afternoonArray = ['empty-dining-tables-and-chairs-1579739.jpg', 'brown-and-green-mountain-view-photo-842711.jpg', 'photo-of-keyboard-near-mouse-3184460.jpg', 'america-arid-bushes-california-221148.jpg'];
     let afternoonBg = afternoonArray[Math.floor(Math.random() * afternoonArray.length)];
-    let afternoonPath = './src/img/hero/';
+    let afternoonPath = '../src/img/hero/';
     let afternoon = afternoonPath + afternoonBg;
 
     // evening
@@ -72,19 +72,19 @@ function setBg() {
     // Show bg
     //morning
     if (hour < 12) {
-        hero.style.backgroundImage = `url(${morning}) no-repeat center center / cover`;
+        hero.style.background = `url(${morning}) no-repeat center center / cover`;
         greetingJs.textContent = 'Hi Good Morning,'
 
         // afternoon
 
     } else if (hour < 18) {
-        hero.style.backgroundImage = `url(${afternoon}) no-repeat center center / cover`;
+        hero.style.background = `url(${afternoon}) no-repeat center center / cover`;
         greetingJs.textContent = 'Hi Good Afternoon,'
     }
 
     // evening and night
     else {
-        hero.style.backgroundImage = `url(${evening}) no-repeat center center / cover`;
+        hero.style.background = `url(${evening}) no-repeat center center / cover`;
         greetingJs.textContent = 'Hi Good Evening,'
     }
 }
