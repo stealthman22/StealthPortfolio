@@ -72,19 +72,19 @@ function setBg() {
     // Show bg
     //morning
     if (hour < 12) {
-        hero.style.background = `url(${morning}) no-repeat center center / cover`;
+        hero.style.backgroundImage = `url(${morning}) no-repeat center center / cover`;
         greetingJs.textContent = 'Hi Good Morning,'
 
         // afternoon
 
     } else if (hour < 18) {
-        hero.style.background = `url(${afternoon}) no-repeat center center / cover`;
+        hero.style.backgroundImage = `url(${afternoon}) no-repeat center center / cover`;
         greetingJs.textContent = 'Hi Good Afternoon,'
     }
 
     // evening and night
     else {
-        hero.style.background = `url(${evening}) no-repeat center center / cover`;
+        hero.style.backgroundImage = `url(${evening}) no-repeat center center / cover`;
         greetingJs.textContent = 'Hi Good Evening,'
     }
 }
