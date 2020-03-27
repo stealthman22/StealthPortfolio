@@ -38,9 +38,9 @@ hamburger.addEventListener('click', (e)=> {
 
 })
 
-links.forEach(link=>link.addEventListener('click', ()=> {
-   navUL.classList.add('transparent');
-}))  
+// links.forEach(link=>link.addEventListener('click', ()=> {
+//    navUL.classList.add('transparent');
+// }))  
 
 
 

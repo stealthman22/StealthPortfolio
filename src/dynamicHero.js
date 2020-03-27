@@ -65,7 +65,7 @@ function setBg() {
     // evening
     let eveningArray = ['twisted-building-during-nighttime-1470405  s.jpg', 'beautiful-beauty-blue-bright-414612.jpg', 'landscape-photo-of-mountain-with-polar-lights-1434608.jpg', 'photo-of-toronto-cityscape-at-night-2478248.jpg'];
     let eveningBg = eveningArray[Math.floor(Math.random() * eveningArray.length)];
-    let eveningPath = '../src/img/hero/';
+    let eveningPath = './src/img/hero/';
     let evening = eveningPath + eveningBg;
 
 
