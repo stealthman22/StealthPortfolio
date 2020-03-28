@@ -1,3 +1,5 @@
+// Autohide Navbar on scroll 
+
 // Grab node list
 let nav = document.querySelector('.nav')
 
@@ -14,6 +16,7 @@ window.onscroll = function () {
 
 console.log(nav)
 console.log(prevScrollPos)
+
 
 // Responsive hamburger
 

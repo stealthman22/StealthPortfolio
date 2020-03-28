@@ -214,21 +214,22 @@ sean #45b29a
 /* .hero-container {
     background-color:  #00cdac;
 } */
+  /* background-image: linear-gradient(90deg, #02aab0 0%, #00cdac  80%); */
+
+  .hero-container {
+    background-color:  #00cdac;
+} 
 
 .hero {
-   /* background-image: linear-gradient(90deg, #02aab0 0%, #00cdac  80%); */
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Be sure to change this */
     height: 100vh;
     width: 100vw;
     text-align: center;
     color: var(--text-sec);
     font-style: italic; 
-    /* background: url('../src/img/hero/america-arid-bushes-california-221148.jpg'); */
 }
 
 .time {
