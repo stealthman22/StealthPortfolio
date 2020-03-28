@@ -31,19 +31,22 @@ console.log(links)
 console.log(navUl)
 
 
-hamburger.addEventListener('click', (e)=> {
-    e.stopPropagation()
+hamburger.addEventListener('click', ()=> { 
     navUl.classList.toggle('open');
     links.forEach(link =>link.classList.toggle('fade'));
     lineThree.classList.toggle('transparent');
     lineOne.classList.toggle('rotateOne');
     lineTwo.classList.toggle('rotateTwo');
-
+   
 })
 
-// links.forEach(link=>link.addEventListener('click', ()=> {
-//    navUL.classList.add('transparent');
-// }))  
+links.forEach(link=>link.addEventListener('click', ()=> {
+    navUl.classList.remove('open');
+    lineThree.classList.remove('transparent');
+    lineOne.classList.remove('rotateOne');
+    lineTwo.classList.remove('rotateTwo');
+    
+}))  
 
 
 

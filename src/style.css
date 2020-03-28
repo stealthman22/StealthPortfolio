@@ -94,6 +94,13 @@ sean #45b29a
     border-radius: 50%;
     text-align: center;
     margin: 0.3rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-logo:hover {
+transform: rotateY(30deg);
+transition: all 0.2s ease-in-out;
 }
 
 .nav-link {
@@ -142,7 +149,7 @@ sean #45b29a
         height: 5px;
         background: white;
         margin: 5px;
-        transition: all 0.6s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
 .nav-logo {
@@ -162,7 +169,7 @@ sean #45b29a
         padding-left: 0;
         clip-path: circle(0px at 90% 10%);
         -webkit-clip-path:circle(0px at 90% 10%);
-        transition: all 1s ease-in-out;
+        transition: all 0.6s ease-in-out;
         pointer-events: none;
     }
    
@@ -170,6 +177,11 @@ sean #45b29a
         clip-path: circle(2000px at 90% 10%);
        -webkit-clip-path: circle(2000px at 90% 10%);
        pointer-events: all;
+    }
+    .nav-ul.close {
+        clip-path: circle(0px at 90% 10%);
+        -webkit-clip-path:circle(0px at 90% 10%);
+        transition: all 0.6s ease-in-out;
     }
     .nav.items {
         opacity: 0;
