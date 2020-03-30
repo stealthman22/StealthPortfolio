@@ -178,11 +178,6 @@ transition: all 0.2s ease-in-out;
        -webkit-clip-path: circle(2000px at 90% 10%);
        pointer-events: all;
     }
-    .nav-ul.close {
-        clip-path: circle(0px at 90% 10%);
-        -webkit-clip-path:circle(0px at 90% 10%);
-        transition: all 0.6s ease-in-out;
-    }
     .nav.items {
         opacity: 0;
     }
