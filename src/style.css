@@ -70,7 +70,7 @@ sean #45b29a
 .nav {
     display: flex;
     padding: 0.3rem;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0.2) 100%);
     position: fixed;
     width: 100vw;
     top: 0;
