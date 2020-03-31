@@ -35,6 +35,7 @@
     },
     "dependencies": {
         "smooth-scroll": "^16.1.2",
+        "webpack-merge": "^4.2.2",
         "yall-js": "^3.1.7"
     }
 }
