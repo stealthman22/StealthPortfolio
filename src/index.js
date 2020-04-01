@@ -1,4 +1,4 @@
-// Import multiple image
+// Import multiple images
 
 function importAll(r) {
     let images = {};
