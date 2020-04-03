@@ -49,14 +49,15 @@ function setBg() {
     hour = today.getHours();
 
 
+    
+function showBg() {
     // Randomize bg
-
-    // morning
+// morning
     let morningArray = ['sunset-view-of-mountains-733100.jpg', 'purple-petal-flower-surrounded-by-green-plants-during-66288.jpg', 'time-lapse-photography-of-waterfalls-during-sunset-210186.jpg', 'two-cargo-ships-sailing-near-city-2144905.jpg'];
     let morningBg = morningArray[Math.floor(Math.random() * morningArray.length)];
     let morningPath = './src/img/hero/';
     let morning = morningPath + morningBg
- 
+
     // afternoon
     afternoonArray = ['empty-dining-tables-and-chairs-1579739.jpg', 'brown-and-green-mountain-view-photo-842711.jpg', 'photo-of-keyboard-near-mouse-3184460.jpg', 'america-arid-bushes-california-221148.jpg'];
     let afternoonBg = afternoonArray[Math.floor(Math.random() * afternoonArray.length)];
@@ -68,30 +69,27 @@ function setBg() {
     let eveningBg = eveningArray[Math.floor(Math.random() * eveningArray.length)];
     let eveningPath = './src/img/hero/';
     let evening = eveningPath + eveningBg;
+    console.log(eveningArray)
 
-    function tabQuery(x) {
-        if (x.matches) {
-            afternoonArray = ['Talon.png'];
-            eveningArray = ['mintbox-3.png'];
-        }
-        }
-        const x = window.matchMedia('(max-width:1024px)');
-        tabQuery(x)
-        x.addListener(tabQuery);
-        console.log(x)
+ function tabQuery(x) {
+            if (x.matches) {
+             const tabArray = ['Talon.png']
+                eveningArray = tabArray;
+                console.log(eveningArray)
+            }
+            }
+            
+            const x = window.matchMedia('(max-width:1024px)');
+            tabQuery(x)
+            x.addListener(tabQuery);
+            console.log(x)
+    
+  
 
-        // // bg-images for mobile
-        // function mobileQuery(y) {
-        //     if (y.matches) {
-        //         afternoonArray = ['kyere.png']
-        //     }
-        // }
-        // const y = window.matchMedia('(max-width:600px)');
-        // mobileQuery(y);
-        // y.addListener( mobileQuery)
-        // console.log(y)
+    console.log(eveningArray)
+        // console.log(tabArray)
 
-    // Show bg
+// Show bg
     //morning
     if (hour < 12) {
         hero.style.background = `url(${morning}) no-repeat center center / cover`;
@@ -110,12 +108,53 @@ function setBg() {
         greetingJs.textContent = 'Hi Good Evening,'
     }
 
+
+    // function tabQuery(x) {
+    //         if (x.matches) {
+    //          const tabArray = ['Talon.png']
+    //             eveningArray = tabArray;
+    //             console.log(eveningArray)
+    //         }
+    //         }
+    //         const x = window.matchMedia('(max-width:1024px)');
+    //         tabQuery(x)
+    //         x.addListener(tabQuery);
+    //         console.log(x)
+    
+    
+}  
+
+
+    // function tabQuery(x) {
+    //     if (x.matches) {
+    //         afternoonArray = ['Talon.png'];
+    //         eveningArray = ['mintbox-3.png'];
+    //     }
+    //     }
+    //     const x = window.matchMedia('(max-width:1024px)');
+    //     tabQuery(x)
+    //     x.addListener(tabQuery);
+    //     console.log(x)
+
+        // // bg-images for mobile
+        // function mobileQuery(y) {
+        //     if (y.matches) {
+        //         afternoonArray = ['kyere.png']
+        //     }
+        // }
+        // const y = window.matchMedia('(max-width:600px)');
+        // mobileQuery(y);
+        // y.addListener( mobileQuery)
+        // console.log(y)
+
+   
+
       // Set media queries
 //   if (window.matchMedia("(max-width:1024px)").matches) {
 //     morningArray = ;
 //     console.log(morningArray)
 // }
-    
+   showBg()
 }
 
 
