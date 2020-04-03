@@ -63,11 +63,18 @@ function setBg() {
     let afternoon = afternoonPath + afternoonBg;
 
     // evening
-    let eveningArray = ['twisted-building-during-nighttime-1470405  s.jpg', 'beautiful-beauty-blue-bright-414612.jpg', 'landscape-photo-of-mountain-with-polar-lights-1434608.jpg', 'photo-of-toronto-cityscape-at-night-2478248.jpg'];
+    let eveningArray = ['twisted-building-during-nighttime-1470405.jpg', 'beautiful-beauty-blue-bright-414612.jpg', 'landscape-photo-of-mountain-with-polar-lights-1434608.jpg', 'photo-of-toronto-cityscape-at-night-2478248.jpg'];
     let eveningBg = eveningArray[Math.floor(Math.random() * eveningArray.length)];
     let eveningPath = './src/img/hero/';
     let evening = eveningPath + eveningBg;
 
+// Set media queries
+// if (window.matchMedia("(max-width:1024px)").matches) {
+//    let  eveningArray = ['agarthaa.jpg'];
+//     let eveningBg = eveningArray[Math.floor(Math.random() * eveningArray.length)];
+//     let eveningPath = './src/img/hero/';
+//     let evening = eveningPath + eveningBg;
+// }
 
     // Show bg
     //morning
@@ -87,6 +94,7 @@ function setBg() {
         hero.style.background = `url(${evening}) no-repeat center center / cover`;
         greetingJs.textContent = 'Hi Good Evening,'
     }
+
 }
 
 

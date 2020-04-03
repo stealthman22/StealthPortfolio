@@ -590,6 +590,17 @@ cards-main-two {
    
 } 
 
+@media screen and (max-width:1024px) {
+   .timeline {
+       background: url("./img/achievements/scenic-view-of-mountains-during-dawn-m.jpg") no-repeat center center / cover;
+   }
+}
+
+@media screen and (max-width:600px) {
+    .timeline {
+        background: url("./img/achievements/scenic-view-of-mountains-during-dawn-s.jpg") no-repeat center center / cover;
+    }
+}
 
 .timeline-container {
     background-color: #00cdac;
