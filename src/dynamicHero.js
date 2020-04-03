@@ -71,8 +71,8 @@ function setBg() {
 
     function tabQuery(x) {
         if (x.matches) {
-            afternoonArray = ['agarthaa.jpg'];
-            eveningArray = ['agarthaa.jpg'];
+            afternoonArray = ['Talon.png'];
+            eveningArray = ['mintbox-3.png'];
         }
         }
         const x = window.matchMedia('(max-width:1024px)');
