@@ -50,6 +50,8 @@ function setBg() {
 
 
     
+    
+
 function showBg() {
     // Randomize bg
 // morning
@@ -59,34 +61,41 @@ function showBg() {
     let morning = morningPath + morningBg
 
     // afternoon
-    afternoonArray = ['empty-dining-tables-and-chairs-1579739.jpg', 'brown-and-green-mountain-view-photo-842711.jpg', 'photo-of-keyboard-near-mouse-3184460.jpg', 'america-arid-bushes-california-221148.jpg'];
+   let afternoonArray = ['empty-dining-tables-and-chairs-1579739.jpg', 'brown-and-green-mountain-view-photo-842711.jpg', 'photo-of-keyboard-near-mouse-3184460.jpg', 'america-arid-bushes-california-221148.jpg'];
     let afternoonBg = afternoonArray[Math.floor(Math.random() * afternoonArray.length)];
     let afternoonPath = './src/img/hero/';
     let afternoon = afternoonPath + afternoonBg;
 
     // evening
-    var eveningArray = [ 'twisted-building-during-nighttime-1470405.jpg', 'beautiful-beauty-blue-bright-414612.jpg', 'landscape-photo-of-mountain-with-polar-lights-1434608.jpg', 'photo-of-toronto-cityscape-at-night-2478248.jpg'];
+    let eveningArray = [ 'twisted-building-during-nighttime-1470405.jpg', 'beautiful-beauty-blue-bright-414612.jpg', 'landscape-photo-of-mountain-with-polar-lights-1434608.jpg', 'photo-of-toronto-cityscape-at-night-2478248.jpg'];
+    
+    if (window.matchMedia("(max-width:1024px)").matches) {
+        eveningArray = ['Talon.png'];
+        console.log(eveningArray)
+    }
+    
     let eveningBg = eveningArray[Math.floor(Math.random() * eveningArray.length)];
     let eveningPath = './src/img/hero/';
     let evening = eveningPath + eveningBg;
-    console.log(eveningArray)
+    console.log('two', eveningArray)
 
- function tabQuery(x) {
-            if (x.matches) {
-             const tabArray = ['Talon.png']
-                eveningArray = tabArray;
-                console.log(eveningArray)
-            }
-            }
+//  function tabQuery(x) {
+//             if (x.matches) {
+//                 eveningArray = tabArray;
+//                 console.log('three' ,eveningArray)
+//             }
+//             }
 
-            const x = window.matchMedia('(max-width:1024px)');
-            tabQuery(x)
-            x.addListener(tabQuery);
-            console.log(x)
+//             const x = window.matchMedia('(max-width:1024px)');
+//             tabQuery(x)
+//             x.addListener(tabQuery);
+            // console.log(x)
+
+          
     
   
 
-    console.log(eveningArray)
+    
         // console.log(tabArray)
 
 // Show bg
@@ -109,17 +118,17 @@ function showBg() {
     }
 
 
-    // function tabQuery(x) {
-    //         if (x.matches) {
-    //          const tabArray = ['Talon.png']
-    //             eveningArray = tabArray;
-    //             console.log(eveningArray)
-    //         }
-    //         }
-    //         const x = window.matchMedia('(max-width:1024px)');
-    //         tabQuery(x)
-    //         x.addListener(tabQuery);
-    //         console.log(x)
+    function tabQuery(x) {
+            if (x.matches) {
+             const tabArray = ['Talon.png']
+                eveningArray = tabArray;
+                console.log(eveningArray)
+            }
+            }
+            const x = window.matchMedia('(max-width:1024px)');
+            tabQuery(x)
+            x.addListener(tabQuery);
+            console.log(x)
     
     
 }  
