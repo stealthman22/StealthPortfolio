@@ -69,7 +69,7 @@ function showBg() {
     let morning = morningPath + morningBg
 
     // afternoon
-   let afternoonArray = ['brown-trench-coat-on-wooden-rack-821357.jpg', 'brown-and-green-mountain-view-photo-842711.jpg', 'photo-of-keyboard-near-mouse-3184460.jpg', 'america-arid-bushes-california-221148.jpg'];
+  let afternoonArray = ['brown-trench-coat-on-wooden-rack-821357.jpg', 'brown-and-green-mountain-view-photo-842711.jpg', 'photo-of-keyboard-near-mouse-3184460.jpg', 'america-arid-bushes-california-221148.jpg'];
    if (window.matchMedia("(max-width:1024px)").matches) {
     afternoonArray = ['brown-trench-coat-on-wooden-rack-821357-m.jpg', 'brown-and-green-mountain-view-photo-842711-m.jpg', 'photo-of-keyboard-near-mouse-3184460-m.jpg', 'america-arid-bushes-california-221148-m.jpg'];
     console.log(afternoonArray)
@@ -107,14 +107,10 @@ if (window.matchMedia("(max-width:600px)").matches) {
 //             const x = window.matchMedia('(max-width:1024px)');
 //             tabQuery(x)
 //             x.addListener(tabQuery);
-            // console.log(x)
-
-          
-    
-  
+//             console.log(x)
 
     
-        // console.log(tabArray)
+//         console.log(tabArray)
 
 // Show bg
     //morning
@@ -136,17 +132,17 @@ if (window.matchMedia("(max-width:600px)").matches) {
     }
 
 
-    function tabQuery(x) {
-            if (x.matches) {
-             const tabArray = ['Talon.png']
-                eveningArray = tabArray;
-                console.log(eveningArray)
-            }
-            }
-            const x = window.matchMedia('(max-width:1024px)');
-            tabQuery(x)
-            x.addListener(tabQuery);
-            console.log(x)
+    // function tabQuery(x) {
+    //         if (x.matches) {
+    //          const tabArray = ['Talon.png']
+    //             eveningArray = tabArray;
+    //             console.log(eveningArray)
+    //         }
+    //         }
+    //         const x = window.matchMedia('(max-width:1024px)');
+    //         tabQuery(x)
+    //         x.addListener(tabQuery);
+    //         console.log(x)
     
     
 }  
