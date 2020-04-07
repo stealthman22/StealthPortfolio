@@ -576,7 +576,9 @@ cards-main-two {
 
 
 /* The timeline container */
-
+.timeline-container {
+ background-color: #00cdac;
+}
 
 
  .timeline {
@@ -585,8 +587,7 @@ cards-main-two {
     position: relative;
     margin: 2rem auto;
     max-width: 100vw;
-    /* background-color: #00cdac; */
-     background: url("../src/img/achievements/scenic-view-of-mountains-during-dawn-1266810.jpg") no-repeat center center / cover;
+     background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586294128/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-1266810.jpg") no-repeat center center / cover;
    
 } 
 
@@ -798,13 +799,13 @@ cards-main-two {
 
 @media screen and (max-width:1024px) {
     .timeline {
-        background: url("./img/achievements/scenic-view-of-mountains-during-dawn-m.jpg") no-repeat center center / cover;
+        background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586293947/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-m.jpg") no-repeat center center / cover;
     }
  }
  
  @media screen and (max-width:600px) {
      .timeline {
-         background: url("./img/achievements/scenic-view-of-mountains-during-dawn-s.jpg") no-repeat center center / cover;
+         background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586293912/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-s.jpg") no-repeat center center / cover;
      }
  }
  
