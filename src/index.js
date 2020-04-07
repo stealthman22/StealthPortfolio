@@ -1,4 +1,4 @@
-// Import multiple image
+// Import multiple images
 
 function importAll(r) {
     let images = {};
@@ -11,7 +11,7 @@ const images = importAll(require.context("./img/hero", true, /\.(png|jpe?g|svg)$
 
 import './index.html';
 import './style.css';
-import './eyes';
+// import './eyes';
 import './dynamicHero';
 import './typewriter';
 import './hover';
@@ -19,7 +19,7 @@ import './nav'
 /* import SmoothScroll from "../node_modules/smooth-scroll";
 const scroll = new SmoothScroll("[data-scroll]"); */
 
-import './lazy';
+// import './lazy';
 
 
 

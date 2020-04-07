@@ -48,5 +48,3 @@ links.forEach(link=>link.addEventListener('click', ()=> {
     
 }))  
 
-
-
