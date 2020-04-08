@@ -55,7 +55,7 @@ function setBg() {
 function showBg() {
     // Randomize bg
 // morning
-    let morningArray = ['sunset-view-of-mountains-733100.jpg', 'purple-petal-flower-surrounded-by-green-plants-during-66288.jpg', 'time-lapse-photography-of-waterfalls-during-sunset-210186.jpg', 'two-cargo-ships-sailing-near-city-2144905.jpg'];
+    let morningArray = ['https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586308021/new-portfolio/hero/sunset-view-of-mountains-733100.jpg', 'https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586308022/new-portfolio/hero/purple-petal-flower-surrounded-by-green-plants-during-66288.jpg', 'https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586308024/new-portfolio/hero/time-lapse-photography-of-waterfalls-during-sunset-210186.jpg', 'https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586308023/new-portfolio/hero/two-cargo-ships-sailing-near-city-2144905.jpg'];
     if (window.matchMedia("(max-width:1024px)").matches) {
     morningArray = ['sunset-view-of-mountains-733100-m.jpg', 'purple-petal-flower-surrounded-by-green-plants-during-66288-m.jpg', 'time-lapse-photography-of-waterfalls-during-sunset-210186-m.jpg', 'two-cargo-ships-sailing-near-city-2144905-m.jpg'];
         console.log(morningArray)
