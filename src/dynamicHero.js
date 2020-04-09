@@ -2,7 +2,7 @@
 
 // All image files
 
-const images = require('./index');
+// const images = require('./index');
 const time = document.querySelector('.time');
 const hero = document.querySelector('.hero');
 
@@ -46,10 +46,6 @@ function setBg() {
     let today = new Date()
     // let today = new Date(),
     hour = today.getHours();
-
-
-    
-    
 
 function showBg() {
     // Randomize bg
@@ -112,7 +108,7 @@ if (window.matchMedia("(max-width:600px)").matches) {
    showBg()
 }
 
-console.log(images)
+// console.log(images)
 
 // Run functions
 getTime();
