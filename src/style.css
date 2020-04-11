@@ -52,16 +52,6 @@ li {
 	font-family: 'Open Sans', sans-serif;
 }
 
-/* 
-Colors
-     #50c879  #ff7e66
-#009f6b 007f56
-accent Complimentary:#45cea2 #ff8f51
-ef5fff0 F2854e
-sham #45cea2
-sean #45b29a
-*/
-
 /* Nav bar */
 
 .nav {
@@ -212,10 +202,6 @@ sean #45b29a
 }
 
 /* Hero section */
-/* .hero-container {
-    background-color:  #00cdac;
-} */
-/* background-image: linear-gradient(90deg, #02aab0 0%, #00cdac  80%); */
 
 .hero-container {
 	background-color: #00cdac;
@@ -285,86 +271,6 @@ sean #45b29a
 }
 
 /* Showcase */
-
-/* Spinner stuff */
-/* .lds-spinner {
-	color: official;
-	display: inline-block;
-	position: relative;
-	width: 80px;
-	height: 80px;
-}
-.lds-spinner div {
-	transform-origin: 40px 40px;
-	animation: lds-spinner 1.2s linear infinite;
-}
-.lds-spinner div:after {
-	content: " ";
-	display: block;
-	position: absolute;
-	top: 3px;
-	left: 37px;
-	width: 6px;
-	height: 18px;
-	border-radius: 20%;
-	background: #fff;
-}
-.lds-spinner div:nth-child(1) {
-	transform: rotate(0deg);
-	animation-delay: -1.1s;
-}
-.lds-spinner div:nth-child(2) {
-	transform: rotate(30deg);
-	animation-delay: -1s;
-}
-.lds-spinner div:nth-child(3) {
-	transform: rotate(60deg);
-	animation-delay: -0.9s;
-}
-.lds-spinner div:nth-child(4) {
-	transform: rotate(90deg);
-	animation-delay: -0.8s;
-}
-.lds-spinner div:nth-child(5) {
-	transform: rotate(120deg);
-	animation-delay: -0.7s;
-}
-.lds-spinner div:nth-child(6) {
-	transform: rotate(150deg);
-	animation-delay: -0.6s;
-}
-.lds-spinner div:nth-child(7) {
-	transform: rotate(180deg);
-	animation-delay: -0.5s;
-}
-.lds-spinner div:nth-child(8) {
-	transform: rotate(210deg);
-	animation-delay: -0.4s;
-}
-.lds-spinner div:nth-child(9) {
-	transform: rotate(240deg);
-	animation-delay: -0.3s;
-}
-.lds-spinner div:nth-child(10) {
-	transform: rotate(270deg);
-	animation-delay: -0.2s;
-}
-.lds-spinner div:nth-child(11) {
-	transform: rotate(300deg);
-	animation-delay: -0.1s;
-}
-.lds-spinner div:nth-child(12) {
-	transform: rotate(330deg);
-	animation-delay: 0s;
-}
-@keyframes lds-spinner {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
-} */
 
 /* The smaller image of all device pairs are absolutely fixed, as their parents (Cards) are relative */
 
@@ -652,21 +558,6 @@ cards-main-two {
 	background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586294128/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-1266810.jpg")
 		no-repeat center center / cover;
 }
-
-/* 
-.timeline {
-    
-    padding: 2rem 3rem;
-    position: relative;
-    margin: 2rem auto;
-    max-width: 100vw;
-   
-     background-image: url("../src/img/achievements/scenic-view-of-mountains-during-dawn-1266810.jpg") ;
-     background-repeat: no-repeat;
-     background-position:  center center ;
-     background-size:  cover;
-   
-} */
 
 /* the vertical ruler */
 
@@ -1179,17 +1070,3 @@ cards-main-two {
 	width: 2rem;
 	vertical-align: middle;
 }
-
-/* #B8EBD0
-svg green #38D39F
-
-
-#3B6C77
-
-#0D0A09
-#9CD4ED
-#7FB862
-#82C0DD
-#5DA2B7
-#F2CDD2
-*/
