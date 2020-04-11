@@ -287,7 +287,7 @@ sean #45b29a
 /* Showcase */
 
 /* Spinner stuff */
-.lds-spinner {
+/* .lds-spinner {
 	color: official;
 	display: inline-block;
 	position: relative;
@@ -364,7 +364,7 @@ sean #45b29a
 	100% {
 		opacity: 0;
 	}
-}
+} */
 
 /* The smaller image of all device pairs are absolutely fixed, as their parents (Cards) are relative */
 
