@@ -1,23 +1,24 @@
 // Import multiple images
 
-function importAll(r) {
-    let images = {};
-    r.keys().map(item => { images[item.replace('./', '')] = r(item) })
-    return images;
-}
+// function importAll(r) {
+//     let images = {};
+//     r.keys().map(item => { images[item.replace('./', '')] = r(item) })
+//     return images;
+// }
 
-const images = importAll(require.context("./img/hero", true, /\.(png|jpe?g|svg)$/));
+// const images = importAll(require.context("./img/hero", true, /\.(png|jpe?g|svg)$/));
 
 
 import './index.html';
 import './style.css';
-// import './eyes';
 import './dynamicHero';
 import './typewriter';
 import './hover';
 import './nav'
-/* import SmoothScroll from "../node_modules/smooth-scroll";
-const scroll = new SmoothScroll("[data-scroll]"); */
+
+import yall from 'yall-js';
+
+document.addEventListener('DOMContentLoaded', yall)
 
 // import './lazy';
 
@@ -38,4 +39,4 @@ const importAll = require =>
 
 
 
-export default images;
+// export default images;
