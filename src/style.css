@@ -323,15 +323,6 @@ cards-main-two {
 	height: 38rem;
 	width: 38rem;
 }
-
-.card-pic-two {
-	position: absolute;
-	left: 28rem;
-	top: 11.8rem;
-	height: 20rem;
-	width: 20rem;
-}
-
 .cards-two {
 	background: linear-gradient(95deg, #3b6c77 0%, #6db352 70%);
 }
@@ -340,15 +331,6 @@ cards-main-two {
 	height: 40rem;
 	width: 40rem;
 }
-
-.card-pic-four {
-	position: absolute;
-	top: 13rem;
-	left: 25rem;
-	height: 20rem;
-	width: 20rem;
-}
-
 .cards-three {
 	background: linear-gradient(90deg, #9cd4ed 0%, #837673 70%);
 }
@@ -357,15 +339,6 @@ cards-main-two {
 	height: 40rem;
 	width: 40rem;
 }
-
-.card-pic-six {
-	position: absolute;
-	top: 12.5rem;
-	left: 28rem;
-	height: 22rem;
-	width: 22rem;
-}
-
 .cards-four {
 	background: linear-gradient(90deg, #7fb862 30%, #82c0dd 90%);
 }
@@ -374,24 +347,13 @@ cards-main-two {
 	height: 45rem;
 	width: 45rem;
 }
-
-.card-pic-eight {
-	position: absolute;
-	top: 17rem;
-	left: 30rem;
-	height: 20rem;
-	width: 20rem;
-}
-
 .cards-five {
 	background: linear-gradient(90deg, #5da2b7 20%, #697d8a 90%);
 }
-
 .card-pic-nine {
 	height: 45rem;
 	width: 45rem;
 }
-
 .cards-info {
 	margin: 0 3rem;
 	padding: 1rem;
@@ -442,44 +404,17 @@ cards-main-two {
 		height: 30rem;
 		width: 30rem;
 	}
-
-	.cards-main-one .card-pic-two {
-		left: 21rem;
-		top: 11rem;
-		height: 14rem;
-		width: 14rem;
-	}
-
 	.cards-main-two .card-pic-three {
 		height: 30rem;
 		width: 30rem;
-	}
-	.cards-main-two .card-pic-four {
-		top: 10rem;
-		left: 19rem;
-		height: 15rem;
-		width: 15rem;
 	}
 	.cards-main-three .card-pic-five {
 		height: 28rem;
 		width: 28rem;
 	}
-
-	.cards-main-three .card-pic-six {
-		top: 9rem;
-		left: 18rem;
-		height: 15rem;
-		width: 15rem;
-	}
 	.cards-main-four .card-pic-seven {
 		height: 30rem;
 		width: 30rem;
-	}
-	.cards-main-four .card-pic-eight {
-		top: 11rem;
-		left: 20rem;
-		height: 13rem;
-		width: 13rem;
 	}
 	.cards-main-five .card-pic-nine {
 		height: 30rem;
@@ -488,28 +423,11 @@ cards-main-two {
 }
 
 @media screen and (max-width: 600px) {
-	.card-pic-two,
-	.card-pic-four,
-	.card-pic-six,
-	.card-pic-eight {
-		opacity: 0;
-	}
-
 	.cards-main-one .card-pic-one {
 		height: 20rem;
 		width: 20rem;
 	}
-
-	.cards-main-two .card-pic-three {
-		height: 20rem;
-		width: 20rem;
-	}
 	.cards-main-three .card-pic-five {
-		height: 20rem;
-		width: 20rem;
-	}
-
-	.cards-main-four .card-pic-seven {
 		height: 20rem;
 		width: 20rem;
 	}
