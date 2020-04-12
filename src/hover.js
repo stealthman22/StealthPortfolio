@@ -1,23 +1,18 @@
 // node lists
 
-const icons = document.querySelectorAll('.social-icon');
+// const icons = document.querySelectorAll('.social-icon');
 
+// // Event delegation approach
+// document.addEventListener('mouseover', function (event) {
 
-// Event delegation approach
-document.addEventListener('mouseover', function (event) {
+//     if (event.target.matches('.social-icon')) {
+//         console.log('Yaaay I work see?')
+//     }
 
-    if (event.target.matches('.social-icon')) {
-        console.log('Yaaay I work see?')
-    }
-
-}, false);
-
+// }, false);
 
 //  Regular event approach
 // icons.forEach((icon) => icon.addEventListener('mouseover', e => console.log('Yaaay I work see?')))
-
-
-
 
 /* document.addEventListener('click', function (event) {
 
@@ -30,5 +25,3 @@ document.addEventListener('mouseover', function (event) {
     }
 
 }, false); */
-
-
