@@ -1,2 +1,3 @@
-import yall from 'yall-js'
-document.addEventListener('DomContentLoaded', yall);
+const yall = require('yall-js');
+
+document.addEventListener('DOMContentLoaded', yall);
