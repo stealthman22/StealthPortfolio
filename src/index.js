@@ -6,3 +6,4 @@ import './dynamicHero';
 import './typewriter';
 import './hover';
 import './nav';
+// jhghjkhgfhjhgy
