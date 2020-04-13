@@ -52,6 +52,75 @@ li {
 	font-family: 'Open Sans', sans-serif;
 }
 
+/* Preloader styles */
+/* #02aab0 → #00cdac *Green beach*/
+/* #000428 → #004e92  Frost*/
+.preloader {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background: linear-gradient(90deg, #000428 0%, #004e92 60%);
+	font-style: italic;
+}
+.lds-heart {
+	/* display: inline-block; */
+	position: relative;
+	width: 60px;
+	height: 5px;
+	transform: rotate(45deg);
+	transform-origin: 30px 30px;
+}
+.lds-heart div {
+	top: 90px;
+	left: 90px;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: red;
+	animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: red;
+}
+.lds-heart div:before {
+	left: -24px;
+	border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+	top: -24px;
+	border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+	0% {
+		transform: scale(0.95);
+	}
+	5% {
+		transform: scale(1.1);
+	}
+	39% {
+		transform: scale(0.85);
+	}
+	45% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(0.9);
+	}
+}
+
 /* Nav bar */
 
 .nav {
@@ -473,7 +542,7 @@ cards-main-two {
 	position: relative;
 	margin: 2rem auto;
 	max-width: 100vw;
-	background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586294128/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-1266810.jpg")
+	background: url("https://res.cloudinary.com/stealthman22/image/upload/v1586796968/new-portfolio/achievements/brown-wooden-dock-over-body-of-water-1227520.jpg")
 		no-repeat center center / cover;
 }
 
@@ -664,14 +733,14 @@ cards-main-two {
 
 	@media screen and (max-width: 1024px) {
 		.timeline {
-			background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586293947/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-m.jpg")
+			background: url("https://res.cloudinary.com/stealthman22/image/upload/v1586796956/new-portfolio/achievements/brown-wooden-dock-over-body-of-water-1227520-m.jpg")
 				no-repeat center center / cover;
 		}
 	}
 
 	@media screen and (max-width: 600px) {
 		.timeline {
-			background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586293912/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-s.jpg")
+			background: url("https://res.cloudinary.com/stealthman22/image/upload/v1586796965/new-portfolio/achievements/brown-wooden-dock-over-body-of-water-1227520-s.jpg")
 				no-repeat center center / cover;
 		}
 	}

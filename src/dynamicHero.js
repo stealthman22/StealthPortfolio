@@ -61,8 +61,7 @@ function setBg() {
 			morningArray = [
 				'https://res.cloudinary.com/stealthman22/image/upload/v1586360310/new-portfolio/hero/sunset-view-of-mountains-733100-s.jpg',
 				'https://res.cloudinary.com/stealthman22/image/upload/v1586360306/new-portfolio/hero/purple-petal-flower-surrounded-by-green-plants-during-66288-s.jpg',
-				'https://res.cloudinary.com/stealthman22/image/upload/v1586360330/new-portfolio/hero/time-lapse-photography-of-waterfalls-during-sunset-210186-s.jpg',
-				'https://res.cloudinary.com/stealthman22/image/upload/v1586360329/new-portfolio/hero/two-cargo-ships-sailing-near-city-2144905-s.jpg'
+				'https://res.cloudinary.com/stealthman22/image/upload/v1586360330/new-portfolio/hero/time-lapse-photography-of-waterfalls-during-sunset-210186-s.jpg'
 			];
 		}
 		let morningBg = morningArray[Math.floor(Math.random() * morningArray.length)];
