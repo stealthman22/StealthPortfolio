@@ -4,6 +4,7 @@ document.onreadystatechange = function preload() {
 	const preloader = document.querySelector('.preloader');
 	if (document.readyState !== 'complete') {
 		bigBody.style.visibility = 'hidden';
+		bigBody.style.background = 'linear-gradient(90deg, #000428 0%, #004e92 60%)';
 		preloader.style.visibility = 'visible';
 		function disableScrolling() {
 			var x = window.scrollX;
@@ -15,6 +16,7 @@ document.onreadystatechange = function preload() {
 		disableScrolling();
 	} else {
 		bigBody.style.visibility = 'visible';
+		bigBody.style.background = '#ffffff';
 		preloader.style.visibility = 'hidden';
 		preloader.style.height = '0vh';
 		function enableScrolling() {
