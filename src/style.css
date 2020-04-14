@@ -20,6 +20,7 @@ body {
 	overflow-x: hidden;
 	font-size: 16.7px;
 	line-height: 1.5;
+	overflow-y: auto;
 }
 
 @supports (-moz-appearance: none) {
@@ -52,8 +53,77 @@ li {
 	font-family: 'Open Sans', sans-serif;
 }
 
-/* Nav bar */
+/* Preloader styles */
+/* #02aab0 → #00cdac *Green beach*/
+/* #000428 → #004e92  Frost*/
 
+.lds-heart {
+	/* display: inline-block; */
+	position: relative;
+	width: 60px;
+	height: 5px;
+	transform: rotate(45deg);
+	transform-origin: 30px 30px;
+}
+.lds-heart div {
+	top: 90px;
+	left: 90px;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background: red;
+	animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+	content: " ";
+	position: absolute;
+	display: block;
+	width: 32px;
+	height: 32px;
+	background: red;
+}
+.lds-heart div:before {
+	left: -24px;
+	border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+	top: -24px;
+	border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+	0% {
+		transform: scale(0.95);
+	}
+	5% {
+		transform: scale(1.1);
+	}
+	39% {
+		transform: scale(0.85);
+	}
+	45% {
+		transform: scale(1);
+	}
+	60% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(0.9);
+	}
+}
+/* #02aab0: */
+/* Progress Bar */
+#progress {
+	--scroll: 0%;
+	background: linear-gradient(90deg, #00cdac var(--scroll), transparent 0%);
+	position: fixed;
+	width: 100%;
+	height: 7px;
+	top: 0px;
+	z-index: 1000;
+}
+
+/* Nav bar */
 .nav {
 	display: flex;
 	padding: 0.3rem;
@@ -323,15 +393,6 @@ cards-main-two {
 	height: 38rem;
 	width: 38rem;
 }
-
-.card-pic-two {
-	position: absolute;
-	left: 28rem;
-	top: 11.8rem;
-	height: 20rem;
-	width: 20rem;
-}
-
 .cards-two {
 	background: linear-gradient(95deg, #3b6c77 0%, #6db352 70%);
 }
@@ -340,15 +401,6 @@ cards-main-two {
 	height: 40rem;
 	width: 40rem;
 }
-
-.card-pic-four {
-	position: absolute;
-	top: 13rem;
-	left: 25rem;
-	height: 20rem;
-	width: 20rem;
-}
-
 .cards-three {
 	background: linear-gradient(90deg, #9cd4ed 0%, #837673 70%);
 }
@@ -357,15 +409,6 @@ cards-main-two {
 	height: 40rem;
 	width: 40rem;
 }
-
-.card-pic-six {
-	position: absolute;
-	top: 12.5rem;
-	left: 28rem;
-	height: 22rem;
-	width: 22rem;
-}
-
 .cards-four {
 	background: linear-gradient(90deg, #7fb862 30%, #82c0dd 90%);
 }
@@ -374,24 +417,13 @@ cards-main-two {
 	height: 45rem;
 	width: 45rem;
 }
-
-.card-pic-eight {
-	position: absolute;
-	top: 17rem;
-	left: 30rem;
-	height: 20rem;
-	width: 20rem;
-}
-
 .cards-five {
 	background: linear-gradient(90deg, #5da2b7 20%, #697d8a 90%);
 }
-
 .card-pic-nine {
 	height: 45rem;
 	width: 45rem;
 }
-
 .cards-info {
 	margin: 0 3rem;
 	padding: 1rem;
@@ -442,44 +474,17 @@ cards-main-two {
 		height: 30rem;
 		width: 30rem;
 	}
-
-	.cards-main-one .card-pic-two {
-		left: 21rem;
-		top: 11rem;
-		height: 14rem;
-		width: 14rem;
-	}
-
 	.cards-main-two .card-pic-three {
 		height: 30rem;
 		width: 30rem;
-	}
-	.cards-main-two .card-pic-four {
-		top: 10rem;
-		left: 19rem;
-		height: 15rem;
-		width: 15rem;
 	}
 	.cards-main-three .card-pic-five {
 		height: 28rem;
 		width: 28rem;
 	}
-
-	.cards-main-three .card-pic-six {
-		top: 9rem;
-		left: 18rem;
-		height: 15rem;
-		width: 15rem;
-	}
 	.cards-main-four .card-pic-seven {
 		height: 30rem;
 		width: 30rem;
-	}
-	.cards-main-four .card-pic-eight {
-		top: 11rem;
-		left: 20rem;
-		height: 13rem;
-		width: 13rem;
 	}
 	.cards-main-five .card-pic-nine {
 		height: 30rem;
@@ -488,28 +493,11 @@ cards-main-two {
 }
 
 @media screen and (max-width: 600px) {
-	.card-pic-two,
-	.card-pic-four,
-	.card-pic-six,
-	.card-pic-eight {
-		opacity: 0;
-	}
-
 	.cards-main-one .card-pic-one {
 		height: 20rem;
 		width: 20rem;
 	}
-
-	.cards-main-two .card-pic-three {
-		height: 20rem;
-		width: 20rem;
-	}
 	.cards-main-three .card-pic-five {
-		height: 20rem;
-		width: 20rem;
-	}
-
-	.cards-main-four .card-pic-seven {
 		height: 20rem;
 		width: 20rem;
 	}
@@ -555,7 +543,7 @@ cards-main-two {
 	position: relative;
 	margin: 2rem auto;
 	max-width: 100vw;
-	background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586294128/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-1266810.jpg")
+	background: url("https://res.cloudinary.com/stealthman22/image/upload/v1586796968/new-portfolio/achievements/brown-wooden-dock-over-body-of-water-1227520.jpg")
 		no-repeat center center / cover;
 }
 
@@ -746,14 +734,14 @@ cards-main-two {
 
 	@media screen and (max-width: 1024px) {
 		.timeline {
-			background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586293947/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-m.jpg")
+			background: url("https://res.cloudinary.com/stealthman22/image/upload/v1586796956/new-portfolio/achievements/brown-wooden-dock-over-body-of-water-1227520-m.jpg")
 				no-repeat center center / cover;
 		}
 	}
 
 	@media screen and (max-width: 600px) {
 		.timeline {
-			background: url("https://res.cloudinary.com/stealthman22/image/upload/fl_progressive:semi/v1586293912/new-portfolio/achievements/scenic-view-of-mountains-during-dawn-s.jpg")
+			background: url("https://res.cloudinary.com/stealthman22/image/upload/v1586796965/new-portfolio/achievements/brown-wooden-dock-over-body-of-water-1227520-s.jpg")
 				no-repeat center center / cover;
 		}
 	}

@@ -8,9 +8,35 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/site.webmanifest">
+<style>
+    .preloader {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background: linear-gradient(90deg, #000428 0%, #004e92 60%);
+        font-style: italic;
+        /* transition: all 0.3s ease; */
+    }
+</style>
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+    <div class="lds-heart"><div></div></div>
+    <h2>Loading...</h2>
+    <h3>Please wait while we get things ready for you.</h2>
+    </div>
+
     <nav class="nav">
 <div class="hamburger">
     <div class="line"></div>
@@ -21,15 +47,19 @@
         <span class="nav-logo">A_S</span>
         <ul class="nav-ul">
 
-            <li class="nav-link"><a href="#home" class="nav-items">Home</a></li>
-            <li class="nav-link"><a href="#showcase" class="nav-items">Showcase</a></li>
+            <li class="nav-link"><a href="#home" class="nav-items">Home</a></li>     
             <li class="nav-link"><a href="#achievements" class="nav-items">Achievements</a></li>
+            <li class="nav-link"><a href="#showcase" class="nav-items">Showcase</a></li>
             <li class="nav-link"><a href="#whyme" class="nav-items">Reasons</a></li>
             <li class="nav-link"><a href="#talk" class="nav-items">Contact</a></li>
             <li class="nav-link"><a href="" class="nav-items">Blog</a></li>
             <!-- <li class="nav-link"><a href="" class="nav-items">About Me</a></li> -->
         </ul>
     </nav>
+
+<!-- Progress Bar -->
+<div id="progress"></div>
+
 <div class="hero-container">
     <main class="hero " id="home">
         <time class="time"></time>
@@ -39,99 +69,10 @@
         <h2 id="description"><span class="txt-type" data-words='["a web developer", "a responsive web designer", "a Ui/Ux enthusaist", "a blogger"]' data-wait="2000"></span></h2>
     </main>
 </div>
-    <!-- Showcase -->
 
-    <section class="cards-container" id="showcase">
-        <div class="cards cards-one">
-            <div class="cards-main cards-main-one">
-                <img class="lazyload card-pic card-pic-one" src="./img/showcase/RollingBall.svg" data-src="https://res.cloudinary.com/stealthman22/image/upload/v1586296209/new-portfolio/showcase/face_box_dell-xps15-front.png" alt="" >
-            </div>
-            <div class=" cards-info ">
-                <h1 class="info-head">Recognize</h1>
-                <p class="info-body">An app that recognizes the faces in pictures and predicts it's location with a bounding box.
-                    <p> The front-end was built in react, it's backend utilizes an express server running on-top of node.js
-                    </p>
-                    <p>It also boasts of a fully functional SQL database built with PostgreSQL </p>
-                </p>
-                <span class="info-bottom"> <a href="https://github.com/stealthman22/smart-brain" target="_blank"> <img
-                            src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a>
-                    <a href="https://image-recog-front-end.herokuapp.com/" target="_blank"><img
-                            src="./img/showcase/link.svg" alt="" class="info-icons"></a>
-                </span>
-            </div>
-        </div>
-        <div class=" cards  cards-two">
-            <div class=" cards-main cards-main-two ">
-                <img class=" lazyload card-pic card-pic-three" src="./img/showcase/RollingBall.svg" data-src="https://res.cloudinary.com/stealthman22/image/upload/v1586299304/new-portfolio/showcase/robo_ipad_ipad_black_landscape.png" alt="" >
-            </div>
-
-            <div class=" cards-info ">
-                <h1 class="info-head"> Friendz</h1>
-                <p class="info-body">
-                    <p>A simple react and redux app that filters profiles based on search results.</p>
-                    <p>It uses react for the UI, and redux for state management, so the state of the search box can be recorded at all times. The profiles structure are fetched from an API.
-                    </p>
-                </p>
-                <span class="info-bottom"> <a href=""> <img src="./img/showcase/web-programming.svg" alt=""
-                            class="info-icons "></a> <a href=""> <img src="./img/showcase/link.svg" alt=""
-                            class="info-icons"> </a></span>
-            </div>
-        </div>
-
-        <div class=" cards cards-three ">
-            <div class=" cards-main cards-main-three ">
-                <img class="lazyload card-pic-five" src="./img/showcase/RollingBall.svg" data-src="https://res.cloudinary.com/stealthman22/image/upload/v1586296175/new-portfolio/showcase/boldness_macbookpro15_front.png" alt="">
-          </div>
-            <div class=" cards-info ">
-                <h1 class="info-head">Dev Portfolio</h1>
-                <p class="info-body">
-                    <p>A portfolio template that devs can utilize to quickly bootstrap theirs by making necessary changes.</p>
-                    <p>It has a beautiful carousel that highlights the teams main strengths and skills.</p>
-                    <p>It is built in vanilla js and is simple to set up.</p>
-                </p>
-                <span class="info-bottom"> <a href="https://codepen.io/alara_joel_stealth/pen/yrjLjB" target="_blank">
-                        <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a> <a
-                        href="https://codepen.io/alara_joel_stealth/full/yrjLjB" target="_blank"> <img
-                            src="./img/showcase/link.svg" alt="" class="info-icons"> </a></span>
-            </div>
-        </div>
-        <div class=" cards  cards-four">
-            <div class=" cards-main cards-main-four ">
-                <img class="lazyload card-pic-seven" src="./img/showcase/RollingBall.svg" data-src="https://res.cloudinary.com/stealthman22/image/upload/v1586299289/new-portfolio/showcase/logistics_landing_macbookpro13_front.png" alt="">
-            </div>
-            <div class=" cards-info">
-                <h1 class="info-head">Stealth Logistics</h1>
-                <p class="info-body">An elegant landing page for an office, to help them get clients contact information and meeting schedule quickly</p>
-                <p>It uses a form that submits directly to an email account, for fast processing, and also a social media link </p>
- 
-                <span class="info-bottom"> <a href="https://github.com/stealthman22/stealthman22.github.io"
-                        target="_blank"> <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a>
-                    <a href="https://stealthman22.github.io/" target="_blank"> <img src="./img/showcase/link.svg" alt=""
-                            class="info-icons"> </a></span>
-            </div>
-        </div>
-
-        <div class=" cards cards-five">
-            <div class=" cards-main cards-main-five">
-                <img class="lazyload card-pic-nine" src="./img/showcase/RollingBall.svg" data-src="https://res.cloudinary.com/stealthman22/image/upload/v1586296621/new-portfolio/showcase/survey_macbookair13_front.png" alt="">
-
-
-            </div>
-            <div class=" cards-info ">
-                <h1 class="info-head">Survey form Page</h1>
-                <p class="info-body">
-                    <p>An extensively detailed survery form template</p>
-                    <p>A survey form that can be used to get valuable feedback from customers and stakeholders</p>
-                </p>
-                <span class="info-bottom"> <a href="https://github.com/stealthman22/product-page-FCC" target="_blank">
-                        <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a> <a
-                        href="https://stealthman22.github.io/survey-form-FCC/" target="_blank"> <img
-                            src="./img/showcase/link.svg" alt="" class="info-icons"> </a></span>
-            </div>
-        </div>
-    </section>
+    
 <div class="timeline-container">
-    <section class="timeline lazyload-bg" id="achievements">
+    <section class="timeline" id="achievements">
         <div class="container left">
             <div class="content">
                 <h2>January, 2020</h2>
@@ -190,6 +131,100 @@
         </div>
     </section>
 </div>
+
+
+    <!-- Showcase -->
+
+    <section class="cards-container" id="showcase">
+        <div class="cards cards-one">
+            <div class="cards-main cards-main-one">
+                <img class=" card-pic card-pic-one" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296209/new-portfolio/showcase/face_box_dell-xps15-front.png" alt="" >
+            </div>
+            <div class=" cards-info ">
+                <h1 class="info-head">Recognize</h1>
+                <p class="info-body">An app that recognizes the faces in pictures and predicts it's location with a bounding box.
+                    <p> The front-end was built in react, it's backend utilizes an express server running on-top of node.js
+                    </p>
+                    <p>It also boasts of a fully functional SQL database built with PostgreSQL </p>
+                </p>
+                <span class="info-bottom"> <a href="https://github.com/stealthman22/smart-brain" target="_blank"> <img
+                            src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a>
+                    <a href="https://image-recog-front-end.herokuapp.com/" target="_blank"><img
+                            src="./img/showcase/link.svg" alt="" class="info-icons"></a>
+                </span>
+            </div>
+        </div>
+        <div class=" cards  cards-two">
+            <div class=" cards-main cards-main-two ">
+                <img class="  card-pic card-pic-three"  src="https://res.cloudinary.com/stealthman22/image/upload/v1586299304/new-portfolio/showcase/robo_ipad_ipad_black_landscape.png" alt="" >
+            </div>
+
+            <div class=" cards-info ">
+                <h1 class="info-head"> Friendz</h1>
+                <p class="info-body">
+                    <p>A simple react and redux app that filters profiles based on search results.</p>
+                    <p>It uses react for the UI, and redux for state management, so the state of the search box can be recorded at all times. The profiles structure are fetched from an API.
+                    </p>
+                </p>
+                <span class="info-bottom"> <a href=""> <img src="./img/showcase/web-programming.svg" alt=""
+                            class="info-icons "></a> <a href=""> <img src="./img/showcase/link.svg" alt=""
+                            class="info-icons"> </a></span>
+            </div>
+        </div>
+
+        <div class=" cards cards-three ">
+            <div class=" cards-main cards-main-three ">
+                <img class=" card-pic-five" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296175/new-portfolio/showcase/boldness_macbookpro15_front.png" alt="">
+          </div>
+            <div class=" cards-info ">
+                <h1 class="info-head">Dev Portfolio</h1>
+                <p class="info-body">
+                    <p>A portfolio template that devs can utilize to quickly bootstrap theirs by making necessary changes.</p>
+                    <p>It has a beautiful carousel that highlights the teams main strengths and skills.</p>
+                    <p>It is built in vanilla js and is simple to set up.</p>
+                </p>
+                <span class="info-bottom"> <a href="https://codepen.io/alara_joel_stealth/pen/yrjLjB" target="_blank">
+                        <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a> <a
+                        href="https://codepen.io/alara_joel_stealth/full/yrjLjB" target="_blank"> <img
+                            src="./img/showcase/link.svg" alt="" class="info-icons"> </a></span>
+            </div>
+        </div>
+        <div class=" cards  cards-four">
+            <div class=" cards-main cards-main-four ">
+                <img class=" card-pic-seven"  src="https://res.cloudinary.com/stealthman22/image/upload/v1586299289/new-portfolio/showcase/logistics_landing_macbookpro13_front.png" alt="">
+            </div>
+            <div class=" cards-info">
+                <h1 class="info-head">Stealth Logistics</h1>
+                <p class="info-body">An elegant landing page for an office, to help them get clients contact information and meeting schedule quickly</p>
+                <p>It uses a form that submits directly to an email account, for fast processing, and also a social media link </p>
+ 
+                <span class="info-bottom"> <a href="https://github.com/stealthman22/stealthman22.github.io"
+                        target="_blank"> <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a>
+                    <a href="https://stealthman22.github.io/" target="_blank"> <img src="./img/showcase/link.svg" alt=""
+                            class="info-icons"> </a></span>
+            </div>
+        </div>
+
+        <div class=" cards cards-five">
+            <div class=" cards-main cards-main-five">
+                <img class="card-pic-nine" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296621/new-portfolio/showcase/survey_macbookair13_front.png" alt="">
+
+
+            </div>
+            <div class=" cards-info ">
+                <h1 class="info-head">Survey form Page</h1>
+                <p class="info-body">
+                    <p>An extensively detailed survery form template</p>
+                    <p>A survey form that can be used to get valuable feedback from customers and stakeholders</p>
+                </p>
+                <span class="info-bottom"> <a href="https://github.com/stealthman22/product-page-FCC" target="_blank">
+                        <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a> <a
+                        href="https://stealthman22.github.io/survey-form-FCC/" target="_blank"> <img
+                            src="./img/showcase/link.svg" alt="" class="info-icons"> </a></span>
+            </div>
+        </div>
+    </section>
+
     <section class="reasons" id="whyme">
 
         <div class="reasons-card">
@@ -252,7 +287,7 @@
         <div class="reasons-card">
             <div class="reasons-card-img reasons-card-img-six"></div>
             <div class="reasons-card-text">
-                <h2>Team-Spirit</h2>
+                <h2>Team-Spirited</h2>
                 <p> I thrive in teamed environments, and ensure to carry everyone  along.
                     Communication is one of my strongest points.
                 </p>
@@ -352,15 +387,7 @@
         <p>Other icons from <a target="_blank" href="https://icons8.com">Icons8</a> and
             <a href="https://freesvg.org/" target="_blank">freesvg</a></p>
     </footer>
-
-
-
-    <!-- A <noscript> example using <img> with src and srcset. -->
-    <!--   <img class="lazyload" data-srcset="/img/image-to-lazyload-load-2x.jpg 2x, /img/image-to-lazyload-load-1x.jpg 1x" data-src="/img/image-to-lazyload-load-1x.jpg" src="/img/placeholder.jpg" alt="Alternative text to describe image.">
-    <noscript>
-      <img srcset="/img/image-to-lazyload-load-2x.jpg 2x, /img/image-to-lazyload-load-1x.jpg 1x" src="/img/image-to-lazyload-load-1x.jpg" alt="Alternative text to describe image.">
-    </noscript> -->
-
+    
 <!-- Smooth scroll -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
     </script>
