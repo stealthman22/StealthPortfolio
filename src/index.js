@@ -1,13 +1,3 @@
-import 'lazysizes';
-
-import './index.html';
-import './style.css';
-import './dynamicHero';
-import './typewriter';
-import './hover';
-import './nav';
-import './bar';
-
 // Preloader code
 document.onreadystatechange = function preload() {
 	const bigBody = document.querySelector('body');
@@ -33,3 +23,11 @@ document.onreadystatechange = function preload() {
 		enableScrolling();
 	}
 };
+
+import './index.html';
+import './style.css';
+import './dynamicHero';
+import './typewriter';
+import './hover';
+import './nav';
+import './bar';

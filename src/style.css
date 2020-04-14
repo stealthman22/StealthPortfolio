@@ -56,18 +56,7 @@ li {
 /* Preloader styles */
 /* #02aab0 → #00cdac *Green beach*/
 /* #000428 → #004e92  Frost*/
-.preloader {
-	height: 100vh;
-	width: 100vw;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	color: #fff;
-	background: linear-gradient(90deg, #000428 0%, #004e92 60%);
-	font-style: italic;
-	/* transition: all 0.3s ease; */
-}
+
 .lds-heart {
 	/* display: inline-block; */
 	position: relative;
@@ -126,7 +115,7 @@ li {
 /* Progress Bar */
 #progress {
 	--scroll: 0%;
-	background: linear-gradient(90deg, #07edf5 var(--scroll), transparent 0%);
+	background: linear-gradient(90deg, #00cdac var(--scroll), transparent 0%);
 	/* var(--scroll), transparent 0) */
 	position: fixed;
 	width: 100%;
