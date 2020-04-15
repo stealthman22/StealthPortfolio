@@ -11,125 +11,127 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- <link rel="icon" href="/favicon.ico" type="image/x-icon" /> -->
     <link rel="manifest" href="/site.webmanifest">
-<style>
-    .preloader {
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        background: linear-gradient(90deg, #000428 0%, #004e92 60%);
-        font-style: italic;
-    }
-</style>
+    <style>
+        .preloader {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            background: linear-gradient(90deg, #000428 0%, #004e92 60%);
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Preloader -->
     <div class="preloader">
-    <div class="lds-heart"><div></div></div>
-    <h2>Loading...</h2>
-    <h3>Please wait while we get things ready for you.</h2>
+        <div class="lds-heart">
+            <div></div>
+        </div>
+        <h2>Loading...</h2>
+        <h3>Please wait while we get things ready for you.</h2>
     </div>
 
     <nav class="nav">
-<div class="hamburger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
 
         <span class="nav-logo">A_S</span>
         <ul class="nav-ul">
 
-            <li class="nav-link"><a href="#home" class="nav-items">Home</a></li>     
+            <li class="nav-link"><a href="#home" class="nav-items">Home</a></li>
             <li class="nav-link"><a href="#achievements" class="nav-items">Achievements</a></li>
             <li class="nav-link"><a href="#showcase" class="nav-items">Showcase</a></li>
-            <li class="nav-link"><a href="#whyme" class="nav-items">Reasons</a></li>
+            <li class="nav-link"><a href="#skills" class="nav-items">Skills</a></li>
+            <li class="nav-link"><a href="#whyme" class="nav-items">Why Me</a></li>
             <li class="nav-link"><a href="#talk" class="nav-items">Contact</a></li>
-            <li class="nav-link"><a href="" class="nav-items">About Me</a></li>
-            <li class="nav-link"><a href="" class="nav-items">Blog</a></li> 
+            <li class="nav-link"><a href="" class="nav-items">Blog</a></li>
         </ul>
     </nav>
 
-<!-- Progress Bar -->
-<div id="progress"></div>
+    <!-- Progress Bar -->
+    <div id="progress"></div>
 
-<div class="hero-container">
-    <main class="hero " id="home">
-        <time class="time"></time>
-        <h1 class="greeting">
-            <span class="greeting-js"> </span> I'm Joel
-        </h1>
-        <h2 id="description"><span class="txt-type" data-words='["a web developer", "a responsive web designer", "a Ui/Ux enthusaist", "a blogger"]' data-wait="2000"></span></h2>
-    </main>
-</div>
+    <div class="hero-container">
+        <main class="hero " id="home">
+            <time class="time"></time>
+            <h1 class="greeting">
+                <span class="greeting-js"> </span> I'm Joel
+            </h1>
+            <h2 id="description"><span class="txt-type" data-words='["a web developer", "a responsive web designer", "a Ui/Ux enthusaist", "a blogger"]' data-wait="2000"></span></h2>
+        </main>
+    </div>
 
-    
-<div class="timeline-container">
-    <section class="timeline" id="achievements">
-        <div class="container left">
-            <div class="content">
-                <h2>January, 2020</h2>
-                <h3>Data Science and Machine Learning </h3>
-                <p>Started the diploma in DS/ML offered by WorldQuant University.</p>
-                <a href="https://wqu.org/programs/data-science" target="_blank">Check it out here</a>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>November, 2019</h2>
-                <h3>Cerification: Complete Web Developer</h3>
-                <p> I completed this intensive Zero to Mastery course with tutor Andrei Neagoie.</p>
-                <p>Used React, Node, Express and PostgreSQL</p>
-                <a href="https://res.cloudinary.com/stealthman22/image/upload/v1574698452/ZTM_grad.jpg" target="_blank">View my certificate here</a>
-            </div>
-        </div>
-        <div class="container left">
-            <div class="content">
-                <h2>May, 2018</h2>
-                <h3>Certification: RWD Principles: Udemy</h3>
-                <p>This added to my knowledge in RWD principles, by Jonas.</p>
-                <p>Learn how to build websites, with user experience in mind.</p>
-                <a href="https://res.cloudinary.com/stealthman22/image/upload/v1583261244/RWD_Cert.jpg" target="_blank">View my certificate here</a>
-            </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>April, 2019</h2>
-                <h3>Certification: RWD: FreeCodeCamp</h3>
-                <p>This was a very intensive one for me, this is how I got my Web Dev groove.</p>
-                <p> Thanks to the FCC community</p>
-                <a href="https://www.freecodecamp.org/certification/alara_joel_stealth/responsive-web-design" target="_blank"> View my certificate here</a>
-            </div>
-        </div>
 
-        <div class="container left">
-            <div class="content">
-                <h2>2015</h2>
-                <h3>HTML 4 and 5 with CSS: VTC</h3>
-                <p>My introduction into frontend web design.</p>
-                <p>Taught me the very basics</p>
-                <a href="https://www.vtc.com/products/HTML-45-with-CSS-Tutorials.htm" target="_blank"> Check it out
+    <div class="timeline-container">
+        <section class="timeline" id="achievements">
+            <div class="container left">
+                <div class="content">
+                    <h2>January, 2020</h2>
+                    <h3>Data Science and Machine Learning </h3>
+                    <p>Started the diploma in DS/ML offered by WorldQuant University.</p>
+                    <a href="https://wqu.org/programs/data-science" target="_blank">Check it out here</a>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>November, 2019</h2>
+                    <h3>Cerification: Complete Web Developer</h3>
+                    <p> I completed this intensive Zero to Mastery course with tutor Andrei Neagoie.</p>
+                    <p>Used React, Node, Express and PostgreSQL</p>
+                    <a href="https://res.cloudinary.com/stealthman22/image/upload/v1574698452/ZTM_grad.jpg" target="_blank">View my certificate here</a>
+                </div>
+            </div>
+            <div class="container left">
+                <div class="content">
+                    <h2>May, 2018</h2>
+                    <h3>Certification: RWD Principles: Udemy</h3>
+                    <p>This added to my knowledge in RWD principles, by Jonas.</p>
+                    <p>Learn how to build websites, with user experience in mind.</p>
+                    <a href="https://res.cloudinary.com/stealthman22/image/upload/v1583261244/RWD_Cert.jpg" target="_blank">View my certificate here</a>
+                </div>
+            </div>
+            <div class="container right">
+                <div class="content">
+                    <h2>April, 2019</h2>
+                    <h3>Certification: RWD: FreeCodeCamp</h3>
+                    <p>This was a very intensive one for me, this is how I got my Web Dev groove.</p>
+                    <p> Thanks to the FCC community</p>
+                    <a href="https://www.freecodecamp.org/certification/alara_joel_stealth/responsive-web-design" target="_blank"> View my certificate here</a>
+                </div>
+            </div>
+
+            <div class="container left">
+                <div class="content">
+                    <h2>2015</h2>
+                    <h3>HTML 4 and 5 with CSS: VTC</h3>
+                    <p>My introduction into frontend web design.</p>
+                    <p>Taught me the very basics</p>
+                    <a href="https://www.vtc.com/products/HTML-45-with-CSS-Tutorials.htm" target="_blank"> Check it out
                     here</a>
+                </div>
             </div>
-        </div>
-        <div class="container right">
-            <div class="content">
-                <h2>2014</h2>
-                <h3>Introduction to programming: Udacity</h3>
-                <p>This was where it all began, with the Udacity app</p>
-                <p>Learnt some basic web manipulations with python.</p>
-                <a href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000" target="_blank"> Check
+            <div class="container right">
+                <div class="content">
+                    <h2>2014</h2>
+                    <h3>Introduction to programming: Udacity</h3>
+                    <p>This was where it all began, with the Udacity app</p>
+                    <p>Learnt some basic web manipulations with python.</p>
+                    <a href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000" target="_blank"> Check
                     it out here</a>
+                </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 
 
     <!-- Showcase -->
@@ -137,7 +139,7 @@
     <section class="cards-container" id="showcase">
         <div class="cards cards-one">
             <div class="cards-main cards-main-one">
-                <img class=" card-pic card-pic-one" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296209/new-portfolio/showcase/face_box_dell-xps15-front.png" alt="" >
+                <img class=" card-pic card-pic-one" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296209/new-portfolio/showcase/face_box_dell-xps15-front.png" alt="">
             </div>
             <div class=" cards-info ">
                 <h1 class="info-head">Recognize</h1>
@@ -155,7 +157,7 @@
         </div>
         <div class=" cards  cards-two">
             <div class=" cards-main cards-main-two ">
-                <img class="  card-pic card-pic-three"  src="https://res.cloudinary.com/stealthman22/image/upload/v1586299304/new-portfolio/showcase/robo_ipad_ipad_black_landscape.png" alt="" >
+                <img class="  card-pic card-pic-three" src="https://res.cloudinary.com/stealthman22/image/upload/v1586299304/new-portfolio/showcase/robo_ipad_ipad_black_landscape.png" alt="">
             </div>
 
             <div class=" cards-info ">
@@ -174,7 +176,7 @@
         <div class=" cards cards-three ">
             <div class=" cards-main cards-main-three ">
                 <img class=" card-pic-five" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296175/new-portfolio/showcase/boldness_macbookpro15_front.png" alt="">
-          </div>
+            </div>
             <div class=" cards-info ">
                 <h1 class="info-head">Dev Portfolio</h1>
                 <p class="info-body">
@@ -190,13 +192,13 @@
         </div>
         <div class=" cards  cards-four">
             <div class=" cards-main cards-main-four ">
-                <img class=" card-pic-seven"  src="https://res.cloudinary.com/stealthman22/image/upload/v1586299289/new-portfolio/showcase/logistics_landing_macbookpro13_front.png" alt="">
+                <img class=" card-pic-seven" src="https://res.cloudinary.com/stealthman22/image/upload/v1586299289/new-portfolio/showcase/logistics_landing_macbookpro13_front.png" alt="">
             </div>
             <div class=" cards-info">
                 <h1 class="info-head">Stealth Logistics</h1>
                 <p class="info-body">An elegant landing page for an office, to help them get clients contact information and meeting schedule quickly</p>
                 <p>It uses a form that submits directly to an email account, for fast processing, and also a social media link </p>
- 
+
                 <span class="info-bottom"> <a href="https://github.com/stealthman22/stealthman22.github.io"
                         target="_blank"> <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a>
                     <a href="https://stealthman22.github.io/" target="_blank"> <img src="./img/showcase/link.svg" alt=""
@@ -223,6 +225,30 @@
             </div>
         </div>
     </section>
+
+    <div class="skills-wrapper">
+        <section id="skills" class="skills-set">
+            <div class="skills-card">
+                <h4>HTML and CSS</h4>
+            </div>
+            <div class="skills-card">
+                <h4>Javascript</h4>
+            </div>
+            <div class="skills-card">
+                <h4>React.js and Redux</h4>
+            </div>
+            <div class="skills-card">
+                <h4>Node.js and Express.js</h4>
+            </div>
+            <div class="skills-card">
+                <h4>PostgreSQL</h4>
+            </div>
+            <div class="skills-card">
+                <h4>Python</h4>
+            </div>
+
+        </section>
+    </div>
 
     <section class="reasons" id="whyme">
 
@@ -287,8 +313,7 @@
             <div class="reasons-card-img reasons-card-img-six"></div>
             <div class="reasons-card-text">
                 <h2>Team-Spirited</h2>
-                <p> I thrive in teamed environments, and ensure to carry everyone  along.
-                    Communication is one of my strongest points.
+                <p> I thrive in teamed environments, and ensure to carry everyone along. Communication is one of my strongest points.
                 </p>
             </div>
             <div class="reasons-footer  reasons-footer-even">
@@ -386,8 +411,8 @@
         <p>Other icons from <a target="_blank" href="https://icons8.com">Icons8</a> and
             <a href="https://freesvg.org/" target="_blank">freesvg</a></p>
     </footer>
-    
-<!-- Smooth scroll -->
+
+    <!-- Smooth scroll -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js">
     </script>
     <script>
@@ -397,4 +422,3 @@
 
 
 </html>
-
