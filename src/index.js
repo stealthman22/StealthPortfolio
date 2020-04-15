@@ -33,3 +33,4 @@ import './typewriter';
 import './hover';
 import './nav';
 import './bar';
+import './about.html';

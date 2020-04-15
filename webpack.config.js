@@ -53,10 +53,13 @@ module.exports = {
 	plugins: [
 		/*   new CleanWebpackPlugin({
               cleanAfterEveryBuildPatterns: ['dist']
-          }), */
+		  }), */
 		new HtmlWebpackPlugin({
-			template: './src/index.html',
-			filename: './index.html'
+			template: './src/index.html'
+		}),
+		new HtmlWebpackPlugin({
+			filename: 'about.html',
+			template: './src/about.html'
 		})
 		/*  new MiniCssExtractPlugin({
              filename: '[name].css',

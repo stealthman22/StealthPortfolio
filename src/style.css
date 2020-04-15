@@ -1058,3 +1058,8 @@ cards-main-two {
 	width: 2rem;
 	vertical-align: middle;
 }
+
+/* About Page */
+.about {
+	background-color: blue;
+}
