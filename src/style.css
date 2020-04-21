@@ -170,6 +170,8 @@ li {
     text-align: center;
     margin: 0.3rem;
     cursor: pointer;
+    color: var(--text-sec);
+    text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
 
@@ -784,6 +786,9 @@ cards-main-two {
     margin: 2rem 0;
 }
 
+
+/**/
+
 .skills-set {
     display: flex;
     flex-wrap: wrap;
@@ -793,6 +798,7 @@ cards-main-two {
 }
 
 .skills-card {
+    text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -823,9 +829,15 @@ cards-main-two {
     }
 }
 
-@media screen and (min-width:1215px) {
+@media screen and (min-width: 1215px) {
     .skills-card {
         margin: 6rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .skills-set {
+        background: url('https://res.cloudinary.com/stealthman22/image/upload/v1586989414/new-portfolio/joel-team-9.jpg') no-repeat center center / cover;
     }
 }
 
