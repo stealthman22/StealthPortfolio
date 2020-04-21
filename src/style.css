@@ -798,6 +798,7 @@ cards-main-two {
 }
 
 .skills-card {
+    text-decoration: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -831,6 +832,12 @@ cards-main-two {
 @media screen and (min-width: 1215px) {
     .skills-card {
         margin: 6rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .skills-set {
+        background: url('https://res.cloudinary.com/stealthman22/image/upload/v1586989414/new-portfolio/joel-team-9.jpg') no-repeat center center / cover;
     }
 }
 
