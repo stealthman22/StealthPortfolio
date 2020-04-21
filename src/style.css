@@ -170,6 +170,8 @@ li {
     text-align: center;
     margin: 0.3rem;
     cursor: pointer;
+    color: var(--text-sec);
+    text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
 
@@ -784,6 +786,9 @@ cards-main-two {
     margin: 2rem 0;
 }
 
+
+/**/
+
 .skills-set {
     display: flex;
     flex-wrap: wrap;
@@ -823,7 +828,7 @@ cards-main-two {
     }
 }
 
-@media screen and (min-width:1215px) {
+@media screen and (min-width: 1215px) {
     .skills-card {
         margin: 6rem;
     }
