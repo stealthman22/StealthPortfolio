@@ -243,12 +243,16 @@ li {
         padding-left: 0;
         clip-path: circle(0px at 90% 10%);
         -webkit-clip-path: circle(0px at 90% 10%);
+        -webkit-clip-path: circle(0px, 90%, 10%);
+        -moz-clip-path: circle(0px, 90%, 10%);
         transition: all 0.6s ease-in-out;
         pointer-events: none;
     }
     .nav-ul.open {
         clip-path: circle(2000px at 90% 10%);
         -webkit-clip-path: circle(2000px at 90% 10%);
+        -webkit-clip-path: circle(2000px, 90%, 10%);
+        -moz-clip-path: circle(2000px, 90%, 10%);
         pointer-events: all;
     }
     .nav.items {
@@ -837,7 +841,7 @@ cards-main-two {
 
 @media screen and (max-width: 470px) {
     .skills-set {
-        background: url('https://res.cloudinary.com/stealthman22/image/upload/v1586989414/new-portfolio/joel-team-9.jpg') no-repeat center center / cover;
+        background: url('https://res.cloudinary.com/stealthman22/image/upload/v1587573084/new-portfolio/showcase/joel-team-9-vs.jpg') no-repeat center center / cover;
     }
 }
 
