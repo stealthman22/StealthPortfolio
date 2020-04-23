@@ -6,12 +6,7 @@ function init() {
 
     // Initialize the constructor function
     new TypeWriter(txtElement, words, wait);
-
 }
-
-
-
-
 
 // Building class
 
@@ -68,11 +63,8 @@ class TypeWriter {
             // Pause before typing
             typeSpeed = 120;
         }
-
-
         setTimeout(() => this.type(), typeSpeed);
     }
-
 }
 
 // init on DOM load

@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-
-/* Clean up css */
-
 :root {
     --hl-clr: #38d39f;
     --text-pry: #092545;
@@ -56,12 +53,6 @@ li {
 
 
 /* Preloader styles */
-
-
-/* #02aab0 → #00cdac *Green beach*/
-
-
-/* #000428 → #004e92  Frost*/
 
 .lds-heart {
     /* display: inline-block; */
@@ -122,9 +113,6 @@ li {
         transform: scale(0.9);
     }
 }
-
-
-/* #02aab0: */
 
 
 /* Progress Bar */
@@ -192,21 +180,15 @@ li {
     font-size: 1.3rem;
     font-style: oblique;
     font-weight: 600;
-    /* align-self: center; */
     color: var(--text-sec);
-    /* Linear gradient hack */
     background-image: linear-gradient(90deg, transparent 50%, #6db357 50%);
     background-size: 200%;
     transition: background-position 0.3s linear;
 }
 
 .nav-items:hover {
-    /* Push the background a 100% of it's width */
     background-position: -100%;
 }
-
-
-/* responsiveness */
 
 @media screen and (max-width: 1160px) {
     nav {
@@ -367,9 +349,6 @@ li {
 
 /* Showcase */
 
-
-/* The smaller image of all device pairs are absolutely fixed, as their parents (Cards) are relative */
-
 .cards-container {
     display: flex;
     flex-direction: column;
@@ -377,12 +356,8 @@ li {
     padding-top: 0;
 }
 
-.lazy {
-    background: none;
-}
-
 .cards {
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
     display: flex;
     min-height: 100vh;
     width: 100vw;
@@ -416,7 +391,6 @@ cards-main-two {
 }
 
 .card-pic-one {
-    /*   padding: 0 2px 0 2px; */
     height: 38rem;
     width: 38rem;
 }
@@ -485,12 +459,6 @@ cards-main-two {
     transform: scale(1.2);
     transition: all 0.5s ease-in-out;
 }
-
-
-/* mobile */
-
-
-/* px = dp * (dpi / 160) */
 
 @media screen and (max-width: 1100px) {
     .cards {
@@ -685,8 +653,6 @@ cards-main-two {
     border-radius: 18px;
     text-align: center;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    /* min-width: 5em; */
-    /* z-index: 2; */
 }
 
 .content>h3 {
@@ -1157,11 +1123,4 @@ cards-main-two {
     height: 2rem;
     width: 2rem;
     vertical-align: middle;
-}
-
-
-/* About Page */
-
-.about {
-    background-color: blue;
 }

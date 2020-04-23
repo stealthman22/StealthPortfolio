@@ -1,7 +1,5 @@
 // Dynamic landing page
 
-// All image files
-
 // const images = require('./index');
 const time = document.querySelector('.time');
 const hero = document.querySelector('.hero');
