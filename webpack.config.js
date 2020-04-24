@@ -1,12 +1,13 @@
 //require plugins
+const merge = require('webpack-merge');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // modules
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         app: './src/index.js'
     },
@@ -33,7 +34,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader']
+                use: [MiniCssExtractPlugin.loader, 'css.loader']
             },
             {
                 test: /\.(png|svg|jpg|gif|jpe?g)$/,
@@ -47,17 +48,15 @@ module.exports = {
         ]
     },
     plugins: [
-        /*   new CleanWebpackPlugin({
-              cleanAfterEveryBuildPatterns: ['dist']
-		  }), */
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            title: 'Production'
         }),
-        // new MiniCssExtractPlugin({
-        // 	filename: '[name].css',
-        // 	chunkFilename: '[id].css',
-        // 	ignoreOrder: false
-        // })
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css',
+            ignoreOrder: false
+        })
     ],
     optimization: {
         splitChunks: {
