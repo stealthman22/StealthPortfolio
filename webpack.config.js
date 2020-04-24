@@ -1,12 +1,12 @@
 //require plugins
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 // modules
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         app: './src/index.js'
     },
@@ -47,17 +47,17 @@ module.exports = {
         ]
     },
     plugins: [
-        /*   new CleanWebpackPlugin({
-              cleanAfterEveryBuildPatterns: ['dist']
-		  }), */
+        new CleanWebpackPlugin({
+            cleanAfterEveryBuildPatterns: ['dist']
+        }),
         new HtmlWebpackPlugin({
             template: './src/index.html'
         }),
-        // new MiniCssExtractPlugin({
-        // 	filename: '[name].css',
-        // 	chunkFilename: '[id].css',
-        // 	ignoreOrder: false
-        // })
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
+            chunkFilename: '[id].css',
+            ignoreOrder: false
+        })
     ],
     optimization: {
         splitChunks: {

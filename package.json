@@ -34,8 +34,6 @@
         "webpack-dev-server": "^3.10.1"
     },
     "dependencies": {
-        "lazysizes": "^5.2.0",
-        "smooth-scroll": "^16.1.2",
         "webpack-merge": "^4.2.2"
     }
 }
