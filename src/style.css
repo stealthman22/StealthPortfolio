@@ -53,63 +53,88 @@ li {
 
 /* Preloader styles */
 
-.lds-heart {
-	/* display: inline-block; */
+.lds-roller {
+	display: inline-block;
 	position: relative;
-	width: 60px;
-	height: 5px;
-	transform: rotate(45deg);
-	transform-origin: 30px 30px;
+	width: 80px;
+	height: 80px;
 }
-
-.lds-heart div {
-	top: 90px;
-	left: 90px;
-	position: absolute;
-	width: 32px;
-	height: 32px;
-	background: red;
-	animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+.lds-roller div {
+	animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	transform-origin: 40px 40px;
 }
-
-.lds-heart div:after,
-.lds-heart div:before {
+.lds-roller div:after {
 	content: " ";
-	position: absolute;
 	display: block;
-	width: 32px;
-	height: 32px;
-	background: red;
+	position: absolute;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: #fff;
+	margin: -4px 0 0 -4px;
 }
-
-.lds-heart div:before {
-	left: -24px;
-	border-radius: 50% 0 0 50%;
+.lds-roller div:nth-child(1) {
+	animation-delay: -0.036s;
 }
-
-.lds-heart div:after {
-	top: -24px;
-	border-radius: 50% 50% 0 0;
+.lds-roller div:nth-child(1):after {
+	top: 63px;
+	left: 63px;
 }
-
-@keyframes lds-heart {
+.lds-roller div:nth-child(2) {
+	animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+	top: 68px;
+	left: 56px;
+}
+.lds-roller div:nth-child(3) {
+	animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+	top: 71px;
+	left: 48px;
+}
+.lds-roller div:nth-child(4) {
+	animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+	top: 72px;
+	left: 40px;
+}
+.lds-roller div:nth-child(5) {
+	animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+	top: 71px;
+	left: 32px;
+}
+.lds-roller div:nth-child(6) {
+	animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+	top: 68px;
+	left: 24px;
+}
+.lds-roller div:nth-child(7) {
+	animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+	top: 63px;
+	left: 17px;
+}
+.lds-roller div:nth-child(8) {
+	animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+	top: 56px;
+	left: 12px;
+}
+@keyframes lds-roller {
 	0% {
-		transform: scale(0.95);
-	}
-	5% {
-		transform: scale(1.1);
-	}
-	39% {
-		transform: scale(0.85);
-	}
-	45% {
-		transform: scale(1);
-	}
-	60% {
-		transform: scale(0.95);
+		transform: rotate(0deg);
 	}
 	100% {
-		transform: scale(0.9);
+		transform: rotate(360deg);
 	}
 }
 
@@ -398,18 +423,14 @@ li {
 	background: linear-gradient(80deg, #040b26 37%, #6f522dc2 90%);
 }
 
-.card-pic-three {
+.card-pic-three,
+.card-pic-five {
 	height: 32rem;
-	width: 45rem;
+	width: 50rem;
 }
 
 .cards-three {
 	background: linear-gradient(95deg, #30426a 0%, #5a6d96 70%);
-}
-
-.card-pic-five {
-	height: 32rem;
-	width: 45rem;
 }
 
 .cards-four {
@@ -471,8 +492,8 @@ li {
 	}
 	.cards-main-two .card-pic-three {
 		padding: 1rem;
-		height: 15rem;
-		width: 25rem;
+		height: 22rem;
+		width: 35rem;
 	}
 	.cards-main-three .card-pic-five {
 		padding: 1rem;
@@ -490,7 +511,8 @@ li {
 		height: 20rem;
 		width: 20rem;
 	}
-	.cards-main-three .card-pic-five {
+	.cards-main-three .card-pic-five,
+	.cards-main-two .card-pic-three {
 		padding: 1rem;
 		height: 20rem;
 		width: 28rem;
@@ -502,14 +524,12 @@ li {
 		height: 15rem;
 		width: 15rem;
 	}
-	.cards-main-two .card-pic-three {
-		height: 15rem;
-		width: 20rem;
-	}
+	.cards-main-two .card-pic-three,
 	.cards-main-three .card-pic-five {
 		height: 15rem;
 		width: 20rem;
 	}
+
 	.cards-main-four .card-pic-seven {
 		height: 15rem;
 		width: 15rem;
