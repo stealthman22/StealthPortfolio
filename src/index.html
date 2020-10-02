@@ -44,9 +44,7 @@
 <body>
     <!-- Preloader -->
     <div class="preloader">
-        <div class="lds-heart">
-            <div></div>
-        </div>
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         <h2>Loading...</h2>
         <h3>Please wait while we get things ready for you.</h2>
     </div>
@@ -62,8 +60,8 @@
         <ul class="nav-ul">
 
             <li class="nav-link"><a href="#home" class="nav-items">Home</a></li>
-            <li class="nav-link"><a href="#achievements" class="nav-items">Achievements</a></li>
             <li class="nav-link"><a href="#showcase" class="nav-items">Showcase</a></li>
+            <li class="nav-link"><a href="#achievements" class="nav-items">Achievements</a></li>
             <li class="nav-link"><a href="#skills" class="nav-items">Skills</a></li>
             <li class="nav-link"><a href="#whyme" class="nav-items">Why Me</a></li>
             <li class="nav-link"><a href="#talk" class="nav-items">Contact</a></li>
@@ -85,14 +83,99 @@
     </div>
 
 
+   <!-- Showcase -->
+
+   <section class="cards-container" id="showcase">
+  
+    <div class=" cards  cards-two">
+        <div class=" cards-main cards-main-two ">
+            <img class="  card-pic card-pic-three" src="https://res.cloudinary.com/stealthman22/image/upload/v1601591035/moviepal-min.png" alt="">
+        </div>
+
+        <div class=" cards-info ">
+            <h1 class="info-head"> Movie-Pal</h1>
+            <p class="info-body">
+                <p>A fully functional movie app built in React, using purely functional components and Hooks.</p>
+                <p>All dynamic contents are being fetched from TMDB's API, users can get critical information of any movie.
+                </p>
+            </p>
+            <span class="info-bottom"> <a href="https://github.com/stealthman22/movie-pal" target="_blank"> <img src="./img/showcase/web-programming.svg" alt=""
+                        class="info-icons "></a> <a href="https://moviepal.netlify.app/" target="_blank"> <img src="./img/showcase/link.svg" alt=""
+                        class="info-icons"> </a></span>
+        </div>
+    </div>
+
+    <div class="cards cards-one">
+        <div class="cards-main cards-main-one">
+            <img class=" card-pic card-pic-one" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296209/new-portfolio/showcase/face_box_dell-xps15-front.png" alt="">
+        </div>
+        <div class=" cards-info ">
+            <h1 class="info-head">Recognize</h1>
+            <p class="info-body">An app that recognizes the faces in pictures and predicts it's location with a bounding box.
+                <p> The front-end was built in react, it's backend utilizes an express server running on-top of node.js.
+                </p>
+                <p>It also boasts of a fully functional SQL database built with PostgreSQL .</p>
+            </p>
+            <span class="info-bottom"> <a href="https://github.com/stealthman22/smart-brain" target="_blank"> <img
+                        src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a>
+                <a href="https://image-recog-front-end.herokuapp.com/" target="_blank"><img
+                        src="./img/showcase/link.svg" alt="" class="info-icons"></a>
+            </span>
+        </div>
+    </div>
+
+    <div class=" cards cards-three ">
+        <div class=" cards-main cards-main-three ">
+            <img class=" card-pic-five" src="https://res.cloudinary.com/stealthman22/image/upload/v1601591176/xiboadmin-min.png" alt="">
+        </div>
+        <div class=" cards-info ">
+            <h1 class="info-head">Xibo Admin</h1>
+            <p class="info-body">
+                <p>I succesfully deployed the Admin dashboard of a digital signage product for and Enterprise company, based on Xibo.</p>
+                <p>I configured a barebones AWS server with the LAMP stack and Docker compose via SSH.</p>
+                <p>Added an Apache reverse proxy and effectively secured the dashboard with a Let's Encrypt cronjob.</p>
+            </p>
+            <span class="info-bottom"> <a href="https://github.com/stealthman22/xibo_lemp_configs" target="_blank">
+                    <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a> <a
+                    href="https://xibo.pepadot.com/login" target="_blank"> <img
+                        src="./img/showcase/link.svg" alt="" class="info-icons"> </a></span>
+        </div>
+    </div>
+    <div class=" cards  cards-four">
+        <div class=" cards-main cards-main-four ">
+            <img class=" card-pic-seven" src="https://res.cloudinary.com/stealthman22/image/upload/v1586299289/new-portfolio/showcase/logistics_landing_macbookpro13_front.png" alt="">
+        </div>
+        <div class=" cards-info">
+            <h1 class="info-head">Stealth Logistics</h1>
+            <p class="info-body">An elegant landing page for an office, to help them get clients contact information and meeting schedule quickly.</p>
+            <p>It uses a form that submits directly to an email account, for fast processing, and also a social media link. </p>
+
+            <span class="info-bottom"> <a href="https://github.com/stealthman22/stealthman22.github.io"
+                    target="_blank"> <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a>
+                <a href="https://stealthman22.github.io/" target="_blank"> <img src="./img/showcase/link.svg" alt=""
+                        class="info-icons"> </a></span>
+        </div>
+    </div>
+</section>
+
     <div class="timeline-container">
         <section class="timeline" id="achievements">
-            <div class="container left">
+            <div class="container right">
                 <div class="content">
-                    <h2>January, 2020</h2>
+                    <h2>September, 2020</h2>
                     <h3>Data Science and Machine Learning </h3>
-                    <p>Started the diploma in DS/ML offered by WorldQuant University.</p>
-                    <a href="https://wqu.org/programs/data-science" target="_blank">Check it out here</a>
+                    <p>Finished the first module of the diploma in DS/ML offered by WorldQuant University.</p>
+                    <a href="https://www.youracclaim.com/badges/fa443454-ec1d-4e9a-b235-0f562fbbe5bb" target="_blank">Check it out here</a>
+                </div>
+            </div>
+            <div class="container left  ">
+                <div class="content">
+                    <h2>September, 2020</h2>
+                    <h3>React Essentials (Hooks)</h3>
+                    <p>Learnt more about the new React Hooks</p>
+                    <p>also learnt some more ways of working with API's</p>
+                    <a href="https://res.cloudinary.com/stealthman22/image/upload/v1601607432/certificate.jpg" target="_blank"> Check
+                    it out here</a>
                 </div>
             </div>
             <div class="container right">
@@ -133,111 +216,10 @@
                     here</a>
                 </div>
             </div>
-            <div class="container right">
-                <div class="content">
-                    <h2>2014</h2>
-                    <h3>Introduction to programming: Udacity</h3>
-                    <p>This was where it all began, with the Udacity app</p>
-                    <p>Learnt some basic web manipulations with python.</p>
-                    <a href="https://www.udacity.com/course/intro-to-programming-nanodegree--nd000" target="_blank"> Check
-                    it out here</a>
-                </div>
-            </div>
         </section>
     </div>
 
 
-    <!-- Showcase -->
-
-    <section class="cards-container" id="showcase">
-        <div class="cards cards-one">
-            <div class="cards-main cards-main-one">
-                <img class=" card-pic card-pic-one" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296209/new-portfolio/showcase/face_box_dell-xps15-front.png" alt="">
-            </div>
-            <div class=" cards-info ">
-                <h1 class="info-head">Recognize</h1>
-                <p class="info-body">An app that recognizes the faces in pictures and predicts it's location with a bounding box.
-                    <p> The front-end was built in react, it's backend utilizes an express server running on-top of node.js
-                    </p>
-                    <p>It also boasts of a fully functional SQL database built with PostgreSQL </p>
-                </p>
-                <span class="info-bottom"> <a href="https://github.com/stealthman22/smart-brain" target="_blank"> <img
-                            src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a>
-                    <a href="https://image-recog-front-end.herokuapp.com/" target="_blank"><img
-                            src="./img/showcase/link.svg" alt="" class="info-icons"></a>
-                </span>
-            </div>
-        </div>
-        <div class=" cards  cards-two">
-            <div class=" cards-main cards-main-two ">
-                <img class="  card-pic card-pic-three" src="https://res.cloudinary.com/stealthman22/image/upload/v1586299304/new-portfolio/showcase/robo_ipad_ipad_black_landscape.png" alt="">
-            </div>
-
-            <div class=" cards-info ">
-                <h1 class="info-head"> Friendz</h1>
-                <p class="info-body">
-                    <p>A simple react and redux app that filters profiles based on search results.</p>
-                    <p>It uses react for the UI, and redux for state management, so the state of the search box can be recorded at all times. The profiles structure are fetched from an API.
-                    </p>
-                </p>
-                <span class="info-bottom"> <a href="https://github.com/stealthman22/RoboFirends" target="_blank"> <img src="./img/showcase/web-programming.svg" alt=""
-                            class="info-icons "></a> <a href="https://frosty-austin-c29ad6.netlify.app/" target="_blank"> <img src="./img/showcase/link.svg" alt=""
-                            class="info-icons"> </a></span>
-            </div>
-        </div>
-
-        <div class=" cards cards-three ">
-            <div class=" cards-main cards-main-three ">
-                <img class=" card-pic-five" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296175/new-portfolio/showcase/boldness_macbookpro15_front.png" alt="">
-            </div>
-            <div class=" cards-info ">
-                <h1 class="info-head">Dev Portfolio</h1>
-                <p class="info-body">
-                    <p>A portfolio template that devs can utilize to quickly bootstrap theirs by making necessary changes.</p>
-                    <p>It has a beautiful carousel that highlights the teams main strengths and skills.</p>
-                    <p>It is built in vanilla js and is simple to set up.</p>
-                </p>
-                <span class="info-bottom"> <a href="https://codepen.io/alara_joel_stealth/pen/yrjLjB" target="_blank">
-                        <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a> <a
-                        href="https://codepen.io/alara_joel_stealth/full/yrjLjB" target="_blank"> <img
-                            src="./img/showcase/link.svg" alt="" class="info-icons"> </a></span>
-            </div>
-        </div>
-        <div class=" cards  cards-four">
-            <div class=" cards-main cards-main-four ">
-                <img class=" card-pic-seven" src="https://res.cloudinary.com/stealthman22/image/upload/v1586299289/new-portfolio/showcase/logistics_landing_macbookpro13_front.png" alt="">
-            </div>
-            <div class=" cards-info">
-                <h1 class="info-head">Stealth Logistics</h1>
-                <p class="info-body">An elegant landing page for an office, to help them get clients contact information and meeting schedule quickly</p>
-                <p>It uses a form that submits directly to an email account, for fast processing, and also a social media link </p>
-
-                <span class="info-bottom"> <a href="https://github.com/stealthman22/stealthman22.github.io"
-                        target="_blank"> <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a>
-                    <a href="https://stealthman22.github.io/" target="_blank"> <img src="./img/showcase/link.svg" alt=""
-                            class="info-icons"> </a></span>
-            </div>
-        </div>
-
-        <div class=" cards cards-five">
-            <div class=" cards-main cards-main-five">
-                <img class="card-pic-nine" src="https://res.cloudinary.com/stealthman22/image/upload/v1586296621/new-portfolio/showcase/survey_macbookair13_front.png" alt="">
-
-
-            </div>
-            <div class=" cards-info ">
-                <h1 class="info-head">Survey form Page</h1>
-                <p class="info-body">
-                    <p>An extensively detailed survery form template</p>
-                    <p>A survey form that can be used to get valuable feedback from customers and stakeholders</p>
-                </p>
-                <span class="info-bottom"> <a href="https://github.com/stealthman22/product-page-FCC" target="_blank">
-                        <img src="./img/showcase/web-programming.svg" alt="" class="info-icons "></a> <a
-                        href="https://stealthman22.github.io/survey-form-FCC/" target="_blank"> <img
-                            src="./img/showcase/link.svg" alt="" class="info-icons"> </a></span>
-            </div>
-        </div>
-    </section>
 
     <div class="skills-wrapper">
         <section id="skills" class="skills-set">
@@ -380,7 +362,6 @@
                         </button>
                     </a>
                 </li>
-                <!--  <li><button>https://www.linkedin.com/in/alara-joel-b16865b6/</button></li> -->
             </ul>
         </div>
         <div class="socialize">
